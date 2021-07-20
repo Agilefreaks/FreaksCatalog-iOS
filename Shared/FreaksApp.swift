@@ -4,7 +4,7 @@ import SwiftUI
 struct FreaksApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FreaksView()
         }
     }
 }

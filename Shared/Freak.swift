@@ -1,7 +1,7 @@
 import Foundation
 
 struct Freak {
-    var imageName: String
-    var firstName: String
-    var lastName: String
+    let imageName: String
+    let firstName: String
+    let lastName: String
 }

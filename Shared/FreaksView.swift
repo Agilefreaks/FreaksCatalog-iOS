@@ -1,12 +1,16 @@
 import SwiftUI
 
 struct FreaksView: View {
-    var names = ["Alin", "Doru", "Raluca", "Mihai", "Vlad"]
+    var freaks: [Freak] = [
+        Freak(imageName: "person.crop.square", firstName: "Vlad", lastName: "Stanescu"),
+        Freak(imageName: "person.crop.square", firstName: "Mihai", lastName: "Pantiru"),
+        Freak(imageName: "person.crop.square", firstName: "Raluca", lastName: "Ionescu"),
+    ]
 
     var body: some View {
         NavigationView {
-            List(names, id: \.self) { name in
-                Text(name)
+            List(freaks, id: \.firstName) { freak in
+                ListItemView(freak: freak)
             }
         }
     }

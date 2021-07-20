@@ -1,0 +1,4 @@
+--guardelse next-line
+--allman false
+--elseposition same-line
+--disable wrapMultilineStatementBraces

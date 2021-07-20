@@ -11,10 +11,10 @@
 		121F7D8D26A6B875005411ED /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D8C26A6B875005411ED /* Tests_macOS.swift */; };
 		121F7D8E26A6B875005411ED /* FreaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6C26A6B874005411ED /* FreaksApp.swift */; };
 		121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6C26A6B874005411ED /* FreaksApp.swift */; };
-		121F7D9026A6B875005411ED /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6D26A6B874005411ED /* FreaksView.swift */; };
-		121F7D9126A6B875005411ED /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6D26A6B874005411ED /* FreaksView.swift */; };
 		121F7D9226A6B875005411ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121F7D6E26A6B875005411ED /* Assets.xcassets */; };
 		121F7D9326A6B875005411ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121F7D6E26A6B875005411ED /* Assets.xcassets */; };
+		3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA054026A6EA840070BADB /* FreaksView.swift */; };
+		3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA054026A6EA840070BADB /* FreaksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		121F7D6C26A6B874005411ED /* FreaksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksApp.swift; sourceTree = "<group>"; };
-		121F7D6D26A6B874005411ED /* FreaksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksView.swift; sourceTree = "<group>"; };
 		121F7D6E26A6B875005411ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		121F7D7326A6B875005411ED /* Freaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		121F7D7926A6B875005411ED /* Freaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		121F7D8226A6B875005411ED /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		121F7D8826A6B875005411ED /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		121F7D8C26A6B875005411ED /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		3BDA054026A6EA840070BADB /* FreaksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreaksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +91,8 @@
 		121F7D6B26A6B874005411ED /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3BDA054026A6EA840070BADB /* FreaksView.swift */,
 				121F7D6C26A6B874005411ED /* FreaksApp.swift */,
-				121F7D6D26A6B874005411ED /* FreaksView.swift */,
 				121F7D6E26A6B875005411ED /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -304,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121F7D9026A6B875005411ED /* FreaksView.swift in Sources */,
+				3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */,
 				121F7D8E26A6B875005411ED /* FreaksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121F7D9126A6B875005411ED /* FreaksView.swift in Sources */,
+				3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */,
 				121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

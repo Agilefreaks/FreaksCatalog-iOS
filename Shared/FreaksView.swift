@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct FreakScreenView: View {
+struct FreaksView: View {
     var names = ["Alin", "Doru", "Raluca", "Mihai", "Vlad"]
 
     var body: some View {
@@ -14,6 +14,6 @@ struct FreakScreenView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        FreakScreenView()
+        FreaksView()
     }
 }

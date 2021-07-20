@@ -10,7 +10,7 @@ struct FreaksView: View {
     var body: some View {
         NavigationView {
             List(freaks, id: \.firstName) { freak in
-                Text(freak.firstName)
+                ListItemView(freak: freak)
             }
         }
     }

@@ -132,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 121F7D9626A6B875005411ED /* Build configuration list for PBXNativeTarget "Freaks (iOS)" */;
 			buildPhases = (
+				1288EA1126A6DD7C0069512B /* ShellScript */,
 				121F7D6F26A6B875005411ED /* Sources */,
 				121F7D7026A6B875005411ED /* Frameworks */,
 				121F7D7126A6B875005411ED /* Resources */,
@@ -277,6 +278,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1288EA1126A6DD7C0069512B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd BuildTools\nSDKROOT=macosx\n#swift package update #Uncomment this line temporarily to update the version used to the latest matching your BuildTools/Package.swift file\nswift run -c release swiftformat \"$SRCROOT\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		121F7D6F26A6B875005411ED /* Sources */ = {

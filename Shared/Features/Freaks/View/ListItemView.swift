@@ -9,7 +9,7 @@ struct ListItemView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 80, height: 80)
-            Text(freak.firstName)
+            Text(freak.firstName + " " + freak.lastName)
         }
         .padding()
     }

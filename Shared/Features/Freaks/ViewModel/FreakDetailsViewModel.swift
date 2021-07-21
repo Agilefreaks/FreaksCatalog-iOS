@@ -7,10 +7,6 @@ final class FreakDetailsViewModel {
         self.freak = freak
     }
 
-    var imageName: String {
-        freak.imageName
-    }
-
     var fullName: String {
         freak.firstName + " " + freak.lastName
     }

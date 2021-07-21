@@ -5,18 +5,11 @@ struct FreaksView: View {
 
     init() {
         let coloredNavAppearance = UINavigationBarAppearance()
-
         coloredNavAppearance.titleTextAttributes = [.foregroundColor: UIColor(Color("SecondaryColor"))]
-
         coloredNavAppearance.backgroundColor = UIColor(Color("AccentColor"))
-
+        
         UINavigationBar.appearance().standardAppearance = coloredNavAppearance
-
         UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
-    }
-
-    var preferredStatusBarStyle: UIStatusBarStyle {
-        .lightContent
     }
 
     var body: some View {

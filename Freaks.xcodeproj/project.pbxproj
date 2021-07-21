@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		121F7D8326A6B875005411ED /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D8226A6B875005411ED /* Tests_iOS.swift */; };
-		121F7D8D26A6B875005411ED /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D8C26A6B875005411ED /* Tests_macOS.swift */; };
 		121F7D8E26A6B875005411ED /* FreaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6C26A6B874005411ED /* FreaksApp.swift */; };
 		121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6C26A6B874005411ED /* FreaksApp.swift */; };
 		121F7D9226A6B875005411ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121F7D6E26A6B875005411ED /* Assets.xcassets */; };
@@ -17,6 +15,9 @@
 		12DFB34C26A6EE0200CB25F7 /* Freak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DFB34A26A6EE0200CB25F7 /* Freak.swift */; };
 		12DFB34E26A6F21E00CB25F7 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DFB34D26A6F21E00CB25F7 /* ListItemView.swift */; };
 		12DFB34F26A6F21E00CB25F7 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DFB34D26A6F21E00CB25F7 /* ListItemView.swift */; };
+		12ECD1DF26A818E10069BD64 /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ECD1DE26A818E10069BD64 /* ListItemViewModel.swift */; };
+		12ECD1E026A818E10069BD64 /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ECD1DE26A818E10069BD64 /* ListItemViewModel.swift */; };
+		12ECD1EE26A82CDA0069BD64 /* FreakTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ECD1DC26A815920069BD64 /* FreakTest.swift */; };
 		3B416B8D26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
 		3B416B8E26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
 		3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA054026A6EA840070BADB /* FreaksView.swift */; };
@@ -24,19 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		121F7D7F26A6B875005411ED /* PBXContainerItemProxy */ = {
+		12ECD1E926A82CB80069BD64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 121F7D6726A6B874005411ED /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 121F7D7226A6B875005411ED;
 			remoteInfo = "Freaks (iOS)";
-		};
-		121F7D8926A6B875005411ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 121F7D6726A6B874005411ED /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 121F7D7826A6B875005411ED;
-			remoteInfo = "Freaks (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,12 +39,11 @@
 		121F7D6E26A6B875005411ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		121F7D7326A6B875005411ED /* Freaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		121F7D7926A6B875005411ED /* Freaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		121F7D7E26A6B875005411ED /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		121F7D8226A6B875005411ED /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		121F7D8826A6B875005411ED /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		121F7D8C26A6B875005411ED /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		12DFB34A26A6EE0200CB25F7 /* Freak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freak.swift; sourceTree = "<group>"; };
 		12DFB34D26A6F21E00CB25F7 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		12ECD1DC26A815920069BD64 /* FreakTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakTest.swift; sourceTree = "<group>"; };
+		12ECD1DE26A818E10069BD64 /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
+		12ECD1E526A82CB80069BD64 /* FreaksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreaksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksViewModel.swift; sourceTree = "<group>"; };
 		3BDA054026A6EA840070BADB /* FreaksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreaksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,14 +63,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		121F7D7B26A6B875005411ED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		121F7D8526A6B875005411ED /* Frameworks */ = {
+		12ECD1E226A82CB80069BD64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,8 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				121F7D6B26A6B874005411ED /* Shared */,
-				121F7D8126A6B875005411ED /* Tests iOS */,
-				121F7D8B26A6B875005411ED /* Tests macOS */,
+				12ECD1E626A82CB80069BD64 /* FreaksTests */,
 				121F7D7426A6B875005411ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,26 +97,17 @@
 			children = (
 				121F7D7326A6B875005411ED /* Freaks.app */,
 				121F7D7926A6B875005411ED /* Freaks.app */,
-				121F7D7E26A6B875005411ED /* Tests iOS.xctest */,
-				121F7D8826A6B875005411ED /* Tests macOS.xctest */,
+				12ECD1E526A82CB80069BD64 /* FreaksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		121F7D8126A6B875005411ED /* Tests iOS */ = {
+		12ECD1E626A82CB80069BD64 /* FreaksTests */ = {
 			isa = PBXGroup;
 			children = (
-				121F7D8226A6B875005411ED /* Tests_iOS.swift */,
+				12ECD1DC26A815920069BD64 /* FreakTest.swift */,
 			);
-			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		121F7D8B26A6B875005411ED /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				121F7D8C26A6B875005411ED /* Tests_macOS.swift */,
-			);
-			path = "Tests macOS";
+			path = FreaksTests;
 			sourceTree = "<group>";
 		};
 		3B416B8F26A811A600250A0D /* App */ = {
@@ -172,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */,
+				12ECD1DE26A818E10069BD64 /* ListItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -223,41 +200,23 @@
 			productReference = 121F7D7926A6B875005411ED /* Freaks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		121F7D7D26A6B875005411ED /* Tests iOS */ = {
+		12ECD1E426A82CB80069BD64 /* FreaksTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 121F7D9C26A6B875005411ED /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildConfigurationList = 12ECD1EB26A82CB80069BD64 /* Build configuration list for PBXNativeTarget "FreaksTests" */;
 			buildPhases = (
-				121F7D7A26A6B875005411ED /* Sources */,
-				121F7D7B26A6B875005411ED /* Frameworks */,
-				121F7D7C26A6B875005411ED /* Resources */,
+				12ECD1E126A82CB80069BD64 /* Sources */,
+				12ECD1E226A82CB80069BD64 /* Frameworks */,
+				12ECD1E326A82CB80069BD64 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				121F7D8026A6B875005411ED /* PBXTargetDependency */,
+				12ECD1EA26A82CB80069BD64 /* PBXTargetDependency */,
 			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = 121F7D7E26A6B875005411ED /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		121F7D8726A6B875005411ED /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 121F7D9F26A6B875005411ED /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				121F7D8426A6B875005411ED /* Sources */,
-				121F7D8526A6B875005411ED /* Frameworks */,
-				121F7D8626A6B875005411ED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				121F7D8A26A6B875005411ED /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 121F7D8826A6B875005411ED /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = FreaksTests;
+			productName = FreaksTests;
+			productReference = 12ECD1E526A82CB80069BD64 /* FreaksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -275,13 +234,9 @@
 					121F7D7826A6B875005411ED = {
 						CreatedOnToolsVersion = 13.0;
 					};
-					121F7D7D26A6B875005411ED = {
+					12ECD1E426A82CB80069BD64 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 121F7D7226A6B875005411ED;
-					};
-					121F7D8726A6B875005411ED = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 121F7D7826A6B875005411ED;
 					};
 				};
 			};
@@ -300,8 +255,7 @@
 			targets = (
 				121F7D7226A6B875005411ED /* Freaks (iOS) */,
 				121F7D7826A6B875005411ED /* Freaks (macOS) */,
-				121F7D7D26A6B875005411ED /* Tests iOS */,
-				121F7D8726A6B875005411ED /* Tests macOS */,
+				12ECD1E426A82CB80069BD64 /* FreaksTests */,
 			);
 		};
 /* End PBXProject section */
@@ -323,14 +277,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		121F7D7C26A6B875005411ED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		121F7D8626A6B875005411ED /* Resources */ = {
+		12ECD1E326A82CB80069BD64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12DFB34B26A6EE0200CB25F7 /* Freak.swift in Sources */,
+				12ECD1DF26A818E10069BD64 /* ListItemViewModel.swift in Sources */,
 				3B416B8D26A80F5B00250A0D /* FreaksViewModel.swift in Sources */,
 				3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */,
 				121F7D8E26A6B875005411ED /* FreaksApp.swift in Sources */,
@@ -377,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12DFB34C26A6EE0200CB25F7 /* Freak.swift in Sources */,
+				12ECD1E026A818E10069BD64 /* ListItemViewModel.swift in Sources */,
 				3B416B8E26A80F5B00250A0D /* FreaksViewModel.swift in Sources */,
 				3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */,
 				121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */,
@@ -384,34 +333,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		121F7D7A26A6B875005411ED /* Sources */ = {
+		12ECD1E126A82CB80069BD64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121F7D8326A6B875005411ED /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		121F7D8426A6B875005411ED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				121F7D8D26A6B875005411ED /* Tests_macOS.swift in Sources */,
+				12ECD1EE26A82CDA0069BD64 /* FreakTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		121F7D8026A6B875005411ED /* PBXTargetDependency */ = {
+		12ECD1EA26A82CB80069BD64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 121F7D7226A6B875005411ED /* Freaks (iOS) */;
-			targetProxy = 121F7D7F26A6B875005411ED /* PBXContainerItemProxy */;
-		};
-		121F7D8A26A6B875005411ED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 121F7D7826A6B875005411ED /* Freaks (macOS) */;
-			targetProxy = 121F7D8926A6B875005411ED /* PBXContainerItemProxy */;
+			targetProxy = 12ECD1E926A82CB80069BD64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -638,96 +574,50 @@
 			};
 			name = Release;
 		};
-		121F7D9D26A6B875005411ED /* Debug */ = {
+		12ECD1EC26A82CB80069BD64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.agile.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agile.FreaksTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Freaks (iOS)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freaks.app/Freaks";
 			};
 			name = Debug;
 		};
-		121F7D9E26A6B875005411ED /* Release */ = {
+		12ECD1ED26A82CB80069BD64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.agile.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agile.FreaksTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Freaks (iOS)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freaks.app/Freaks";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		121F7DA026A6B875005411ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.agile.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_TARGET_NAME = "Freaks (macOS)";
-			};
-			name = Debug;
-		};
-		121F7DA126A6B875005411ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.agile.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TEST_TARGET_NAME = "Freaks (macOS)";
 			};
 			name = Release;
 		};
@@ -761,20 +651,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		121F7D9C26A6B875005411ED /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+		12ECD1EB26A82CB80069BD64 /* Build configuration list for PBXNativeTarget "FreaksTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				121F7D9D26A6B875005411ED /* Debug */,
-				121F7D9E26A6B875005411ED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		121F7D9F26A6B875005411ED /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				121F7DA026A6B875005411ED /* Debug */,
-				121F7DA126A6B875005411ED /* Release */,
+				12ECD1EC26A82CB80069BD64 /* Debug */,
+				12ECD1ED26A82CB80069BD64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

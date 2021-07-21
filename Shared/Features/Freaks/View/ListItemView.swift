@@ -1,22 +1,24 @@
 import SwiftUI
 
 struct ListItemView: View {
-    var freak: Freak
+    var viewModel: ListItemViewModel
 
     var body: some View {
         HStack(alignment: .top) {
-            Image(systemName: freak.imageName)
+            Image(systemName: viewModel.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 80, height: 80)
-            Text(freak.firstName + " " + freak.lastName)
+            Text(viewModel.fullName)
         }
         .padding()
     }
 }
 
 struct ListItemView_Previews: PreviewProvider {
+    static var viewModel = ListItemViewModel(freak: Freak(imageName: "", firstName: "Vlad", lastName: "Militaru"))
+
     static var previews: some View {
-        ListItemView(freak: Freak(imageName: "person.crop.square", firstName: "Vlad", lastName: "Stanescu"))
+        ListItemView(viewModel: viewModel)
     }
 }

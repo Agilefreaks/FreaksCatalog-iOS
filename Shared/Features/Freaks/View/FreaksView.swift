@@ -21,6 +21,7 @@ struct FreaksView: View {
             }
             .navigationBarTitle("Freaks", displayMode: .inline)
         }
+        .accentColor(Color("SecondaryColor"))
     }
 }
 

@@ -24,12 +24,20 @@
 		12ECD1EE26A82CDA0069BD64 /* FreakTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ECD1DC26A815920069BD64 /* FreakTest.swift */; };
 		3B416B8D26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
 		3B416B8E26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
+		3B8E6FE626A993830019E00E /* FreaksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E6FE526A993830019E00E /* FreaksUITests.swift */; };
 		3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA054026A6EA840070BADB /* FreaksView.swift */; };
 		3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA054026A6EA840070BADB /* FreaksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		12ECD1E926A82CB80069BD64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 121F7D6726A6B874005411ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 121F7D7226A6B875005411ED;
+			remoteInfo = "Freaks (iOS)";
+		};
+		3B8E6FE726A993830019E00E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 121F7D6726A6B874005411ED /* Project object */;
 			proxyType = 1;
@@ -52,6 +60,8 @@
 		12ECD1E526A82CB80069BD64 /* FreaksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreaksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksViewModel.swift; sourceTree = "<group>"; };
 		3B416B9526A8463800250A0D /* Freaks--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freaks--iOS--Info.plist"; sourceTree = "<group>"; };
+		3B8E6FE326A993830019E00E /* FreaksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreaksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8E6FE526A993830019E00E /* FreaksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksUITests.swift; sourceTree = "<group>"; };
 		3BDA054026A6EA840070BADB /* FreaksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreaksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +87,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B8E6FE026A993830019E00E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +103,7 @@
 				3B416B9526A8463800250A0D /* Freaks--iOS--Info.plist */,
 				121F7D6B26A6B874005411ED /* Shared */,
 				12ECD1E626A82CB80069BD64 /* FreaksTests */,
+				3B8E6FE426A993830019E00E /* FreaksUITests */,
 				121F7D7426A6B875005411ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +124,7 @@
 				121F7D7326A6B875005411ED /* Freaks.app */,
 				121F7D7926A6B875005411ED /* Freaks.app */,
 				12ECD1E526A82CB80069BD64 /* FreaksTests.xctest */,
+				3B8E6FE326A993830019E00E /* FreaksUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +215,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3B8E6FE426A993830019E00E /* FreaksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E6FE526A993830019E00E /* FreaksUITests.swift */,
+			);
+			path = FreaksUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +279,24 @@
 			productReference = 12ECD1E526A82CB80069BD64 /* FreaksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3B8E6FE226A993830019E00E /* FreaksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B8E6FEB26A993830019E00E /* Build configuration list for PBXNativeTarget "FreaksUITests" */;
+			buildPhases = (
+				3B8E6FDF26A993830019E00E /* Sources */,
+				3B8E6FE026A993830019E00E /* Frameworks */,
+				3B8E6FE126A993830019E00E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B8E6FE826A993830019E00E /* PBXTargetDependency */,
+			);
+			name = FreaksUITests;
+			productName = FreaksUITests;
+			productReference = 3B8E6FE326A993830019E00E /* FreaksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -269,6 +314,10 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					12ECD1E426A82CB80069BD64 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 121F7D7226A6B875005411ED;
+					};
+					3B8E6FE226A993830019E00E = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 121F7D7226A6B875005411ED;
 					};
@@ -290,6 +339,7 @@
 				121F7D7226A6B875005411ED /* Freaks (iOS) */,
 				121F7D7826A6B875005411ED /* Freaks (macOS) */,
 				12ECD1E426A82CB80069BD64 /* FreaksTests */,
+				3B8E6FE226A993830019E00E /* FreaksUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +362,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		12ECD1E326A82CB80069BD64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8E6FE126A993830019E00E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,6 +436,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B8E6FDF26A993830019E00E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B8E6FE626A993830019E00E /* FreaksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -386,6 +451,11 @@
 			isa = PBXTargetDependency;
 			target = 121F7D7226A6B875005411ED /* Freaks (iOS) */;
 			targetProxy = 12ECD1E926A82CB80069BD64 /* PBXContainerItemProxy */;
+		};
+		3B8E6FE826A993830019E00E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 121F7D7226A6B875005411ED /* Freaks (iOS) */;
+			targetProxy = 3B8E6FE726A993830019E00E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -667,6 +737,55 @@
 			};
 			name = Release;
 		};
+		3B8E6FE926A993830019E00E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2SAGF7L3J;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moldozeu.FreaksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Freaks (iOS)";
+			};
+			name = Debug;
+		};
+		3B8E6FEA26A993830019E00E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2SAGF7L3J;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moldozeu.FreaksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Freaks (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -702,6 +821,15 @@
 			buildConfigurations = (
 				12ECD1EC26A82CB80069BD64 /* Debug */,
 				12ECD1ED26A82CB80069BD64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B8E6FEB26A993830019E00E /* Build configuration list for PBXNativeTarget "FreaksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B8E6FE926A993830019E00E /* Debug */,
+				3B8E6FEA26A993830019E00E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -5,7 +5,7 @@ struct ListItemView: View {
 
     var body: some View {
         HStack(alignment: .top) {
-            Image(systemName: viewModel.imageName)
+            Image(viewModel.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 80, height: 80)
@@ -16,7 +16,7 @@ struct ListItemView: View {
 }
 
 struct ListItemView_Previews: PreviewProvider {
-    static var viewModel = ListItemViewModel(freak: Freak(imageName: "", firstName: "Vlad", lastName: "Militaru"))
+    static var viewModel = ListItemViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Militaru", id: 0))
 
     static var previews: some View {
         ListItemView(viewModel: viewModel)

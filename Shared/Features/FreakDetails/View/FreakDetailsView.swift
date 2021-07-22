@@ -10,6 +10,6 @@ struct FreakDetailsView: View {
 
 struct FreakDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "", firstName: "Vlad", lastName: "Militaru")))
+        FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Militaru", id: 10)))
     }
 }

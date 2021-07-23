@@ -5,6 +5,7 @@ struct FreaksApp: App {
     var body: some Scene {
         WindowGroup {
             FreaksView()
+                .accentColor(Color("SecondaryColor"))
         }
     }
 }

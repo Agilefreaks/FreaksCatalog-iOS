@@ -9,7 +9,9 @@ struct ListItemView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 80, height: 80)
+                .accessibility(identifier: "freakImage")
             Text(viewModel.fullName)
+                .accessibility(identifier: "freakFullName")
         }
         .padding()
     }

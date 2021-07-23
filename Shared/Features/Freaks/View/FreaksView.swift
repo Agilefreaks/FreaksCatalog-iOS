@@ -19,7 +19,15 @@ struct FreaksView: View {
                     ListItemView(viewModel: ListItemViewModel(freak: freak))
                 }
             }
-            .navigationBarTitle("Freaks", displayMode: .inline)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Freaks")
+                        .fontWeight(.medium)
+                        .font(.system(size: 24))
+                        .foregroundColor(Color("SecondaryColor"))
+                }
+            }
         }
     }
 }

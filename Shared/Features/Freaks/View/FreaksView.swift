@@ -2,6 +2,8 @@ import SwiftUI
 
 struct FreaksView: View {
     var viewModel = FreaksViewModel()
+    let columns = [GridItem(.flexible()),
+                   GridItem(.flexible())]
 
     init() {
         let coloredNavAppearance = UINavigationBarAppearance()
@@ -17,9 +19,13 @@ struct FreaksView: View {
             VStack(spacing: 0) {
                 FilterButtonsView()
 
-                List(viewModel.freaks) { freak in
-                    NavigationLink(destination: FreakDetailsView(viewModel: FreakDetailsViewModel(freak: freak))) {
-                        ListItemView(viewModel: ListItemViewModel(freak: freak))
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 5) {
+                        ForEach(viewModel.freaks) { freak in
+                            NavigationLink(destination: FreakDetailsView(viewModel: FreakDetailsViewModel(freak: freak))) {
+                                ListItemView(viewModel: ListItemViewModel(freak: freak))
+                            }
+                        }
                     }
                 }
             }

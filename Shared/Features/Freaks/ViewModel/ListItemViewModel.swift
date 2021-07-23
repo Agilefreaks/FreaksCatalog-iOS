@@ -14,4 +14,8 @@ final class ListItemViewModel {
     var fullName: String {
         freak.firstName + " " + freak.lastName
     }
+
+    var firstName: String {
+        freak.firstName
+    }
 }

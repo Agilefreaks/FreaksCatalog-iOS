@@ -4,15 +4,23 @@ struct ListItemView: View {
     var viewModel: ListItemViewModel
 
     var body: some View {
-        HStack(alignment: .top) {
+        ZStack(alignment: .bottom) {
             Image(viewModel.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 80, height: 80)
+                .frame(width: 150, height: 150)
+                .cornerRadius(10)
                 .accessibility(identifier: "freakImage")
-            Text(viewModel.fullName)
+
+            Text(viewModel.firstName)
+                .font(.system(size: 20, weight: .heavy, design: .default))
+                .frame(width: 150, height: 60)
                 .accessibility(identifier: "freakFullName")
+                .foregroundColor(Color("SecondaryColor"))
+                .background(
+                    LinearGradient(gradient: Gradient(colors: [.clear, .black.opacity(1)]), startPoint: .top, endPoint: .bottom))
         }
+        .cornerRadius(10)
         .padding()
     }
 }

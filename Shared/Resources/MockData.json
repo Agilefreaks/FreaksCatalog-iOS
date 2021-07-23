@@ -1,0 +1,68 @@
+[
+    {
+        "firstName": "Radu",
+        "lastName": "Moldovan",
+        "imageName": "test1",
+        "id": 1001
+    },
+    {
+        "firstName": "Teodora",
+        "lastName": "Dejeanu",
+        "imageName": "test1",
+        "id": 1002
+    },
+    {
+        "firstName": "Andreea",
+        "lastName": "Matei",
+        "imageName": "test1",
+        "id": 1003
+    },
+    {
+        "firstName": "Ciprian",
+        "lastName": "Hotea",
+        "imageName": "test1",
+        "id": 1004
+    },
+    {
+        "firstName": "Robert",
+        "lastName": "Solymosi",
+        "imageName": "test1",
+        "id": 1005
+    },
+    {
+        "firstName": "Adrian",
+        "lastName": "Salcudean",
+        "imageName": "test1",
+        "id": 1006
+    },
+    {
+        "firstName": "Gabriel",
+        "lastName": "Giroe",
+        "imageName": "test1",
+        "id": 1007
+    },
+    {
+        "firstName": "Marian",
+        "lastName": "Badea",
+        "imageName": "test1",
+        "id": 1008 
+    },
+    {
+        "firstName": "Georgiana",
+        "lastName": "Lazar",
+        "imageName": "test1",
+        "id": 1009
+    },
+    {
+        "firstName": "Eduart",
+        "lastName": "Ioo",
+        "imageName": "test1",
+        "id": 1010
+    },
+    {
+        "firstName": "Gabriel",
+        "lastName": "Craciun",
+        "imageName": "test1",
+        "id": 1011
+    }
+]

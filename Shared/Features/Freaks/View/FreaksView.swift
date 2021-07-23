@@ -14,7 +14,7 @@ struct FreaksView: View {
 
     var body: some View {
         NavigationView {
-            List(viewModel.freaks, id: \.firstName) { freak in
+            List(viewModel.freaks) { freak in
                 NavigationLink(destination: FreakDetailsView(viewModel: FreakDetailsViewModel(freak: freak))) {
                     ListItemView(viewModel: ListItemViewModel(freak: freak))
                 }

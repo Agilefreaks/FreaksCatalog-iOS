@@ -13,4 +13,4 @@ jobs:
       with:
         xcode-version: latest
     - name: Run tests
-      run: xcodebuild test -scheme 'Freaks (iOS)' -project 'Freaks.xcodeproj' -destination 'platform=iOS Simulator,name=iPhone 12'
+      run: xcodebuild test -scheme "Freaks (iOS)" -project "Freaks.xcodeproj" -destination "platform=iOS Simulator,name=iPhone 12"

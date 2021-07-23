@@ -8,14 +8,14 @@ struct ListItemView: View {
             Image(viewModel.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 150, height: 150)
+                .frame(maxWidth: 140, maxHeight: 140)
                 .cornerRadius(10)
                 .accessibility(identifier: "freakImage")
 
             Text(viewModel.firstName)
                 .font(.system(size: 20, weight: .heavy, design: .default))
-                .frame(width: 150, height: 60)
-                .accessibility(identifier: "freakFullName")
+                .frame(maxWidth: 140, maxHeight: 61)
+                .accessibility(identifier: "freakFirstName")
                 .foregroundColor(Color("SecondaryColor"))
                 .background(
                     LinearGradient(gradient: Gradient(colors: [.clear, .black.opacity(1)]), startPoint: .top, endPoint: .bottom))

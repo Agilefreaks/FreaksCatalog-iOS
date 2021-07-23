@@ -224,6 +224,8 @@
 				3B8E6FDB26A96C8E0019E00E /* MockData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
 		3B8E6FE426A993830019E00E /* FreaksUITests */ = {
 			isa = PBXGroup;
 			children = (

@@ -17,13 +17,21 @@ struct FreaksView: View {
             VStack(spacing: 0) {
                 FilterButtonsView()
 
-                List(viewModel.freaks, id: \.firstName) { freak in
+                List(viewModel.freaks) { freak in
                     NavigationLink(destination: FreakDetailsView(viewModel: FreakDetailsViewModel(freak: freak))) {
                         ListItemView(viewModel: ListItemViewModel(freak: freak))
                     }
                 }
             }
-            .navigationBarTitle("Freaks", displayMode: .inline)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Freaks")
+                        .fontWeight(.medium)
+                        .font(.system(size: 24))
+                        .foregroundColor(Color("SecondaryColor"))
+                }
+            }
         }
     }
 }

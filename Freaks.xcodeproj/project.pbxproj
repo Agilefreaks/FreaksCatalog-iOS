@@ -22,8 +22,8 @@
 		12ECD1DF26A818E10069BD64 /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ECD1DE26A818E10069BD64 /* ListItemViewModel.swift */; };
 		12ECD1E026A818E10069BD64 /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ECD1DE26A818E10069BD64 /* ListItemViewModel.swift */; };
 		12ECD1EE26A82CDA0069BD64 /* FreakTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ECD1DC26A815920069BD64 /* FreakTest.swift */; };
-		12FD8E3C26A9BB8D00EF05E8 /* FreaksButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FD8E3B26A9BB8D00EF05E8 /* FreaksButtonsView.swift */; };
-		12FD8E3D26A9BB8D00EF05E8 /* FreaksButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FD8E3B26A9BB8D00EF05E8 /* FreaksButtonsView.swift */; };
+		12FD8E3C26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FD8E3B26A9BB8D00EF05E8 /* FilterButtonsView.swift */; };
+		12FD8E3D26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FD8E3B26A9BB8D00EF05E8 /* FilterButtonsView.swift */; };
 		3B416B8D26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
 		3B416B8E26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
 		3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA054026A6EA840070BADB /* FreaksView.swift */; };
@@ -52,7 +52,7 @@
 		12ECD1DC26A815920069BD64 /* FreakTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakTest.swift; sourceTree = "<group>"; };
 		12ECD1DE26A818E10069BD64 /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
 		12ECD1E526A82CB80069BD64 /* FreaksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreaksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		12FD8E3B26A9BB8D00EF05E8 /* FreaksButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksButtonsView.swift; sourceTree = "<group>"; };
+		12FD8E3B26A9BB8D00EF05E8 /* FilterButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonsView.swift; sourceTree = "<group>"; };
 		3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksViewModel.swift; sourceTree = "<group>"; };
 		3B416B9526A8463800250A0D /* Freaks--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freaks--iOS--Info.plist"; sourceTree = "<group>"; };
 		3BDA054026A6EA840070BADB /* FreaksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreaksView.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 			children = (
 				12DFB34D26A6F21E00CB25F7 /* ListItemView.swift */,
 				3BDA054026A6EA840070BADB /* FreaksView.swift */,
-				12FD8E3B26A9BB8D00EF05E8 /* FreaksButtonsView.swift */,
+				12FD8E3B26A9BB8D00EF05E8 /* FilterButtonsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 				3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */,
 				125FF4FF26A83CBB00018CE8 /* FreakDetailsViewModel.swift in Sources */,
 				121F7D8E26A6B875005411ED /* FreaksApp.swift in Sources */,
-				12FD8E3C26A9BB8D00EF05E8 /* FreaksButtonsView.swift in Sources */,
+				12FD8E3C26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */,
 				12DFB34E26A6F21E00CB25F7 /* ListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +372,7 @@
 				3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */,
 				125FF50026A83CBB00018CE8 /* FreakDetailsViewModel.swift in Sources */,
 				121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */,
-				12FD8E3D26A9BB8D00EF05E8 /* FreaksButtonsView.swift in Sources */,
+				12FD8E3D26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */,
 				12DFB34F26A6F21E00CB25F7 /* ListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct FreaksButtonsView: View {
+struct FilterButtonsView: View {
     var body: some View {
         HStack(spacing: 0) {
             Button("Skills") {
@@ -17,7 +17,7 @@ struct FreaksButtonsView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 60)
         }
-        .foregroundColor(.white)
+        .foregroundColor(Color("SecondaryColor"))
         .font(.title3)
         .background(Color("AccentColor"))
         .border(Color("SecondaryColor"), width: 3)
@@ -26,6 +26,6 @@ struct FreaksButtonsView: View {
 
 struct FreaksButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        FreaksButtonsView()
+        FilterButtonsView()
     }
 }

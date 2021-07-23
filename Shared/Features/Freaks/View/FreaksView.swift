@@ -14,9 +14,13 @@ struct FreaksView: View {
 
     var body: some View {
         NavigationView {
-            List(viewModel.freaks) { freak in
-                NavigationLink(destination: FreakDetailsView(viewModel: FreakDetailsViewModel(freak: freak))) {
-                    ListItemView(viewModel: ListItemViewModel(freak: freak))
+            VStack(spacing: 0) {
+                FilterButtonsView()
+
+                List(viewModel.freaks) { freak in
+                    NavigationLink(destination: FreakDetailsView(viewModel: FreakDetailsViewModel(freak: freak))) {
+                        ListItemView(viewModel: ListItemViewModel(freak: freak))
+                    }
                 }
             }
             .navigationBarTitleDisplayMode(.inline)

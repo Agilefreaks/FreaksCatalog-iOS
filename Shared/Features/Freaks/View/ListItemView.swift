@@ -8,13 +8,13 @@ struct ListItemView: View {
             Image(viewModel.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: 140, maxHeight: 140)
+                .frame(maxWidth: 160, maxHeight: 160)
                 .cornerRadius(10)
                 .accessibility(identifier: "freakImage")
 
             Text(viewModel.firstName)
                 .font(.system(size: 20, weight: .heavy, design: .default))
-                .frame(maxWidth: 140, maxHeight: 61)
+                .frame(maxWidth: 160, maxHeight: 70)
                 .accessibility(identifier: "freakFirstName")
                 .foregroundColor(Color("SecondaryColor"))
                 .background(

@@ -16,7 +16,7 @@ struct FreaksView: View {
 
     var body: some View {
         NavigationView {
-            VStack(spacing: 0) {
+            VStack {
                 FilterButtonsView()
 
                 ScrollView {
@@ -27,6 +27,8 @@ struct FreaksView: View {
                             }
                         }
                     }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 5)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)

@@ -1,10 +1,18 @@
 import SwiftUI
 
 struct FreakDetailsView: View {
+    @Environment(\.presentationMode) var presentationMode
     var viewModel: FreakDetailsViewModel
 
     var body: some View {
         Text(viewModel.fullName)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: Button(action: { self.presentationMode.wrappedValue.dismiss() }) {
+                HStack {
+                    Image(systemName: "chevron.left")
+                    Text(viewModel.fullName)
+                }
+            })
     }
 }
 

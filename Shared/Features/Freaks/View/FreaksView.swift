@@ -2,8 +2,7 @@ import SwiftUI
 
 struct FreaksView: View {
     var viewModel = FreaksViewModel()
-    let columns = [GridItem(.flexible()),
-                   GridItem(.flexible())]
+    let columns = [GridItem(.adaptive(minimum: 160))]
 
     init() {
         let coloredNavAppearance = UINavigationBarAppearance()

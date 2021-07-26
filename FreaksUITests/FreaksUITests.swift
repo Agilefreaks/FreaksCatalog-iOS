@@ -20,8 +20,8 @@ class FreaksUITests: XCTestCase {
     }
 
     func testFreakListItemHasFullName() {
-        let fullName = app.staticTexts["freakFullName"]
+        let firstName = app.staticTexts["freakFirstName"]
 
-        XCTAssert(fullName.waitForExistence(timeout: 10))
+        XCTAssert(firstName.waitForExistence(timeout: 10))
     }
 }

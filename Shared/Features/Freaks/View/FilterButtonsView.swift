@@ -8,7 +8,7 @@ struct FilterButtonsView: View {
             }
             .frame(maxWidth: .infinity)
             .frame(height: 60)
-            
+
             Rectangle()
                 .frame(width: 3, height: 60)
 

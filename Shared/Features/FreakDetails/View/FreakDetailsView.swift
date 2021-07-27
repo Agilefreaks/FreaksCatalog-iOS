@@ -3,12 +3,15 @@ import SwiftUI
 struct FreakDetailsView: View {
     @Environment(\.presentationMode) var presentationMode
     var viewModel: FreakDetailsViewModel
+    // let freak = Bundle.main.decode([Freak].self, from: "MockData.json")
 
     var body: some View {
         ZStack {
             Rectangle()
                 .fill(Color("AccentColor"))
-                .frame(maxWidth: 300, maxHeight: 400, alignment: .center)
+                .ignoresSafeArea()
+                .frame(maxWidth: 350, maxHeight: 500, alignment: .bottom)
+                .cornerRadius(10)
 
             VStack {
                 Image(viewModel.imageName)
@@ -25,7 +28,33 @@ struct FreakDetailsView: View {
                             Text(viewModel.fullName)
                         }
                     })
+
+                Text(viewModel.description)
+                    .padding()
+
+                VStack(alignment: .leading, spacing: 2) {
+                    HStack {
+                        Text("Skills: ")
+                        ForEach(viewModel.skills, id: \.self) { skill in
+                            Text(skill)
+                        }
+                    }
+
+                    HStack {
+                        Text("Projects: ")
+                        ForEach(viewModel.projects, id: \.self) { project in
+                            Text(project)
+                        }
+                    }
+
+                    HStack {
+                        Text("Level: ")
+                        Text(viewModel.level)
+                    }
+                }
             }
+
+            .frame(maxWidth: 350, maxHeight: 650, alignment: .top)
         }
     }
 }
@@ -33,5 +62,6 @@ struct FreakDetailsView: View {
 struct FreakDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Stanescu", description: "Lorem ipsum", skills: ["iOS"], projects: ["Epix"], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: 0)))
+            .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }

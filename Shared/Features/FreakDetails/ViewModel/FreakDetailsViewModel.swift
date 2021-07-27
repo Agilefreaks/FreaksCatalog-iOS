@@ -10,4 +10,8 @@ final class FreakDetailsViewModel {
     var fullName: String {
         freak.firstName + " " + freak.lastName
     }
+
+    var imageName: String {
+        freak.imageName
+    }
 }

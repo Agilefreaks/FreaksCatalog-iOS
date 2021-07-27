@@ -18,6 +18,6 @@ struct FreakDetailsView: View {
 
 struct FreakDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Militaru", id: 10)))
+        FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Stanescu", description: "Lorem ipsum", skills: ["iOS"], projects: ["Epix"], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: 0)))
     }
 }

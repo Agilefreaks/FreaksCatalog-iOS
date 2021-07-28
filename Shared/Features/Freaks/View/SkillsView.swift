@@ -1,10 +1,3 @@
-//
-//  SkillsView.swift
-//  SkillsView
-//
-//  Created by Radu Moldovan on 27.07.2021.
-//
-
 import SwiftUI
 
 struct SkillsView: View {

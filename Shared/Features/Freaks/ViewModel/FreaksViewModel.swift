@@ -2,6 +2,7 @@ import Foundation
 
 final class FreaksViewModel: ObservableObject {
     @Published var freaks: [Freak] = load("MockData.json")
+    var skills: [String] = ["Kotlin", "Swift", "SwiftUI", "Elm"]
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

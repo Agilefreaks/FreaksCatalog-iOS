@@ -3,23 +3,19 @@ import SwiftUI
 struct SkillsView: View {
     var viewModel = FreaksViewModel()
     @Binding var showSkillsView: Bool
-    @State var selectedItem: Bool = false
+    @State var skillSelections: [String] = []
 
     var body: some View {
         NavigationView {
-            List(viewModel.skills, id: \.self) { skill in
-                HStack {
-                    Text(skill)
-                        .foregroundColor(.black)
-                    Spacer()
-
-                    if self.selectedItem {
-                        Image(systemName: "checkmark")
-                            .foregroundColor(Color("AccentColor"))
+            List {
+                ForEach(viewModel.skills, id: \.self) { skill in
+                    MultipleSelectionRow(title: skill, isSelected: self.skillSelections.contains(skill)) {
+                        if self.skillSelections.contains(skill) {
+                            self.skillSelections.removeAll(where: { $0 == skill })
+                        } else {
+                            self.skillSelections.append(skill)
+                        }
                     }
-                }
-                .onTapGesture {
-                    self.selectedItem = true
                 }
             }
             .navigationBarTitle(Text("SKILLS"), displayMode: .inline)

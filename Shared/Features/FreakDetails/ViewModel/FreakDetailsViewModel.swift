@@ -10,4 +10,24 @@ final class FreakDetailsViewModel {
     var fullName: String {
         freak.firstName + " " + freak.lastName
     }
+
+    var imageName: String {
+        freak.imageName
+    }
+
+    var description: String {
+        freak.description
+    }
+
+    var skills: [String] {
+        freak.skills
+    }
+
+    var projects: [String] {
+        freak.projects
+    }
+
+    var level: String {
+        freak.level
+    }
 }

@@ -19,7 +19,7 @@ final class FreakDetailsViewModel {
         freak.description
     }
 
-    var skills: [String] {
+    var skills: [Skill] {
         freak.skills
     }
 

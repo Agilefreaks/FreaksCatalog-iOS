@@ -1,17 +1,18 @@
 import SwiftUI
 
 struct MultipleSelectionRow: View {
-    var title: String
-    var isSelected: Bool
+    @ObservedObject var viewModel = FreaksViewModel()
+    var skill: Skill
+    var isPressed: Bool
     var action: () -> Void
 
     var body: some View {
         Button(action: self.action) {
             HStack {
-                Text(self.title)
+                Text(skill.name)
                     .foregroundColor(.black)
 
-                if self.isSelected {
+                if self.isPressed {
                     Spacer()
                     Image(systemName: "checkmark")
                         .foregroundColor(Color("AccentColor"))

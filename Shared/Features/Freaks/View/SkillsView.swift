@@ -1,20 +1,15 @@
 import SwiftUI
 
 struct SkillsView: View {
-    var viewModel = FreaksViewModel()
+    @ObservedObject var viewModel = FreaksViewModel()
     @Binding var showSkillsView: Bool
-    @State var skillSelections: [String] = []
 
     var body: some View {
         NavigationView {
             List {
                 ForEach(viewModel.skills, id: \.self) { skill in
-                    MultipleSelectionRow(title: skill, isSelected: self.skillSelections.contains(skill)) {
-                        if self.skillSelections.contains(skill) {
-                            self.skillSelections.removeAll(where: { $0 == skill })
-                        } else {
-                            self.skillSelections.append(skill)
-                        }
+                    MultipleSelectionRow(skill: skill, isPressed: viewModel.isSkillSelected(skill: skill)) {
+                        viewModel.setupSelectedSkills(skill: skill)
                     }
                 }
             }

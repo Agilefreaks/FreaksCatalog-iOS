@@ -5,8 +5,19 @@
         "imageName": "test1",
         "id": 1001,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -17,8 +28,19 @@
         "imageName": "test1",
         "id": 1002,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -29,8 +51,19 @@
         "imageName": "test1",
         "id": 1003,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -41,8 +74,19 @@
         "imageName": "test1",
         "id": 1004,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -53,8 +97,19 @@
         "imageName": "test1",
         "id": 1005,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -65,8 +120,19 @@
         "imageName": "test1",
         "id": 1006,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -77,8 +143,19 @@
         "imageName": "test1",
         "id": 1007,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -89,8 +166,19 @@
         "imageName": "test1",
         "id": 1008,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -101,8 +189,19 @@
         "imageName": "test1",
         "id": 1009,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -113,8 +212,19 @@
         "imageName": "test1",
         "id": 1010,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -125,8 +235,19 @@
         "imageName": "test1",
         "id": 1011,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": ["iOS", "C++"],
-        "projects": ["Freaks Catalog"],
+        "skills": [
+            {
+                "id": 1,
+                "name": "iOS"
+            },
+            {
+                "id": 2,
+                "name": "C++"
+            }
+        ],
+        "projects": [
+            "Freaks Catalog"
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"

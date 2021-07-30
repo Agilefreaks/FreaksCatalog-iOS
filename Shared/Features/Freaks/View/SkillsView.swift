@@ -8,7 +8,7 @@ struct SkillsView: View {
         NavigationView {
             List {
                 ForEach(viewModel.skills, id: \.self) { skill in
-                    MultipleSelectionRow(skill: skill, isPressed: viewModel.isSkillSelected(skill: skill)) {
+                    MultipleSelectionRow(skill: skill, isSelected: viewModel.isSkillSelected(skill: skill)) {
                         viewModel.setupSelectedSkills(skill: skill)
                     }
                 }

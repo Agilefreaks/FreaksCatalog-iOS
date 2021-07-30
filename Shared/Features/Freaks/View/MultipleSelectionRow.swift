@@ -3,7 +3,7 @@ import SwiftUI
 struct MultipleSelectionRow: View {
     @StateObject var viewModel = FreaksViewModel()
     var skill: Skill
-    var isPressed: Bool
+    var isSelected: Bool
     var action: () -> Void
 
     var body: some View {
@@ -12,7 +12,7 @@ struct MultipleSelectionRow: View {
                 Text(skill.name)
                     .foregroundColor(.black)
 
-                if self.isPressed {
+                if self.isSelected {
                     Spacer()
                     Image(systemName: "checkmark")
                         .foregroundColor(Color("AccentColor"))

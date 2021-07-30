@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct FilterButtonsView: View {
+    @ObservedObject var viewModel: FreaksViewModel
     @State var showSkillsView = false
 
     var body: some View {
@@ -12,7 +13,7 @@ struct FilterButtonsView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 60)
             .sheet(isPresented: $showSkillsView) {
-                SkillsView(showSkillsView: $showSkillsView)
+                SkillsView(viewModel: viewModel, showSkillsView: $showSkillsView)
             }
 
             Rectangle()
@@ -33,6 +34,6 @@ struct FilterButtonsView: View {
 
 struct FreaksButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterButtonsView()
+        FilterButtonsView(viewModel: FreaksViewModel())
     }
 }

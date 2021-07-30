@@ -1,14 +1,14 @@
 import SwiftUI
 
 struct SkillsView: View {
-    @StateObject var viewModel = FreaksViewModel()
+    @ObservedObject var viewModel: FreaksViewModel
     @Binding var showSkillsView: Bool
 
     var body: some View {
         NavigationView {
             List {
                 ForEach(viewModel.skills, id: \.self) { skill in
-                    MultipleSelectionRow(skill: skill, isSelected: viewModel.isSkillSelected(skill: skill)) {
+                    MultipleSelectionRow(viewModel: viewModel, skill: skill, isSelected: viewModel.isSkillSelected(skill: skill)) {
                         viewModel.setupSelectedSkills(skill: skill)
                     }
                 }
@@ -34,6 +34,6 @@ struct SkillsView: View {
 
 struct SkillsView_Previews: PreviewProvider {
     static var previews: some View {
-        SkillsView(showSkillsView: .constant(true))
+        SkillsView(viewModel: FreaksViewModel(), showSkillsView: .constant(true))
     }
 }

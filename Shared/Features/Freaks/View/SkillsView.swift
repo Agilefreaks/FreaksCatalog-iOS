@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SkillsView: View {
-    @ObservedObject var viewModel = FreaksViewModel()
+    @StateObject var viewModel = FreaksViewModel()
     @Binding var showSkillsView: Bool
 
     var body: some View {

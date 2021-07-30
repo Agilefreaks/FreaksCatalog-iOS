@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MultipleSelectionRow: View {
-    @ObservedObject var viewModel = FreaksViewModel()
+    @StateObject var viewModel = FreaksViewModel()
     var skill: Skill
     var isPressed: Bool
     var action: () -> Void

@@ -2,7 +2,21 @@ import Foundation
 
 final class FreaksViewModel: ObservableObject {
     @Published var freaks: [Freak] = load("MockData.json")
-    var skills: [String] = ["Kotlin", "Swift", "SwiftUI", "Elm"]
+    var skills: [Skill] = [Skill(id: 0, name: "Kotlin"), Skill(id: 1, name: "Swift"), Skill(id: 2, name: "SwiftUI"), Skill(id: 3, name: "Elm")]
+
+    @Published var skillSelections: [Skill] = []
+
+    func isSkillSelected(skill: Skill) -> Bool {
+        skillSelections.contains(skill)
+    }
+
+    func setupSelectedSkills(skill: Skill) {
+        if isSkillSelected(skill: skill) {
+            skillSelections.removeAll(where: { $0.id == skill.id })
+        } else {
+            skillSelections.append(skill)
+        }
+    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

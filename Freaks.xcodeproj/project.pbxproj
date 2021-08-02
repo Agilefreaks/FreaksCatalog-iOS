@@ -26,6 +26,10 @@
 		12FD8E3D26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FD8E3B26A9BB8D00EF05E8 /* FilterButtonsView.swift */; };
 		3B416B8D26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
 		3B416B8E26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
+		3B661F6E26B16F7D00C45974 /* MultipleSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B661F6D26B16F7D00C45974 /* MultipleSelectionRow.swift */; };
+		3B661F6F26B16F7D00C45974 /* MultipleSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B661F6D26B16F7D00C45974 /* MultipleSelectionRow.swift */; };
+		3B661F7D26B41EFC00C45974 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B661F7C26B41EFC00C45974 /* Skill.swift */; };
+		3B661F7E26B41EFC00C45974 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B661F7C26B41EFC00C45974 /* Skill.swift */; };
 		3B76E4DC26B01A2500D92898 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B76E4DB26B01A2500D92898 /* SkillsView.swift */; };
 		3B76E4DD26B01A2500D92898 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B76E4DB26B01A2500D92898 /* SkillsView.swift */; };
 		3B8CCBE226AECE81005765AA /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CCBE126AECE81005765AA /* UINavigationController+Extensions.swift */; };
@@ -68,6 +72,8 @@
 		12FD8E3B26A9BB8D00EF05E8 /* FilterButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonsView.swift; sourceTree = "<group>"; };
 		3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksViewModel.swift; sourceTree = "<group>"; };
 		3B416B9526A8463800250A0D /* Freaks--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freaks--iOS--Info.plist"; sourceTree = "<group>"; };
+		3B661F6D26B16F7D00C45974 /* MultipleSelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionRow.swift; sourceTree = "<group>"; };
+		3B661F7C26B41EFC00C45974 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		3B76E4DB26B01A2500D92898 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
 		3B8CCBE126AECE81005765AA /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		3B8E6FDB26A96C8E0019E00E /* MockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
@@ -207,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				12DFB34A26A6EE0200CB25F7 /* Freak.swift */,
+				3B661F7C26B41EFC00C45974 /* Skill.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +234,7 @@
 				3BDA054026A6EA840070BADB /* FreaksView.swift */,
 				12FD8E3B26A9BB8D00EF05E8 /* FilterButtonsView.swift */,
 				3B76E4DB26B01A2500D92898 /* SkillsView.swift */,
+				3B661F6D26B16F7D00C45974 /* MultipleSelectionRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -450,12 +458,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				12DFB34B26A6EE0200CB25F7 /* Freak.swift in Sources */,
+				3B661F7D26B41EFC00C45974 /* Skill.swift in Sources */,
 				12ECD1DF26A818E10069BD64 /* ListItemViewModel.swift in Sources */,
 				125FF4FC26A83B9500018CE8 /* FreakDetailsView.swift in Sources */,
 				3B76E4DC26B01A2500D92898 /* SkillsView.swift in Sources */,
 				3B8CCBE226AECE81005765AA /* UINavigationController+Extensions.swift in Sources */,
 				3B416B8D26A80F5B00250A0D /* FreaksViewModel.swift in Sources */,
 				3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */,
+				3B661F6E26B16F7D00C45974 /* MultipleSelectionRow.swift in Sources */,
 				125FF4FF26A83CBB00018CE8 /* FreakDetailsViewModel.swift in Sources */,
 				121F7D8E26A6B875005411ED /* FreaksApp.swift in Sources */,
 				12FD8E3C26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */,
@@ -470,11 +480,13 @@
 				12DFB34C26A6EE0200CB25F7 /* Freak.swift in Sources */,
 				12ECD1E026A818E10069BD64 /* ListItemViewModel.swift in Sources */,
 				125FF4FD26A83B9500018CE8 /* FreakDetailsView.swift in Sources */,
+				3B661F6F26B16F7D00C45974 /* MultipleSelectionRow.swift in Sources */,
 				3B416B8E26A80F5B00250A0D /* FreaksViewModel.swift in Sources */,
 				3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */,
 				125FF50026A83CBB00018CE8 /* FreakDetailsViewModel.swift in Sources */,
 				3B76E4DD26B01A2500D92898 /* SkillsView.swift in Sources */,
 				121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */,
+				3B661F7E26B41EFC00C45974 /* Skill.swift in Sources */,
 				12FD8E3D26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */,
 				12DFB34F26A6F21E00CB25F7 /* ListItemView.swift in Sources */,
 			);

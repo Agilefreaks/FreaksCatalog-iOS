@@ -15,7 +15,7 @@ struct SkillsView: View {
             }
             .navigationBarTitle(Text("SKILLS"), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
-                print("Reset skills")
+                viewModel.skillSelections.removeAll()
             }) {
                 Text("Reset")
                     .fontWeight(.medium)

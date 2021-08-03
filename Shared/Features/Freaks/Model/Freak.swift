@@ -6,7 +6,7 @@ struct Freak: Identifiable, Codable {
     let lastName: String
     let description: String
     let skills: [Skill]
-    let projects: [String]
+    let projects: [Project]
     let role: String
     let level: String
     let norm: String

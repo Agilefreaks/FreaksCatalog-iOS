@@ -8,7 +8,6 @@ struct FilterButtonsView: View {
         HStack(spacing: 0) {
             Button(viewModel.filterCounter) {
                 self.showSkillsView.toggle()
-                print("skills")
             }
             .frame(maxWidth: .infinity)
             .frame(height: 60)

@@ -30,6 +30,7 @@ struct SkillsView: View {
             .navigationBarTitle(Text("SKILLS"), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
                 viewModel.skillSelections.removeAll()
+                viewModel.isFilterApplied = false
             }) {
                 Text("Reset")
                     .fontWeight(.medium)

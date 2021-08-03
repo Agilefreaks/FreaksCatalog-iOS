@@ -1,5 +1,4 @@
 import Foundation
-import UIKit
 
 final class FreaksViewModel: ObservableObject {
     @Published var freaks: [Freak] = load("MockData.json")

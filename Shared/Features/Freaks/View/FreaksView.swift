@@ -20,7 +20,7 @@ struct FreaksView: View {
 
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 5) {
-                        ForEach(viewModel.freaks) { freak in
+                        ForEach(viewModel.filteredFreaks) { freak in
                             NavigationLink(destination: FreakDetailsView(viewModel: FreakDetailsViewModel(freak: freak))) {
                                 ListItemView(viewModel: ListItemViewModel(freak: freak))
                             }

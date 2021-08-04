@@ -6,10 +6,12 @@ struct FilterView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.skills, id: \.self) { skill in
-                    MultipleSelectionRow(skill: skill, isSelected: viewModel.isSkillSelected(skill: skill)) {
-                        viewModel.setupSelectedSkills(skill: skill)
+            VStack {
+                List {
+                    ForEach(viewModel.skills, id: \.self) { skill in
+                        MultipleSelectionRow(viewModel: viewModel, skill: skill, isSelected: viewModel.isSkillSelected(skill: skill)) {
+                            viewModel.setupSelectedSkills(skill: skill)
+                        }
                     }
                 }
 

@@ -20,7 +20,7 @@ struct FreaksView: View {
 
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 5) {
-                        ForEach(viewModel.filteredFreaks) { freak in
+                        ForEach(viewModel.freaks) { freak in
                             NavigationLink(destination: FreakDetailsView(viewModel: FreakDetailsViewModel(freak: freak))) {
                                 ListItemView(viewModel: ListItemViewModel(freak: freak))
                             }
@@ -30,6 +30,14 @@ struct FreaksView: View {
                     .padding(.vertical, 5)
                 }
             }
+            .onAppear {
+                self.viewModel.getFreaks()
+            }
+            .onReceive(viewModel.$shouldFilterFreaks, perform: { value in
+                if value {
+                    self.viewModel.getFreaks()
+                }
+            })
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {

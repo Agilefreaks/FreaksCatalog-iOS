@@ -17,7 +17,7 @@ struct SkillsView: View {
 
                 Button(action: {
                     self.showSkillsView = false
-                    self.viewModel.isFilterApplied = true
+                    self.viewModel.shouldFilterFreaks = true
                 }, label: {
                     Text("Apply")
                 })
@@ -30,7 +30,6 @@ struct SkillsView: View {
             .navigationBarTitle(Text("SKILLS"), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
                 viewModel.skillSelections.removeAll()
-                viewModel.isFilterApplied = false
             }) {
                 Text("Reset")
                     .fontWeight(.medium)

@@ -1,27 +1,11 @@
 import Foundation
 
 final class FreaksViewModel: ObservableObject {
-    @Published var freaks: [Freak] = load("MockData.json")
+    @Published var freaks: [Freak] = []
     var skills: [Skill] = [Skill(id: 0, name: "Kotlin"), Skill(id: 1, name: "iOS"), Skill(id: 2, name: "SwiftUI"), Skill(id: 3, name: "Elm")]
 
     @Published var skillSelections: [Skill] = []
-    @Published var isFilterApplied: Bool = false
-
-    var filteredFreaks: [Freak] {
-        guard isFilterApplied else {
-            return freaks
-        }
-
-        if skillSelections.isEmpty {
-            return freaks
-        }
-
-        return freaks.filter { freak in
-            freak.skills.contains { skill in
-                skillSelections.contains(skill)
-            }
-        }
-    }
+    @Published var shouldFilterFreaks: Bool = false
 
     func isSkillSelected(skill: Skill) -> Bool {
         skillSelections.contains(skill)
@@ -32,6 +16,18 @@ final class FreaksViewModel: ObservableObject {
             skillSelections.removeAll(where: { $0.id == skill.id })
         } else {
             skillSelections.append(skill)
+        }
+    }
+
+    func getFreaks() {
+        freaks = load("MockData.json")
+
+        if !skillSelections.isEmpty {
+            freaks = freaks.filter { freak in
+                freak.skills.contains { skill in
+                    skillSelections.contains(skill)
+                }
+            }
         }
     }
 }

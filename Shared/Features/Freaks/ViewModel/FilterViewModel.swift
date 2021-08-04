@@ -19,6 +19,30 @@ class FilterViewModel: ObservableObject {
     @Published var projectSelections: [Project] = []
     @Published var filterItems: [FilterItem] = []
 
+    private func setupSelectedSkills(filterItem: FilterItem, filterType: FilterType) {
+        if isFilterItemSelected(filterItem: filterItem, filterType: filterType) {
+            skillSelections.removeAll(where: { $0.id == filterItem.id })
+        } else {
+            let skill = skills.first(where: { $0.id == filterItem.id })
+
+            if let skill = skill {
+                skillSelections.append(skill)
+            }
+        }
+    }
+    
+    private func setupSelectedProjects(filterItem: FilterItem, filterType: FilterType) {
+        if isFilterItemSelected(filterItem: filterItem, filterType: filterType) {
+            projectSelections.removeAll(where: { $0.id == filterItem.id })
+        } else {
+            let project = projects.first(where: { $0.id == filterItem.id })
+            
+            if let project = project {
+                projectSelections.append(project)
+            }
+        }
+    }
+
     func getTitle(filterType: FilterType) -> String {
         filterType == .skill ? "SKILLS" : "PROJECTS"
     }
@@ -43,6 +67,13 @@ class FilterViewModel: ObservableObject {
             return projects.contains(where: { $0.id == filterItem.id })
         }
     }
-    
-    
+
+    func setupSelected(filterItem: FilterItem, filterType: FilterType) {
+        switch filterType {
+        case .skill:
+            setupSelectedSkills(filterItem: filterItem, filterType: filterType)
+        case .project:
+            setupSelectedProjects(filterItem: filterItem, filterType: filterType)
+        }
+    }
 }

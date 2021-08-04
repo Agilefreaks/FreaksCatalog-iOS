@@ -6,24 +6,44 @@ struct FilterButtonsView: View {
 
     var body: some View {
         HStack(spacing: 0) {
-            Button("Skills") {
-                self.showSkillsView.toggle()
-                print("skills")
-            }
-            .frame(maxWidth: .infinity)
-            .frame(height: 60)
-            .sheet(isPresented: $showSkillsView) {
-                SkillsView(viewModel: viewModel, showSkillsView: $showSkillsView)
+            if !viewModel.skillSelections.isEmpty {
+                Button("Skills (\(viewModel.counter))") {
+                    self.showSkillsView.toggle()
+                    print("skills")
+                }
+                .frame(maxWidth: .infinity)
+                .frame(height: 60)
+                .sheet(isPresented: $showSkillsView) {
+                    SkillsView(viewModel: viewModel, showSkillsView: $showSkillsView)
+                }
+            } else {
+                Button("Skills") {
+                    self.showSkillsView.toggle()
+                    print("skills")
+                }
+                .frame(maxWidth: .infinity)
+                .frame(height: 60)
+                .sheet(isPresented: $showSkillsView) {
+                    SkillsView(viewModel: viewModel, showSkillsView: $showSkillsView)
+                }
             }
 
             Rectangle()
                 .frame(width: 3, height: 60)
 
-            Button("Projects") {
-                print("projects")
+            if !viewModel.skillSelections.isEmpty {
+                Button("Projects(\(viewModel.counter)") {
+                    print("projects")
+                }
+                .frame(maxWidth: .infinity)
+                .frame(height: 60)
+            } else {
+                Button("Projects") {
+                    print("projects")
+                }
+                .frame(maxWidth: .infinity)
+                .frame(height: 60)
             }
-            .frame(maxWidth: .infinity)
-            .frame(height: 60)
         }
         .foregroundColor(Color("SecondaryColor"))
         .font(.title3)

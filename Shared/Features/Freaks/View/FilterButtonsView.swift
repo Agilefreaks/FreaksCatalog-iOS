@@ -12,7 +12,7 @@ struct FilterButtonsView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 60)
             .sheet(isPresented: $showSkillsView) {
-                SkillsView(viewModel: viewModel, showSkillsView: $showSkillsView)
+                FilterView(viewModel: viewModel, showSkillsView: $showSkillsView)
             }
 
             Rectangle()

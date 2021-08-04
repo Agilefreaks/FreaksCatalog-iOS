@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SkillsView: View {
+struct FilterView: View {
     @ObservedObject var viewModel: FreaksViewModel
     @Binding var showSkillsView: Bool
 
@@ -34,7 +34,6 @@ struct SkillsView: View {
                     .font(.system(size: 16))
             })
             .navigationBarItems(leading: Button(action: {
-                print("Close skills sheet view")
                 self.showSkillsView = false
             }) {
                 Image(systemName: "xmark")
@@ -44,8 +43,9 @@ struct SkillsView: View {
     }
 }
 
-struct SkillsView_Previews: PreviewProvider {
+struct FilterView_Previews: PreviewProvider {
     static var previews: some View {
-        SkillsView(viewModel: FreaksViewModel(), showSkillsView: .constant(true))
+        FilterView(viewModel: FreaksViewModel(), showSkillsView: .constant(true))
+        FilterView(viewModel: FreaksViewModel(), showSkillsView: .constant(true))
     }
 }

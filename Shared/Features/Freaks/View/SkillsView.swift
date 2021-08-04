@@ -6,12 +6,26 @@ struct SkillsView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.skills, id: \.self) { skill in
-                    MultipleSelectionRow(viewModel: viewModel, skill: skill, isSelected: viewModel.isSkillSelected(skill: skill)) {
-                        viewModel.setupSelectedSkills(skill: skill)
+            VStack {
+                List {
+                    ForEach(viewModel.skills, id: \.self) { skill in
+                        MultipleSelectionRow(viewModel: viewModel, skill: skill, isSelected: viewModel.isSkillSelected(skill: skill)) {
+                            viewModel.setupSelectedSkills(skill: skill)
+                        }
                     }
                 }
+
+                Button(action: {
+                    self.showSkillsView = false
+                    self.viewModel.shouldFilterFreaks = true
+                }, label: {
+                    Text("Apply")
+                })
+                    .foregroundColor(Color("SecondaryColor"))
+                    .frame(maxWidth: 150, maxHeight: 40)
+                    .background(Color("AccentColor"))
+                    .padding()
+                    .font(.system(size: 18, weight: .bold, design: .default))
             }
             .navigationBarTitle(Text("SKILLS"), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {

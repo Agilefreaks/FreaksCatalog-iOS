@@ -30,6 +30,14 @@ struct FreaksView: View {
                     .padding(.vertical, 5)
                 }
             }
+            .onAppear {
+                self.viewModel.getFreaks()
+            }
+            .onReceive(viewModel.$shouldFilterFreaks, perform: { value in
+                if value {
+                    self.viewModel.getFreaks()
+                }
+            })
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {

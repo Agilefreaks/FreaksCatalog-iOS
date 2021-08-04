@@ -5,7 +5,7 @@ enum FilterType {
     case project
 }
 
-struct FilterItem {
+struct FilterItem: Identifiable {
     let id: Int
     let name: String
 }
@@ -30,13 +30,13 @@ class FilterViewModel: ObservableObject {
             }
         }
     }
-    
+
     private func setupSelectedProjects(filterItem: FilterItem, filterType: FilterType) {
         if isFilterItemSelected(filterItem: filterItem, filterType: filterType) {
             projectSelections.removeAll(where: { $0.id == filterItem.id })
         } else {
             let project = projects.first(where: { $0.id == filterItem.id })
-            
+
             if let project = project {
                 projectSelections.append(project)
             }
@@ -47,24 +47,22 @@ class FilterViewModel: ObservableObject {
         filterType == .skill ? "SKILLS" : "PROJECTS"
     }
 
-    func getFilterItems(filterType: FilterType) -> [FilterItem] {
-        // Convert skills or projects to FilterItem array
+    // Convert Skills or Projects array to FilterItem array
+    func setupFilterItems(filterType: FilterType) {
         switch filterType {
         case .skill:
             filterItems = skills.map { FilterItem(id: $0.id, name: $0.name) }
         case .project:
             filterItems = projects.map { FilterItem(id: $0.id, name: $0.name) }
         }
-
-        return filterItems
     }
 
     func isFilterItemSelected(filterItem: FilterItem, filterType: FilterType) -> Bool {
         switch filterType {
         case .skill:
-            return skills.contains(where: { $0.id == filterItem.id })
+            return skillSelections.contains(where: { $0.id == filterItem.id })
         case .project:
-            return projects.contains(where: { $0.id == filterItem.id })
+            return projectSelections.contains(where: { $0.id == filterItem.id })
         }
     }
 
@@ -74,6 +72,15 @@ class FilterViewModel: ObservableObject {
             setupSelectedSkills(filterItem: filterItem, filterType: filterType)
         case .project:
             setupSelectedProjects(filterItem: filterItem, filterType: filterType)
+        }
+    }
+
+    func resetSelections(filterType: FilterType) {
+        switch filterType {
+        case .skill:
+            skillSelections.removeAll()
+        case .project:
+            projectSelections.removeAll()
         }
     }
 }

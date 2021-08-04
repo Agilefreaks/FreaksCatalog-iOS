@@ -2,6 +2,8 @@ import SwiftUI
 
 struct FreaksView: View {
     @StateObject var viewModel = FreaksViewModel()
+    @StateObject var filterViewModel = FilterViewModel()
+
     let columns = [GridItem(.adaptive(minimum: 160))]
 
     init() {
@@ -16,7 +18,7 @@ struct FreaksView: View {
     var body: some View {
         NavigationView {
             VStack {
-                FilterButtonsView(viewModel: viewModel)
+                FilterButtonsView(viewModel: filterViewModel)
 
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 5) {

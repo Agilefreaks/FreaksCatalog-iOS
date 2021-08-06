@@ -19,6 +19,17 @@ class FilterViewModel: ObservableObject {
     @Published var selectedProjects: [Project] = []
     @Published var filterItems: [FilterItem] = []
 
+    var counter: Int {
+        selectedSkills.count
+    }
+
+    var filterCounter: String {
+        if !selectedSkills.isEmpty {
+            return "Skills (\(counter))"
+        }
+        return "Skills"
+    }
+
     private func setupSelectedSkills(filterItem: FilterItem, filterType: FilterType) {
         if isFilterItemSelected(filterItem: filterItem, filterType: filterType) {
             selectedSkills.removeAll(where: { $0.id == filterItem.id })

@@ -7,6 +7,17 @@ final class FreaksViewModel: ObservableObject {
     @Published var skillSelections: [Skill] = []
     @Published var shouldFilterFreaks: Bool = false
 
+    var counter: Int {
+        skillSelections.count
+    }
+
+    var filterCounter: String {
+        if !skillSelections.isEmpty {
+            return "Skills (\(counter))"
+        }
+        return "Skills"
+    }
+
     func isSkillSelected(skill: Skill) -> Bool {
         skillSelections.contains(skill)
     }

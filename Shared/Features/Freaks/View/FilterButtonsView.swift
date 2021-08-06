@@ -6,7 +6,7 @@ struct FilterButtonsView: View {
 
     var body: some View {
         HStack(spacing: 0) {
-            Button("Skills") {
+            Button(viewModel.filterCounter) {
                 self.showSkillsView.toggle()
                 print("skills")
             }

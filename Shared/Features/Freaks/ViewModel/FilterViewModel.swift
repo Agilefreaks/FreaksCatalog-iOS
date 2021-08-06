@@ -15,30 +15,30 @@ class FilterViewModel: ObservableObject {
 
     var projects: [Project] = [Project(id: 0, name: "FreaksCatalog", description: "Catalog of freaks"), Project(id: 1, name: "Epix", description: "Lorem Ipsum"), Project(id: 2, name: "ReAsig", description: "Lorem Ipsum")]
 
-    @Published var skillSelections: [Skill] = []
-    @Published var projectSelections: [Project] = []
+    @Published var selectedSkills: [Skill] = []
+    @Published var selectedProjects: [Project] = []
     @Published var filterItems: [FilterItem] = []
 
     private func setupSelectedSkills(filterItem: FilterItem, filterType: FilterType) {
         if isFilterItemSelected(filterItem: filterItem, filterType: filterType) {
-            skillSelections.removeAll(where: { $0.id == filterItem.id })
+            selectedSkills.removeAll(where: { $0.id == filterItem.id })
         } else {
             let skill = skills.first(where: { $0.id == filterItem.id })
 
             if let skill = skill {
-                skillSelections.append(skill)
+                selectedSkills.append(skill)
             }
         }
     }
 
     private func setupSelectedProjects(filterItem: FilterItem, filterType: FilterType) {
         if isFilterItemSelected(filterItem: filterItem, filterType: filterType) {
-            projectSelections.removeAll(where: { $0.id == filterItem.id })
+            selectedProjects.removeAll(where: { $0.id == filterItem.id })
         } else {
             let project = projects.first(where: { $0.id == filterItem.id })
 
             if let project = project {
-                projectSelections.append(project)
+                selectedProjects.append(project)
             }
         }
     }
@@ -60,9 +60,9 @@ class FilterViewModel: ObservableObject {
     func isFilterItemSelected(filterItem: FilterItem, filterType: FilterType) -> Bool {
         switch filterType {
         case .skill:
-            return skillSelections.contains(where: { $0.id == filterItem.id })
+            return selectedSkills.contains(where: { $0.id == filterItem.id })
         case .project:
-            return projectSelections.contains(where: { $0.id == filterItem.id })
+            return selectedProjects.contains(where: { $0.id == filterItem.id })
         }
     }
 
@@ -75,12 +75,12 @@ class FilterViewModel: ObservableObject {
         }
     }
 
-    func resetSelections(filterType: FilterType) {
+    func resetSelected(filterType: FilterType) {
         switch filterType {
         case .skill:
-            skillSelections.removeAll()
+            selectedSkills.removeAll()
         case .project:
-            projectSelections.removeAll()
+            selectedProjects.removeAll()
         }
     }
 }

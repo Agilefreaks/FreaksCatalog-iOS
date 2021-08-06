@@ -21,21 +21,21 @@ struct FilterView: View {
                     viewModel.setupFilterItems(filterType: filterType)
                 }
 
-//                Button(action: {
+                Button(action: {
 //                    self.showSkillsView = false
 //                    self.viewModel.shouldFilterFreaks = true
-//                }, label: {
-//                    Text("Apply")
-//                })
-//                    .foregroundColor(Color("SecondaryColor"))
-//                    .frame(maxWidth: 150, maxHeight: 40)
-//                    .background(Color("AccentColor"))
-//                    .padding()
-//                    .font(.system(size: 18, weight: .bold, design: .default))
+                }, label: {
+                    Text("Apply")
+                })
+                    .foregroundColor(Color("SecondaryColor"))
+                    .frame(maxWidth: 150, maxHeight: 40)
+                    .background(Color("AccentColor"))
+                    .padding()
+                    .font(.system(size: 18, weight: .bold, design: .default))
             }
             .navigationBarTitle(Text(viewModel.getTitle(filterType: filterType)), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
-                viewModel.resetSelections(filterType: filterType)
+                viewModel.resetSelected(filterType: filterType)
             }) {
                 Text("Reset")
                     .fontWeight(.medium)

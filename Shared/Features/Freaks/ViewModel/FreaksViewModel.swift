@@ -2,8 +2,6 @@ import Foundation
 
 final class FreaksViewModel: ObservableObject {
     @Published var freaks: [Freak] = []
-    var skills: [Skill] = [Skill(id: 0, name: "Kotlin"), Skill(id: 1, name: "iOS"), Skill(id: 2, name: "SwiftUI"), Skill(id: 3, name: "Elm")]
-
     @Published var skillSelections: [Skill] = []
     @Published var shouldFilterFreaks: Bool = false
 

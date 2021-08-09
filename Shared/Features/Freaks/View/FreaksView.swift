@@ -17,7 +17,8 @@ struct FreaksView: View {
     var body: some View {
         NavigationView {
             VStack {
-                FilterButtonsView()
+                FilterButtonsView(onSkillsFilterApply: { items in print(items) },
+                                  onProjectsFilterApply: { items in print(items) })
 
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 5) {
@@ -34,11 +35,6 @@ struct FreaksView: View {
             .onAppear {
                 viewModel.getFreaks()
             }
-            .onReceive(viewModel.$shouldFilterFreaks, perform: { value in
-                if value {
-                    viewModel.getFreaks()
-                }
-            })
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {

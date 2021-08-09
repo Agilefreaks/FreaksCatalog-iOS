@@ -7,11 +7,10 @@ enum FilterType {
 
 class FilterViewModel: ObservableObject {
     var skills: [Skill] = [Skill(id: 0, name: "Kotlin"), Skill(id: 1, name: "Swift"), Skill(id: 2, name: "SwiftUI"), Skill(id: 3, name: "Elm")]
-
     var projects: [Project] = [Project(id: 0, name: "FreaksCatalog", description: "Catalog of freaks"), Project(id: 1, name: "Epix", description: "Lorem Ipsum"), Project(id: 2, name: "ReAsig", description: "Lorem Ipsum")]
 
-    var filterItems: [Filterable] = []
     @Published var selectedItems: [Filterable] = []
+    var filterItems: [Filterable] = []
 
     init(filterType: FilterType) {
         switch filterType {

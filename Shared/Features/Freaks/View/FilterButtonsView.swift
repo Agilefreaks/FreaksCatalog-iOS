@@ -4,6 +4,9 @@ struct FilterButtonsView: View {
     @State var showSkillsView = false
     @State var showProjectsView = false
 
+    var onSkillsFilterApply: ([Filterable]) -> Void
+    var onProjectsFilterApply: ([Filterable]) -> Void
+
     var body: some View {
         HStack(spacing: 0) {
             Button("Skills") {
@@ -12,7 +15,12 @@ struct FilterButtonsView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 60)
             .sheet(isPresented: $showSkillsView) {
-                FilterView(viewModel: FilterViewModel(filterType: .skill), title: "SKILLS")
+                FilterView(viewModel: FilterViewModel(filterType: .skill),
+                           showSkillsView: $showSkillsView,
+                           showProjectsView: $showProjectsView,
+                           title: "SKILLS") { items in
+                    onSkillsFilterApply(items)
+                }
             }
 
             Rectangle()
@@ -24,7 +32,12 @@ struct FilterButtonsView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 60)
             .sheet(isPresented: $showProjectsView) {
-                FilterView(viewModel: FilterViewModel(filterType: .project), title: "PROJECTS")
+                FilterView(viewModel: FilterViewModel(filterType: .project),
+                           showSkillsView: $showSkillsView,
+                           showProjectsView: $showProjectsView,
+                           title: "PROJECTS") { items in
+                    onProjectsFilterApply(items)
+                }
             }
         }
         .foregroundColor(Color("SecondaryColor"))
@@ -36,6 +49,9 @@ struct FilterButtonsView: View {
 
 struct FreaksButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterButtonsView()
+        FilterButtonsView { _ in
+
+        } onProjectsFilterApply: { _ in
+        }
     }
 }

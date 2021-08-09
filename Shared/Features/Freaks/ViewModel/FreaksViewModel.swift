@@ -3,7 +3,6 @@ import Foundation
 final class FreaksViewModel: ObservableObject {
     @Published var freaks: [Freak] = []
     @Published var skillSelections: [Skill] = []
-    @Published var shouldFilterFreaks: Bool = false
 
     func getFreaks() {
         freaks = load("MockData.json")

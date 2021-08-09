@@ -2,24 +2,19 @@ import SwiftUI
 
 struct FilterView: View {
     @ObservedObject var viewModel: FilterViewModel
-    @Binding var showSkillsView: Bool
-    @Binding var showProjectsView: Bool
-
-    var filterType: FilterType
+    var title: String
 
     var body: some View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(viewModel.filterItems) { item in
-                        MultipleSelectionRow(name: item.name, isSelected: viewModel.isFilterItemSelected(filterItem: item, filterType: filterType)) {
-                            viewModel.setupSelected(filterItem: item, filterType: filterType)
+                    ForEach(viewModel.filterItems, id: \.id) { item in
+                        MultipleSelectionRow(name: item.name, isSelected: viewModel.isSelected(item: item)) {
+                            viewModel.didTap(on: item)
                         }
                     }
                 }
-                .onAppear {
-                    viewModel.setupFilterItems(filterType: filterType)
-                }
+                .onAppear {}
 
                 Button(action: {
 //                    self.showSkillsView = false
@@ -33,28 +28,18 @@ struct FilterView: View {
                     .padding()
                     .font(.system(size: 18, weight: .bold, design: .default))
             }
-            .navigationBarTitle(Text(viewModel.getTitle(filterType: filterType)), displayMode: .inline)
+            .navigationBarTitle(title)
             .navigationBarItems(trailing: Button(action: {
-                viewModel.resetSelected(filterType: filterType)
+                // viewModel.resetSelected(filterType: filterType)
             }) {
                 Text("Reset")
                     .fontWeight(.medium)
                     .font(.system(size: 16))
             })
-            .navigationBarItems(leading: Button(action: {
-                showSkillsView = false
-                showProjectsView = false
-            }) {
+            .navigationBarItems(leading: Button(action: {}) {
                 Image(systemName: "xmark")
                     .font(.system(size: 16))
             })
         }
-    }
-}
-
-struct FilterView_Previews: PreviewProvider {
-    static var previews: some View {
-        FilterView(viewModel: FilterViewModel(), showSkillsView: .constant(true), showProjectsView: .constant(false), filterType: .skill)
-        FilterView(viewModel: FilterViewModel(), showSkillsView: .constant(false), showProjectsView: .constant(false), filterType: .project)
     }
 }

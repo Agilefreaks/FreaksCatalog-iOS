@@ -5,18 +5,6 @@ final class FreaksViewModel: ObservableObject {
     @Published var skillSelections: [Skill] = []
     @Published var shouldFilterFreaks: Bool = false
 
-    func isSkillSelected(skill: Skill) -> Bool {
-        skillSelections.contains(skill)
-    }
-
-    func setupSelectedSkills(skill: Skill) {
-        if isSkillSelected(skill: skill) {
-            skillSelections.removeAll(where: { $0.id == skill.id })
-        } else {
-            skillSelections.append(skill)
-        }
-    }
-
     func getFreaks() {
         freaks = load("MockData.json")
 

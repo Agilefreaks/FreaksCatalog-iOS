@@ -1,19 +1,18 @@
 import SwiftUI
 
 struct FilterButtonsView: View {
-    @ObservedObject var viewModel: FilterViewModel
     @State var showSkillsView = false
     @State var showProjectsView = false
 
     var body: some View {
         HStack(spacing: 0) {
-            Button(viewModel.filterCounter) {
-                self.showSkillsView.toggle()
+            Button("Skills") {
+                showSkillsView.toggle()
             }
             .frame(maxWidth: .infinity)
             .frame(height: 60)
             .sheet(isPresented: $showSkillsView) {
-                FilterView(viewModel: viewModel, showSkillsView: $showSkillsView, showProjectsView: $showProjectsView, filterType: .skill)
+                FilterView(viewModel: FilterViewModel(filterType: .skill), title: "SKILLS")
             }
 
             Rectangle()
@@ -25,7 +24,7 @@ struct FilterButtonsView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 60)
             .sheet(isPresented: $showProjectsView) {
-                FilterView(viewModel: viewModel, showSkillsView: $showSkillsView, showProjectsView: $showProjectsView, filterType: .project)
+                FilterView(viewModel: FilterViewModel(filterType: .project), title: "PROJECTS")
             }
         }
         .foregroundColor(Color("SecondaryColor"))
@@ -37,6 +36,6 @@ struct FilterButtonsView: View {
 
 struct FreaksButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterButtonsView(viewModel: FilterViewModel())
+        FilterButtonsView()
     }
 }

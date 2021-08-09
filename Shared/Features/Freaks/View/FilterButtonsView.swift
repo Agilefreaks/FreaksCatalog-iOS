@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct FilterButtonsView: View {
+    @StateObject var viewModel = FilterButtonsViewModel()
     @State var showSkillsView = false
     @State var showProjectsView = false
 
@@ -9,7 +10,7 @@ struct FilterButtonsView: View {
 
     var body: some View {
         HStack(spacing: 0) {
-            Button("Skills") {
+            Button(viewModel.getSkillsTitle()) {
                 showSkillsView.toggle()
             }
             .frame(maxWidth: .infinity)
@@ -19,6 +20,7 @@ struct FilterButtonsView: View {
                            showSkillsView: $showSkillsView,
                            showProjectsView: $showProjectsView,
                            title: "SKILLS") { items in
+                    viewModel.setSkillsCounter(counter: items.count)
                     onSkillsFilterApply(items)
                 }
             }
@@ -26,7 +28,7 @@ struct FilterButtonsView: View {
             Rectangle()
                 .frame(width: 3, height: 60)
 
-            Button("Projects") {
+            Button(viewModel.getProjectsTitle()) {
                 showProjectsView.toggle()
             }
             .frame(maxWidth: .infinity)
@@ -36,6 +38,7 @@ struct FilterButtonsView: View {
                            showSkillsView: $showSkillsView,
                            showProjectsView: $showProjectsView,
                            title: "PROJECTS") { items in
+                    viewModel.setProjectsCounter(counter: items.count)
                     onProjectsFilterApply(items)
                 }
             }

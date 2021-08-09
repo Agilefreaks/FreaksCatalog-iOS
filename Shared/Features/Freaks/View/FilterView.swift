@@ -22,6 +22,9 @@ struct FilterView: View {
 
                 Button(action: {
                     onFilterApply(viewModel.selectedItems)
+
+                    showSkillsView = false
+                    showProjectsView = false
                 }, label: {
                     Text("Apply")
                 })

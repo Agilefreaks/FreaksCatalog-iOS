@@ -18,7 +18,6 @@ struct FilterView: View {
                         }
                     }
                 }
-                .onAppear {}
 
                 Button(action: {
                     onFilterApply(viewModel.selectedItems)

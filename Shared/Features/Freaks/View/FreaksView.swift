@@ -17,8 +17,16 @@ struct FreaksView: View {
     var body: some View {
         NavigationView {
             VStack {
-                FilterButtonsView(onSkillsFilterApply: { items in print(items) },
-                                  onProjectsFilterApply: { items in print(items) })
+                FilterButtonsView(preselectedSkills: viewModel.selectedSkills,
+                                  preselectedProjects: viewModel.selectedProjects,
+                                  onSkillsFilterApply: { skills in
+                                      viewModel.setSelectedSkills(skills: skills)
+                                      viewModel.filterFreaks()
+                                  },
+                                  onProjectsFilterApply: { projects in
+                                      viewModel.setSelectedProjects(projects: projects)
+                                      viewModel.filterFreaks()
+                                  })
 
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 5) {
@@ -31,9 +39,6 @@ struct FreaksView: View {
                     .padding(.horizontal, 20)
                     .padding(.vertical, 5)
                 }
-            }
-            .onAppear {
-                viewModel.getFreaks()
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

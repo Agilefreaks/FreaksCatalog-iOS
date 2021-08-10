@@ -7,8 +7,12 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
         "skills": [
             {
-                "id": 1,
+                "id": 0,
                 "name": "iOS"
+            },
+            {
+                "id": 1,
+                "name": "Swift"
             },
             {
                 "id": 2,
@@ -19,6 +23,11 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "description": "Lorem ipsum"
+            },
+            {
+                "id": 2,
+                "name": "reAsig",
                 "description": "Lorem ipsum"
             }
         ],
@@ -34,8 +43,12 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
         "skills": [
             {
-                "id": 1,
+                "id": 0,
                 "name": "iOS"
+            },
+            {
+                "id": 1,
+                "name": "Swift"
             },
             {
                 "id": 2,
@@ -73,6 +86,11 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "description": "Lorem ipsum"
+            },
+            {
+                "id": 2,
+                "name": "reAsig",
                 "description": "Lorem ipsum"
             }
         ],
@@ -142,12 +160,12 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
         "skills": [
             {
-                "id": 1,
-                "name": "iOS"
+                "id": 7,
+                "name": "Ruby"
             },
             {
-                "id": 5,
-                "name": "C++"
+                "id": 8,
+                "name": "GraphQL"
             }
         ],
         "projects": [
@@ -169,18 +187,23 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
         "skills": [
             {
-                "id": 1,
-                "name": "iOS"
+                "id": 7,
+                "name": "Ruby"
             },
             {
-                "id": 5,
-                "name": "C++"
+                "id": 8,
+                "name": "GraphQL"
             }
         ],
         "projects": [
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "description": "Lorem ipsum"
+            },
+            {
+                "id": 0,
+                "name": "EPIX",
                 "description": "Lorem ipsum"
             }
         ],
@@ -196,18 +219,23 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
         "skills": [
             {
-                "id": 1,
-                "name": "iOS"
+                "id": 5,
+                "name": "JavaScript"
             },
             {
-                "id": 5,
-                "name": "C++"
+                "id": 9,
+                "name": "SCSS"
             }
         ],
         "projects": [
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "description": "Lorem ipsum"
+            },
+            {
+                "id": 2,
+                "name": "reAsig",
                 "description": "Lorem ipsum"
             }
         ],
@@ -223,18 +251,24 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
         "skills": [
             {
-                "id": 1,
-                "name": "iOS"
-            },
-            {
-                "id": 5,
-                "name": "C++"
+                "id": 10,
+                "name": "Tester"
             }
         ],
         "projects": [
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "description": "Lorem ipsum"
+            },
+            {
+                "id": 2,
+                "name": "reAsig",
+                "description": "Lorem ipsum"
+            },
+            {
+                "id": 0,
+                "name": "EPIX",
                 "description": "Lorem ipsum"
             }
         ],
@@ -250,12 +284,12 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
         "skills": [
             {
-                "id": 1,
-                "name": "iOS"
+                "id": 5,
+                "name": "JavaScript"
             },
             {
-                "id": 5,
-                "name": "C++"
+                "id": 6,
+                "name": "Solidity"
             }
         ],
         "projects": [
@@ -277,12 +311,12 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
         "skills": [
             {
-                "id": 1,
-                "name": "iOS"
+                "id": 5,
+                "name": "JavaScript"
             },
             {
-                "id": 5,
-                "name": "C++"
+                "id": 6,
+                "name": "Solidity"
             }
         ],
         "projects": [

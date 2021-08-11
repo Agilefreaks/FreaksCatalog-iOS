@@ -20,8 +20,7 @@ struct FilterButtonsView: View {
             .frame(height: 60)
             .sheet(isPresented: $showSkillsView) {
                 FilterView(viewModel: FilterViewModel(filterType: .skill, preselectedItems: preselectedSkills),
-                           showSkillsView: $showSkillsView,
-                           showProjectsView: $showProjectsView,
+                           showFilterView: $showSkillsView,
                            title: "SKILLS") { items in
                     viewModel.setSkillsCounter(counter: items.count)
                     onSkillsFilterApply(items)
@@ -38,8 +37,7 @@ struct FilterButtonsView: View {
             .frame(height: 60)
             .sheet(isPresented: $showProjectsView) {
                 FilterView(viewModel: FilterViewModel(filterType: .project, preselectedItems: preselectedProjects),
-                           showSkillsView: $showSkillsView,
-                           showProjectsView: $showProjectsView,
+                           showFilterView: $showProjectsView,
                            title: "PROJECTS") { items in
                     viewModel.setProjectsCounter(counter: items.count)
                     onProjectsFilterApply(items)

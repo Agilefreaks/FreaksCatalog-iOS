@@ -2,8 +2,7 @@ import SwiftUI
 
 struct FilterView: View {
     @ObservedObject var viewModel: FilterViewModel
-    @Binding var showSkillsView: Bool
-    @Binding var showProjectsView: Bool
+    @Binding var showFilterView: Bool
 
     var title: String
     var onFilterApply: ([Filterable]) -> Void
@@ -22,8 +21,7 @@ struct FilterView: View {
                 Button(action: {
                     onFilterApply(viewModel.selectedItems)
 
-                    showSkillsView = false
-                    showProjectsView = false
+                    showFilterView = false
                 }, label: {
                     Text("Apply")
                 })
@@ -42,8 +40,7 @@ struct FilterView: View {
                     .font(.system(size: 16))
             })
             .navigationBarItems(leading: Button(action: {
-                showSkillsView = false
-                showProjectsView = false
+                showFilterView = false
             }) {
                 Image(systemName: "xmark")
                     .font(.system(size: 16))

@@ -24,10 +24,8 @@ class FilterViewModel: ObservableObject {
     }
 
     func didTap(on item: Filterable) {
-        if let index = selectedItems.firstIndex(where: {
-            $0.id == item.id
-        }) {
-            selectedItems.remove(at: index)
+        if isSelected(item: item) {
+            selectedItems.removeAll(where: { $0.id == item.id })
         } else {
             selectedItems.append(item)
         }

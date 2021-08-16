@@ -30,6 +30,7 @@
 		12ECD1EE26A82CDA0069BD64 /* FreakTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ECD1DC26A815920069BD64 /* FreakTest.swift */; };
 		12FD8E3C26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FD8E3B26A9BB8D00EF05E8 /* FilterButtonsView.swift */; };
 		12FD8E3D26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FD8E3B26A9BB8D00EF05E8 /* FilterButtonsView.swift */; };
+		3B283D8A26CA95240006B78F /* NavbarTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B283D8926CA95240006B78F /* NavbarTitleModifier.swift */; };
 		3B416B8D26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
 		3B416B8E26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
 		3B63BA6726B92DFC0014126B /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63BA6626B92DFC0014126B /* Project.swift */; };
@@ -87,6 +88,7 @@
 		12ECD1DE26A818E10069BD64 /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
 		12ECD1E526A82CB80069BD64 /* FreaksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreaksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12FD8E3B26A9BB8D00EF05E8 /* FilterButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonsView.swift; sourceTree = "<group>"; };
+		3B283D8926CA95240006B78F /* NavbarTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarTitleModifier.swift; sourceTree = "<group>"; };
 		3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksViewModel.swift; sourceTree = "<group>"; };
 		3B416B9526A8463800250A0D /* Freaks--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freaks--iOS--Info.plist"; sourceTree = "<group>"; };
 		3B63BA6626B92DFC0014126B /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		121F7D6B26A6B874005411ED /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3B283D8726CA94EE0006B78F /* Common */,
 				3B8CCBE026AECE46005765AA /* Utils */,
 				3B416B8F26A811A600250A0D /* App */,
 				121F7D6E26A6B875005411ED /* Assets.xcassets */,
@@ -249,6 +252,22 @@
 				12ECD1DC26A815920069BD64 /* FreakTest.swift */,
 			);
 			path = FreaksTests;
+			sourceTree = "<group>";
+		};
+		3B283D8726CA94EE0006B78F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3B283D8826CA94F90006B78F /* Styles */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3B283D8826CA94F90006B78F /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				3B283D8926CA95240006B78F /* NavbarTitleModifier.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		3B416B8F26A811A600250A0D /* App */ = {
@@ -552,6 +571,7 @@
 				125FF4FF26A83CBB00018CE8 /* FreakDetailsViewModel.swift in Sources */,
 				121F7D8E26A6B875005411ED /* FreaksApp.swift in Sources */,
 				12FD8E3C26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */,
+				3B283D8A26CA95240006B78F /* NavbarTitleModifier.swift in Sources */,
 				12DFB34E26A6F21E00CB25F7 /* ListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

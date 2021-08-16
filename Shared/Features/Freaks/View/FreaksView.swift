@@ -40,15 +40,7 @@ struct FreaksView: View {
                     .padding(.vertical, 5)
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("Freaks")
-                        .fontWeight(.medium)
-                        .font(.system(size: 24))
-                        .foregroundColor(Color("SecondaryColor"))
-                }
-            }
+            .modifier(NavbarTitle(title: "Freaks"))
         }
     }
 }

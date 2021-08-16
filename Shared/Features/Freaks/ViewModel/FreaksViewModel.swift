@@ -23,11 +23,7 @@ final class FreaksViewModel: ObservableObject {
     }
 
     func filterFreaks() {
-        if (selectedSkills.isEmpty || selectedProjects.isEmpty) ||
-            (!selectedSkills.isEmpty || selectedProjects.isEmpty) ||
-            (selectedSkills.isEmpty || !selectedProjects.isEmpty) {
-            getFreaks()
-        }
+        getFreaks()
 
         if !selectedSkills.isEmpty {
             freaks = freaks.filter {

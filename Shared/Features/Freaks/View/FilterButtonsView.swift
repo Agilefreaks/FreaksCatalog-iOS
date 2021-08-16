@@ -1,29 +1,48 @@
 import SwiftUI
 
 struct FilterButtonsView: View {
-    @ObservedObject var viewModel: FreaksViewModel
+    @StateObject var viewModel = FilterButtonsViewModel()
     @State var showSkillsView = false
+    @State var showProjectsView = false
+
+    var preselectedSkills: [Filterable]
+    var preselectedProjects: [Filterable]
+
+    var onSkillsFilterApply: ([Filterable]) -> Void
+    var onProjectsFilterApply: ([Filterable]) -> Void
 
     var body: some View {
         HStack(spacing: 0) {
-            Button(viewModel.filterCounter) {
-                self.showSkillsView.toggle()
-                print("skills")
+            Button(viewModel.getSkillsTitle()) {
+                showSkillsView.toggle()
             }
             .frame(maxWidth: .infinity)
             .frame(height: 60)
             .sheet(isPresented: $showSkillsView) {
-                SkillsView(viewModel: viewModel, showSkillsView: $showSkillsView)
+                FilterView(viewModel: FilterViewModel(filterType: .skill, preselectedItems: preselectedSkills),
+                           showFilterView: $showSkillsView,
+                           title: "SKILLS") { items in
+                    viewModel.setSkillsCounter(counter: items.count)
+                    onSkillsFilterApply(items)
+                }
             }
 
             Rectangle()
                 .frame(width: 3, height: 60)
 
-            Button("Projects") {
-                print("projects")
+            Button(viewModel.getProjectsTitle()) {
+                showProjectsView.toggle()
             }
             .frame(maxWidth: .infinity)
             .frame(height: 60)
+            .sheet(isPresented: $showProjectsView) {
+                FilterView(viewModel: FilterViewModel(filterType: .project, preselectedItems: preselectedProjects),
+                           showFilterView: $showProjectsView,
+                           title: "PROJECTS") { items in
+                    viewModel.setProjectsCounter(counter: items.count)
+                    onProjectsFilterApply(items)
+                }
+            }
         }
         .foregroundColor(Color("SecondaryColor"))
         .font(.title3)
@@ -34,6 +53,9 @@ struct FilterButtonsView: View {
 
 struct FreaksButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterButtonsView(viewModel: FreaksViewModel())
+        FilterButtonsView(preselectedSkills: [],
+                          preselectedProjects: []) { _ in
+        } onProjectsFilterApply: { _ in
+        }
     }
 }

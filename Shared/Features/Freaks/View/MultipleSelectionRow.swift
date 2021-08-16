@@ -1,15 +1,14 @@
 import SwiftUI
 
 struct MultipleSelectionRow: View {
-    @ObservedObject var viewModel: FreaksViewModel
-    var skill: Skill
+    var name: String
     var isSelected: Bool
     var action: () -> Void
 
     var body: some View {
         Button(action: self.action) {
             HStack {
-                Text(skill.name)
+                Text(name)
                     .foregroundColor(.black)
 
                 if self.isSelected {

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct FreaksView: View {
     @StateObject var viewModel = FreaksViewModel()
+
     let columns = [GridItem(.adaptive(minimum: 160))]
 
     init() {
@@ -16,7 +17,16 @@ struct FreaksView: View {
     var body: some View {
         NavigationView {
             VStack {
-                FilterButtonsView(viewModel: viewModel)
+                FilterButtonsView(preselectedSkills: viewModel.selectedSkills,
+                                  preselectedProjects: viewModel.selectedProjects,
+                                  onSkillsFilterApply: { skills in
+                                      viewModel.setSelectedSkills(skills: skills)
+                                      viewModel.filterFreaks()
+                                  },
+                                  onProjectsFilterApply: { projects in
+                                      viewModel.setSelectedProjects(projects: projects)
+                                      viewModel.filterFreaks()
+                                  })
 
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 5) {
@@ -30,14 +40,6 @@ struct FreaksView: View {
                     .padding(.vertical, 5)
                 }
             }
-            .onAppear {
-                self.viewModel.getFreaks()
-            }
-            .onReceive(viewModel.$shouldFilterFreaks, perform: { value in
-                if value {
-                    self.viewModel.getFreaks()
-                }
-            })
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {

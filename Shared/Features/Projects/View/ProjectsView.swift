@@ -6,6 +6,7 @@ struct ProjectsView: View {
             Text("Projects")
                 .modifier(NavbarTitle(title: "Projects"))
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

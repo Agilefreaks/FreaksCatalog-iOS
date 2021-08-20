@@ -55,6 +55,8 @@
 		3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA054026A6EA840070BADB /* FreaksView.swift */; };
 		3BDDBC0A26CFBA3C004EBA5D /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDDBC0926CFBA3C004EBA5D /* ProjectCardView.swift */; };
 		3BDDBC0B26CFBA3C004EBA5D /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDDBC0926CFBA3C004EBA5D /* ProjectCardView.swift */; };
+		3BDDBC0D26CFBAB0004EBA5D /* MockProjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BDDBC0C26CFBAB0004EBA5D /* MockProjects.json */; };
+		3BDDBC0E26CFBAB0004EBA5D /* MockProjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BDDBC0C26CFBAB0004EBA5D /* MockProjects.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,7 @@
 		3BC6F9EA26B97C2B001EB581 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		3BDA054026A6EA840070BADB /* FreaksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreaksView.swift; sourceTree = "<group>"; };
 		3BDDBC0926CFBA3C004EBA5D /* ProjectCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
+		3BDDBC0C26CFBAB0004EBA5D /* MockProjects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockProjects.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,6 +360,7 @@
 		3B8E6FDA26A96C660019E00E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3BDDBC0C26CFBAB0004EBA5D /* MockProjects.json */,
 				3B8E6FDB26A96C8E0019E00E /* MockData.json */,
 			);
 			path = Resources;
@@ -511,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				121F7D9226A6B875005411ED /* Assets.xcassets in Resources */,
+				3BDDBC0D26CFBAB0004EBA5D /* MockProjects.json in Resources */,
 				3B8E6FDC26A96C8E0019E00E /* MockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				121F7D9326A6B875005411ED /* Assets.xcassets in Resources */,
+				3BDDBC0E26CFBAB0004EBA5D /* MockProjects.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

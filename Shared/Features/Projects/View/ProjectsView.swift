@@ -2,7 +2,11 @@ import SwiftUI
 
 struct ProjectsView: View {
     var body: some View {
-        Text("Projects")
+        NavigationView {
+            Text("Projects")
+                .modifier(NavbarTitle(title: "Projects"))
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

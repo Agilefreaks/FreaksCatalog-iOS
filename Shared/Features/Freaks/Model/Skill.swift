@@ -1,6 +1,6 @@
 import Foundation
 
-struct Skill: Identifiable, Codable, Hashable, Filterable {
+struct Skill: Identifiable, Codable, Hashable {
     let id: Int
     let name: String
 }

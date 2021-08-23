@@ -5,18 +5,27 @@
         "imageName": "test1",
         "id": 1001,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 0,
-                "name": "iOS"
+                "name": "iOS",
+                "description": "test"
             },
             {
                 "id": 1,
-                "name": "Swift"
+                "name": "Swift",
+                "description": "test"
             },
             {
                 "id": 2,
-                "name": "SwiftUI"
+                "name": "SwiftUI",
+                "description": "test"
+            }
+        ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
             }
         ],
         "projects": [
@@ -41,18 +50,21 @@
         "imageName": "test1",
         "id": 1002,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 0,
-                "name": "iOS"
+                "name": "iOS",
+                "description": "test"
             },
             {
                 "id": 1,
-                "name": "Swift"
+                "name": "Swift",
+                "description": "test"
             },
             {
                 "id": 2,
-                "name": "SwiftUI"
+                "name": "SwiftUI",
+                "description": "test"
             }
         ],
         "projects": [
@@ -60,6 +72,12 @@
                 "id": 1,
                 "name": "FreaksCatalog",
                 "description": "Lorem ipsum"
+            }
+        ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
             }
         ],
         "role": "Intern",
@@ -72,14 +90,16 @@
         "imageName": "test1",
         "id": 1003,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 3,
-                "name": "Android"
+                "name": "Android",
+                "description": "test"
             },
             {
                 "id": 4,
-                "name": "Kotlin"
+                "name": "Kotlin",
+                "description": "test"
             }
         ],
         "projects": [
@@ -92,6 +112,12 @@
                 "id": 2,
                 "name": "reAsig",
                 "description": "Lorem ipsum"
+            }
+        ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
             }
         ],
         "role": "Intern",
@@ -104,14 +130,16 @@
         "imageName": "test1",
         "id": 1004,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 3,
-                "name": "Android"
+                "name": "Android",
+                "description": "test"
             },
             {
                 "id": 4,
-                "name": "Kotlin"
+                "name": "Kotlin",
+                "description": "test"
             }
         ],
         "projects": [
@@ -119,6 +147,12 @@
                 "id": 1,
                 "name": "FreaksCatalog",
                 "description": "Lorem ipsum"
+            }
+        ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
             }
         ],
         "role": "Intern",
@@ -131,14 +165,16 @@
         "imageName": "test1",
         "id": 1005,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 3,
-                "name": "Android"
+                "name": "Android",
+                "description": "test"
             },
             {
                 "id": 4,
-                "name": "Kotlin"
+                "name": "Kotlin",
+                "description": "test"
             }
         ],
         "projects": [
@@ -146,6 +182,12 @@
                 "id": 1,
                 "name": "FreaksCatalog",
                 "description": "Lorem ipsum"
+            }
+        ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
             }
         ],
         "role": "Intern",
@@ -158,14 +200,16 @@
         "imageName": "test1",
         "id": 1006,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 7,
-                "name": "Ruby"
+                "name": "Ruby",
+                "description": "test"
             },
             {
                 "id": 8,
-                "name": "GraphQL"
+                "name": "GraphQL",
+                "description": "test"
             }
         ],
         "projects": [
@@ -173,6 +217,12 @@
                 "id": 1,
                 "name": "FreaksCatalog",
                 "description": "Lorem ipsum"
+            }
+        ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
             }
         ],
         "role": "Intern",
@@ -185,14 +235,16 @@
         "imageName": "test1",
         "id": 1007,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 7,
-                "name": "Ruby"
+                "name": "Ruby",
+                "description": "test"
             },
             {
                 "id": 8,
-                "name": "GraphQL"
+                "name": "GraphQL",
+                "description": "test"
             }
         ],
         "projects": [
@@ -205,6 +257,12 @@
                 "id": 0,
                 "name": "EPIX",
                 "description": "Lorem ipsum"
+            }
+        ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
             }
         ],
         "role": "Intern",
@@ -217,14 +275,16 @@
         "imageName": "test1",
         "id": 1008,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 5,
-                "name": "JavaScript"
+                "name": "JavaScript",
+                "description": "test"
             },
             {
                 "id": 9,
-                "name": "SCSS"
+                "name": "SCSS",
+                "description": "test"
             }
         ],
         "projects": [
@@ -239,6 +299,12 @@
                 "description": "Lorem ipsum"
             }
         ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
+            }
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -249,10 +315,11 @@
         "imageName": "test1",
         "id": 1009,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 10,
-                "name": "Tester"
+                "name": "Tester",
+                "description": "test"
             }
         ],
         "projects": [
@@ -272,6 +339,12 @@
                 "description": "Lorem ipsum"
             }
         ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
+            }
+        ],
         "role": "Intern",
         "level": "Junior",
         "norm": "Fulltime"
@@ -282,14 +355,16 @@
         "imageName": "test1",
         "id": 1010,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 5,
-                "name": "JavaScript"
+                "name": "JavaScript",
+                "description": "test"
             },
             {
                 "id": 6,
-                "name": "Solidity"
+                "name": "Solidity",
+                "description": "test"
             }
         ],
         "projects": [
@@ -297,6 +372,12 @@
                 "id": 1,
                 "name": "FreaksCatalog",
                 "description": "Lorem ipsum"
+            }
+        ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
             }
         ],
         "role": "Intern",
@@ -309,14 +390,16 @@
         "imageName": "test1",
         "id": 1011,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-        "skills": [
+        "technologies": [
             {
                 "id": 5,
-                "name": "JavaScript"
+                "name": "JavaScript",
+                "description": "test"
             },
             {
                 "id": 6,
-                "name": "Solidity"
+                "name": "Solidity",
+                "description": "test"
             }
         ],
         "projects": [
@@ -324,6 +407,12 @@
                 "id": 1,
                 "name": "FreaksCatalog",
                 "description": "Lorem ipsum"
+            }
+        ],
+        "skills": [
+            {
+                "id": 0,
+                "name": "Project manager"
             }
         ],
         "role": "Intern",

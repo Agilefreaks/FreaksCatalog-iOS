@@ -35,8 +35,8 @@ struct FreakDetailsView: View {
                 VStack(alignment: .leading, spacing: 15) {
                     HStack {
                         Text("Skills: ")
-                        ForEach(viewModel.skills, id: \.self) { skill in
-                            Text(skill.name)
+                        ForEach(viewModel.technologies) { technology in
+                            Text(technology.name)
                         }
                     }
 
@@ -73,6 +73,6 @@ struct FreakDetailsView: View {
 
 struct FreakDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Stanescu", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc.", skills: [Skill(id: 0, name: "iOS")], projects: [Project(id: 0, name: "Epix", description: "Streaming service")], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: 0)))
+        FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Stanescu", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc.", skills: [Skill(id: 0, name: "iOS")], projects: [Project(id: 0, name: "Epix", description: "Streaming service")], technologies: [Technology(id: 0, name: "iOS", description: "test")], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: 0)))
     }
 }

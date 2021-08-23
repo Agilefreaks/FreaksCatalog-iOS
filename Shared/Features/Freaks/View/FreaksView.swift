@@ -17,10 +17,10 @@ struct FreaksView: View {
     var body: some View {
         NavigationView {
             VStack {
-                FilterButtonsView(preselectedSkills: viewModel.selectedSkills,
+                FilterButtonsView(preselectedTechnologies: viewModel.selectedTechnologies,
                                   preselectedProjects: viewModel.selectedProjects,
-                                  onSkillsFilterApply: { skills in
-                                      viewModel.setSelectedSkills(skills: skills)
+                                  onTechnologiesFilterApply: { skills in
+                                      viewModel.setSelectedTechnologies(skills: skills)
                                       viewModel.filterFreaks()
                                   },
                                   onProjectsFilterApply: { projects in

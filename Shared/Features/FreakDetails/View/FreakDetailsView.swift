@@ -42,7 +42,7 @@ struct FreakDetailsView: View {
 
                     HStack {
                         Text("Projects: ")
-                        ForEach(viewModel.projects, id: \.self) { project in
+                        ForEach(viewModel.projects) { project in
                             Text(project.name)
                         }
                     }

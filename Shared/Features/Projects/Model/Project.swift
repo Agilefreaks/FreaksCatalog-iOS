@@ -1,6 +1,6 @@
 import Foundation
 
-struct Project: Identifiable, Codable, Hashable, Filterable {
+struct Project: Identifiable, Codable, Filterable {
     let id: Int
     let name: String
     let description: String

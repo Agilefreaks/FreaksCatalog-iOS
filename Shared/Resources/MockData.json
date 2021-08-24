@@ -32,12 +32,76 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             },
             {
                 "id": 2,
                 "name": "reAsig",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "role": "Intern",
@@ -71,7 +135,39 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "skills": [
@@ -106,12 +202,76 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             },
             {
                 "id": 2,
                 "name": "reAsig",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "skills": [
@@ -146,7 +306,39 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "skills": [
@@ -181,7 +373,39 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "skills": [
@@ -216,7 +440,39 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "skills": [
@@ -251,12 +507,81 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             },
             {
                 "id": 0,
                 "name": "EPIX",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    },
+                    {
+                        "id": 5,
+                        "name": "JavaScript",
+                        "description": "test"
+                    },
+                    {
+                        "id": 9,
+                        "name": "SCSS",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "skills": [
@@ -291,12 +616,76 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             },
             {
                 "id": 2,
                 "name": "reAsig",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "skills": [
@@ -326,17 +715,118 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             },
             {
                 "id": 2,
                 "name": "reAsig",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             },
             {
                 "id": 0,
                 "name": "EPIX",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    },
+                    {
+                        "id": 5,
+                        "name": "JavaScript",
+                        "description": "test"
+                    },
+                    {
+                        "id": 9,
+                        "name": "SCSS",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "skills": [
@@ -371,7 +861,39 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "skills": [
@@ -406,7 +928,39 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
-                "description": "Lorem ipsum"
+                "description": "Lorem ipsum",
+                "technologies": [
+                    {
+                        "id": 0,
+                        "name": "iOS",
+                        "description": "test"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Swift",
+                        "description": "test"
+                    },
+                    {
+                        "id": 2,
+                        "name": "SwiftUI",
+                        "description": "test"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Kotlin",
+                        "description": "test"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ruby",
+                        "description": "test"
+                    },
+                    {
+                        "id": 8,
+                        "name": "GraphQL",
+                        "description": "test"
+                    }
+                ]
             }
         ],
         "skills": [

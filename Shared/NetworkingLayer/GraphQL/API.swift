@@ -11,30 +11,27 @@ public final class GetAllFreaksQuery: GraphQLQuery {
         query GetAllFreaks {
           freaks {
             __typename
-            edges {
+            nodes {
               __typename
-              node {
+              id
+              firstName
+              lastName
+              description
+              level {
                 __typename
-                id
-                firstName
-                lastName
-                description
-                level {
-                  __typename
-                  name
-                }
-                norm {
-                  __typename
-                  name
-                }
-                role {
-                  __typename
-                  name
-                }
-                photo {
-                  __typename
-                  uri
-                }
+                name
+              }
+              norm {
+                __typename
+                name
+              }
+              role {
+                __typename
+                name
+              }
+              photo {
+                __typename
+                uri
               }
             }
           }
@@ -79,7 +76,7 @@ public final class GetAllFreaksQuery: GraphQLQuery {
             public static var selections: [GraphQLSelection] {
                 [
                     GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-                    GraphQLField("edges", type: .list(.object(Edge.selections))),
+                    GraphQLField("nodes", type: .list(.object(Node.selections))),
                 ]
             }
 
@@ -89,8 +86,8 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                 resultMap = unsafeResultMap
             }
 
-            public init(edges: [Edge?]? = nil) {
-                self.init(unsafeResultMap: ["__typename": "FreakConnection", "edges": edges.flatMap { (value: [Edge?]) -> [ResultMap?] in value.map { (value: Edge?) -> ResultMap? in value.flatMap { (value: Edge) -> ResultMap in value.resultMap } } }])
+            public init(nodes: [Node?]? = nil) {
+                self.init(unsafeResultMap: ["__typename": "FreakConnection", "nodes": nodes.flatMap { (value: [Node?]) -> [ResultMap?] in value.map { (value: Node?) -> ResultMap? in value.flatMap { (value: Node) -> ResultMap in value.resultMap } } }])
             }
 
             public var __typename: String {
@@ -102,23 +99,30 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                 }
             }
 
-            /// A list of edges.
-            public var edges: [Edge?]? {
+            /// A list of nodes.
+            public var nodes: [Node?]? {
                 get {
-                    (resultMap["edges"] as? [ResultMap?]).flatMap { (value: [ResultMap?]) -> [Edge?] in value.map { (value: ResultMap?) -> Edge? in value.flatMap { (value: ResultMap) -> Edge in Edge(unsafeResultMap: value) } } }
+                    (resultMap["nodes"] as? [ResultMap?]).flatMap { (value: [ResultMap?]) -> [Node?] in value.map { (value: ResultMap?) -> Node? in value.flatMap { (value: ResultMap) -> Node in Node(unsafeResultMap: value) } } }
                 }
                 set {
-                    resultMap.updateValue(newValue.flatMap { (value: [Edge?]) -> [ResultMap?] in value.map { (value: Edge?) -> ResultMap? in value.flatMap { (value: Edge) -> ResultMap in value.resultMap } } }, forKey: "edges")
+                    resultMap.updateValue(newValue.flatMap { (value: [Node?]) -> [ResultMap?] in value.map { (value: Node?) -> ResultMap? in value.flatMap { (value: Node) -> ResultMap in value.resultMap } } }, forKey: "nodes")
                 }
             }
 
-            public struct Edge: GraphQLSelectionSet {
-                public static let possibleTypes: [String] = ["FreakEdge"]
+            public struct Node: GraphQLSelectionSet {
+                public static let possibleTypes: [String] = ["Freak"]
 
                 public static var selections: [GraphQLSelection] {
                     [
                         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-                        GraphQLField("node", type: .object(Node.selections)),
+                        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+                        GraphQLField("firstName", type: .nonNull(.scalar(String.self))),
+                        GraphQLField("lastName", type: .nonNull(.scalar(String.self))),
+                        GraphQLField("description", type: .nonNull(.scalar(String.self))),
+                        GraphQLField("level", type: .nonNull(.object(Level.selections))),
+                        GraphQLField("norm", type: .nonNull(.object(Norm.selections))),
+                        GraphQLField("role", type: .nonNull(.object(Role.selections))),
+                        GraphQLField("photo", type: .object(Photo.selections)),
                     ]
                 }
 
@@ -128,8 +132,8 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                     resultMap = unsafeResultMap
                 }
 
-                public init(node: Node? = nil) {
-                    self.init(unsafeResultMap: ["__typename": "FreakEdge", "node": node.flatMap { (value: Node) -> ResultMap in value.resultMap }])
+                public init(id: GraphQLID, firstName: String, lastName: String, description: String, level: Level, norm: Norm, role: Role, photo: Photo? = nil) {
+                    self.init(unsafeResultMap: ["__typename": "Freak", "id": id, "firstName": firstName, "lastName": lastName, "description": description, "level": level.resultMap, "norm": norm.resultMap, "role": role.resultMap, "photo": photo.flatMap { (value: Photo) -> ResultMap in value.resultMap }])
                 }
 
                 public var __typename: String {
@@ -141,30 +145,85 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                     }
                 }
 
-                /// The item at the end of the edge.
-                public var node: Node? {
+                public var id: GraphQLID {
                     get {
-                        (resultMap["node"] as? ResultMap).flatMap { Node(unsafeResultMap: $0) }
+                        resultMap["id"]! as! GraphQLID
                     }
                     set {
-                        resultMap.updateValue(newValue?.resultMap, forKey: "node")
+                        resultMap.updateValue(newValue, forKey: "id")
                     }
                 }
 
-                public struct Node: GraphQLSelectionSet {
-                    public static let possibleTypes: [String] = ["Freak"]
+                public var firstName: String {
+                    get {
+                        resultMap["firstName"]! as! String
+                    }
+                    set {
+                        resultMap.updateValue(newValue, forKey: "firstName")
+                    }
+                }
+
+                public var lastName: String {
+                    get {
+                        resultMap["lastName"]! as! String
+                    }
+                    set {
+                        resultMap.updateValue(newValue, forKey: "lastName")
+                    }
+                }
+
+                public var description: String {
+                    get {
+                        resultMap["description"]! as! String
+                    }
+                    set {
+                        resultMap.updateValue(newValue, forKey: "description")
+                    }
+                }
+
+                public var level: Level {
+                    get {
+                        Level(unsafeResultMap: resultMap["level"]! as! ResultMap)
+                    }
+                    set {
+                        resultMap.updateValue(newValue.resultMap, forKey: "level")
+                    }
+                }
+
+                public var norm: Norm {
+                    get {
+                        Norm(unsafeResultMap: resultMap["norm"]! as! ResultMap)
+                    }
+                    set {
+                        resultMap.updateValue(newValue.resultMap, forKey: "norm")
+                    }
+                }
+
+                public var role: Role {
+                    get {
+                        Role(unsafeResultMap: resultMap["role"]! as! ResultMap)
+                    }
+                    set {
+                        resultMap.updateValue(newValue.resultMap, forKey: "role")
+                    }
+                }
+
+                public var photo: Photo? {
+                    get {
+                        (resultMap["photo"] as? ResultMap).flatMap { Photo(unsafeResultMap: $0) }
+                    }
+                    set {
+                        resultMap.updateValue(newValue?.resultMap, forKey: "photo")
+                    }
+                }
+
+                public struct Level: GraphQLSelectionSet {
+                    public static let possibleTypes: [String] = ["Level"]
 
                     public static var selections: [GraphQLSelection] {
                         [
                             GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-                            GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-                            GraphQLField("firstName", type: .nonNull(.scalar(String.self))),
-                            GraphQLField("lastName", type: .nonNull(.scalar(String.self))),
-                            GraphQLField("description", type: .nonNull(.scalar(String.self))),
-                            GraphQLField("level", type: .nonNull(.object(Level.selections))),
-                            GraphQLField("norm", type: .nonNull(.object(Norm.selections))),
-                            GraphQLField("role", type: .nonNull(.object(Role.selections))),
-                            GraphQLField("photo", type: .object(Photo.selections)),
+                            GraphQLField("name", type: .nonNull(.scalar(String.self))),
                         ]
                     }
 
@@ -174,8 +233,8 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                         resultMap = unsafeResultMap
                     }
 
-                    public init(id: GraphQLID, firstName: String, lastName: String, description: String, level: Level, norm: Norm, role: Role, photo: Photo? = nil) {
-                        self.init(unsafeResultMap: ["__typename": "Freak", "id": id, "firstName": firstName, "lastName": lastName, "description": description, "level": level.resultMap, "norm": norm.resultMap, "role": role.resultMap, "photo": photo.flatMap { (value: Photo) -> ResultMap in value.resultMap }])
+                    public init(name: String) {
+                        self.init(unsafeResultMap: ["__typename": "Level", "name": name])
                     }
 
                     public var __typename: String {
@@ -187,231 +246,129 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                         }
                     }
 
-                    public var id: GraphQLID {
+                    public var name: String {
                         get {
-                            resultMap["id"]! as! GraphQLID
+                            resultMap["name"]! as! String
                         }
                         set {
-                            resultMap.updateValue(newValue, forKey: "id")
+                            resultMap.updateValue(newValue, forKey: "name")
                         }
                     }
+                }
 
-                    public var firstName: String {
+                public struct Norm: GraphQLSelectionSet {
+                    public static let possibleTypes: [String] = ["Norm"]
+
+                    public static var selections: [GraphQLSelection] {
+                        [
+                            GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+                            GraphQLField("name", type: .nonNull(.scalar(String.self))),
+                        ]
+                    }
+
+                    public private(set) var resultMap: ResultMap
+
+                    public init(unsafeResultMap: ResultMap) {
+                        resultMap = unsafeResultMap
+                    }
+
+                    public init(name: String) {
+                        self.init(unsafeResultMap: ["__typename": "Norm", "name": name])
+                    }
+
+                    public var __typename: String {
                         get {
-                            resultMap["firstName"]! as! String
+                            resultMap["__typename"]! as! String
                         }
                         set {
-                            resultMap.updateValue(newValue, forKey: "firstName")
+                            resultMap.updateValue(newValue, forKey: "__typename")
                         }
                     }
 
-                    public var lastName: String {
+                    public var name: String {
                         get {
-                            resultMap["lastName"]! as! String
+                            resultMap["name"]! as! String
                         }
                         set {
-                            resultMap.updateValue(newValue, forKey: "lastName")
+                            resultMap.updateValue(newValue, forKey: "name")
                         }
                     }
+                }
 
-                    public var description: String {
+                public struct Role: GraphQLSelectionSet {
+                    public static let possibleTypes: [String] = ["Role"]
+
+                    public static var selections: [GraphQLSelection] {
+                        [
+                            GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+                            GraphQLField("name", type: .nonNull(.scalar(String.self))),
+                        ]
+                    }
+
+                    public private(set) var resultMap: ResultMap
+
+                    public init(unsafeResultMap: ResultMap) {
+                        resultMap = unsafeResultMap
+                    }
+
+                    public init(name: String) {
+                        self.init(unsafeResultMap: ["__typename": "Role", "name": name])
+                    }
+
+                    public var __typename: String {
                         get {
-                            resultMap["description"]! as! String
+                            resultMap["__typename"]! as! String
                         }
                         set {
-                            resultMap.updateValue(newValue, forKey: "description")
+                            resultMap.updateValue(newValue, forKey: "__typename")
                         }
                     }
 
-                    public var level: Level {
+                    public var name: String {
                         get {
-                            Level(unsafeResultMap: resultMap["level"]! as! ResultMap)
+                            resultMap["name"]! as! String
                         }
                         set {
-                            resultMap.updateValue(newValue.resultMap, forKey: "level")
+                            resultMap.updateValue(newValue, forKey: "name")
                         }
                     }
+                }
 
-                    public var norm: Norm {
+                public struct Photo: GraphQLSelectionSet {
+                    public static let possibleTypes: [String] = ["Photo"]
+
+                    public static var selections: [GraphQLSelection] {
+                        [
+                            GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+                            GraphQLField("uri", type: .nonNull(.scalar(String.self))),
+                        ]
+                    }
+
+                    public private(set) var resultMap: ResultMap
+
+                    public init(unsafeResultMap: ResultMap) {
+                        resultMap = unsafeResultMap
+                    }
+
+                    public init(uri: String) {
+                        self.init(unsafeResultMap: ["__typename": "Photo", "uri": uri])
+                    }
+
+                    public var __typename: String {
                         get {
-                            Norm(unsafeResultMap: resultMap["norm"]! as! ResultMap)
+                            resultMap["__typename"]! as! String
                         }
                         set {
-                            resultMap.updateValue(newValue.resultMap, forKey: "norm")
+                            resultMap.updateValue(newValue, forKey: "__typename")
                         }
                     }
 
-                    public var role: Role {
+                    public var uri: String {
                         get {
-                            Role(unsafeResultMap: resultMap["role"]! as! ResultMap)
+                            resultMap["uri"]! as! String
                         }
                         set {
-                            resultMap.updateValue(newValue.resultMap, forKey: "role")
-                        }
-                    }
-
-                    public var photo: Photo? {
-                        get {
-                            (resultMap["photo"] as? ResultMap).flatMap { Photo(unsafeResultMap: $0) }
-                        }
-                        set {
-                            resultMap.updateValue(newValue?.resultMap, forKey: "photo")
-                        }
-                    }
-
-                    public struct Level: GraphQLSelectionSet {
-                        public static let possibleTypes: [String] = ["Level"]
-
-                        public static var selections: [GraphQLSelection] {
-                            [
-                                GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-                                GraphQLField("name", type: .nonNull(.scalar(String.self))),
-                            ]
-                        }
-
-                        public private(set) var resultMap: ResultMap
-
-                        public init(unsafeResultMap: ResultMap) {
-                            resultMap = unsafeResultMap
-                        }
-
-                        public init(name: String) {
-                            self.init(unsafeResultMap: ["__typename": "Level", "name": name])
-                        }
-
-                        public var __typename: String {
-                            get {
-                                resultMap["__typename"]! as! String
-                            }
-                            set {
-                                resultMap.updateValue(newValue, forKey: "__typename")
-                            }
-                        }
-
-                        public var name: String {
-                            get {
-                                resultMap["name"]! as! String
-                            }
-                            set {
-                                resultMap.updateValue(newValue, forKey: "name")
-                            }
-                        }
-                    }
-
-                    public struct Norm: GraphQLSelectionSet {
-                        public static let possibleTypes: [String] = ["Norm"]
-
-                        public static var selections: [GraphQLSelection] {
-                            [
-                                GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-                                GraphQLField("name", type: .nonNull(.scalar(String.self))),
-                            ]
-                        }
-
-                        public private(set) var resultMap: ResultMap
-
-                        public init(unsafeResultMap: ResultMap) {
-                            resultMap = unsafeResultMap
-                        }
-
-                        public init(name: String) {
-                            self.init(unsafeResultMap: ["__typename": "Norm", "name": name])
-                        }
-
-                        public var __typename: String {
-                            get {
-                                resultMap["__typename"]! as! String
-                            }
-                            set {
-                                resultMap.updateValue(newValue, forKey: "__typename")
-                            }
-                        }
-
-                        public var name: String {
-                            get {
-                                resultMap["name"]! as! String
-                            }
-                            set {
-                                resultMap.updateValue(newValue, forKey: "name")
-                            }
-                        }
-                    }
-
-                    public struct Role: GraphQLSelectionSet {
-                        public static let possibleTypes: [String] = ["Role"]
-
-                        public static var selections: [GraphQLSelection] {
-                            [
-                                GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-                                GraphQLField("name", type: .nonNull(.scalar(String.self))),
-                            ]
-                        }
-
-                        public private(set) var resultMap: ResultMap
-
-                        public init(unsafeResultMap: ResultMap) {
-                            resultMap = unsafeResultMap
-                        }
-
-                        public init(name: String) {
-                            self.init(unsafeResultMap: ["__typename": "Role", "name": name])
-                        }
-
-                        public var __typename: String {
-                            get {
-                                resultMap["__typename"]! as! String
-                            }
-                            set {
-                                resultMap.updateValue(newValue, forKey: "__typename")
-                            }
-                        }
-
-                        public var name: String {
-                            get {
-                                resultMap["name"]! as! String
-                            }
-                            set {
-                                resultMap.updateValue(newValue, forKey: "name")
-                            }
-                        }
-                    }
-
-                    public struct Photo: GraphQLSelectionSet {
-                        public static let possibleTypes: [String] = ["Photo"]
-
-                        public static var selections: [GraphQLSelection] {
-                            [
-                                GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-                                GraphQLField("uri", type: .nonNull(.scalar(String.self))),
-                            ]
-                        }
-
-                        public private(set) var resultMap: ResultMap
-
-                        public init(unsafeResultMap: ResultMap) {
-                            resultMap = unsafeResultMap
-                        }
-
-                        public init(uri: String) {
-                            self.init(unsafeResultMap: ["__typename": "Photo", "uri": uri])
-                        }
-
-                        public var __typename: String {
-                            get {
-                                resultMap["__typename"]! as! String
-                            }
-                            set {
-                                resultMap.updateValue(newValue, forKey: "__typename")
-                            }
-                        }
-
-                        public var uri: String {
-                            get {
-                                resultMap["uri"]! as! String
-                            }
-                            set {
-                                resultMap.updateValue(newValue, forKey: "uri")
-                            }
+                            resultMap.updateValue(newValue, forKey: "uri")
                         }
                     }
                 }

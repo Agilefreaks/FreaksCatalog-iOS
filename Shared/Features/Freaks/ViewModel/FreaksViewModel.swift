@@ -13,7 +13,7 @@ final class FreaksViewModel: ObservableObject {
     func loadFreaks() {
         Network.shared.getAllFreaks { [weak self] result, _ in
             guard let self = self else { return }
-            print(result)
+            self.freaks = result
         }
     }
 

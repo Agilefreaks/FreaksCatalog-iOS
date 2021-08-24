@@ -1,7 +1,6 @@
 query GetAllFreaks {
-   freaks {
-     edges {
-        node {
+    freaks {
+        nodes {
         id
          firstName
          lastName
@@ -20,5 +19,4 @@ query GetAllFreaks {
           }
            }
         }
-    }
 }

@@ -1,8 +1,7 @@
 import Foundation
 
 typealias FreakItem = GetAllFreaksQuery.Data.Freak
-typealias FreakItemEdges = FreakItem.Edge
-typealias FreakItemNode = FreakItemEdges.Node
+typealias FreakItemNode = FreakItem.Node
 
 extension FreakItemNode {
     var freakPhoto: String? {
@@ -11,19 +10,15 @@ extension FreakItemNode {
 }
 
 extension Freak {
-    init?(freakNode: FreakItemNode?) {
-        guard let freak = freakNode else {
-            return nil
-        }
-
-        id = freak.id
-        firstName = freak.firstName
-        lastName = freak.lastName
-        imageName = freak.freakPhoto
-        description = freak.description
-        level = freak.level.name
-        norm = freak.norm.name
-        role = freak.role.name
+    init?(freakNode: FreakItemNode) {
+        id = freakNode.id
+        firstName = freakNode.firstName
+        lastName = freakNode.lastName
+        imageName = freakNode.freakPhoto
+        description = freakNode.description
+        level = freakNode.level.name
+        norm = freakNode.norm.name
+        role = freakNode.role.name
         skills = []
         projects = []
     }

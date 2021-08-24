@@ -2,8 +2,9 @@ import Foundation
 
 final class FreaksViewModel: ObservableObject {
     @Published var freaks: [Freak] = []
+    private var allFreaks: [Freak] = []
 
-    var selectedTechnologies: [Filterable] = []
+    var selectedSkills: [Filterable] = []
     var selectedProjects: [Filterable] = []
 
     init() {
@@ -14,6 +15,7 @@ final class FreaksViewModel: ObservableObject {
         Network.shared.getAllFreaks { [weak self] result, _ in
             guard let self = self else { return }
             self.freaks = result
+            self.allFreaks = result
         }
     }
 
@@ -21,8 +23,8 @@ final class FreaksViewModel: ObservableObject {
         loadFreaks()
     }
 
-    func setSelectedTechnologies(technologies: [Filterable]) {
-        selectedTechnologies = technologies
+    func setSelectedSkills(skills: [Filterable]) {
+        selectedSkills = skills
     }
 
     func setSelectedProjects(projects: [Filterable]) {
@@ -30,12 +32,11 @@ final class FreaksViewModel: ObservableObject {
     }
 
     func filterFreaks() {
-        getFreaks()
-
-        if !selectedTechnologies.isEmpty {
+        freaks = allFreaks
+        if !selectedSkills.isEmpty {
             freaks = freaks.filter {
-                $0.technologies.contains { technology in
-                    selectedTechnologies.contains(where: { $0.id == technology.id })
+                $0.skills.contains { skill in
+                    selectedSkills.contains(where: { $0.id == skill.id })
                 }
             }
         }

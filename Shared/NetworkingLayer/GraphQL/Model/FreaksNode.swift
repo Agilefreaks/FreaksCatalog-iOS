@@ -2,7 +2,7 @@ import Foundation
 
 typealias FreakItem = GetAllFreaksQuery.Data.Freak
 typealias FreakItemNode = FreakItem.Node
-typealias SkilItem = FreakItem.Node.Skill
+typealias SkillItem = FreakItem.Node.Technology
 typealias ProjectItem = FreakItem.Node.Project
 
 extension FreakItemNode {
@@ -12,7 +12,7 @@ extension FreakItemNode {
 }
 
 extension Skill {
-    init(from skillItem: SkilItem) {
+    init(from skillItem: SkillItem) {
         id = skillItem.id
         name = skillItem.name
     }
@@ -36,7 +36,7 @@ extension Freak {
         level = freakNode.level.name
         norm = freakNode.norm.name
         role = freakNode.role.name
-        skills = freakNode.skills.map { Skill(from: $0) }
+        skills = freakNode.technologies.map { Skill(from: $0) }
         projects = freakNode.projects.map { Project(from: $0) }
     }
 }

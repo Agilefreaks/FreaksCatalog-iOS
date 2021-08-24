@@ -1,5 +1,5 @@
 query GetAllFreaks {
-     freaks {
+      freaks {
         nodes {
         id
          firstName
@@ -17,9 +17,10 @@ query GetAllFreaks {
           photo{
             uri
           }
-          skills{
+          technologies{
             id
             name
+            description
           }
           projects{
             id

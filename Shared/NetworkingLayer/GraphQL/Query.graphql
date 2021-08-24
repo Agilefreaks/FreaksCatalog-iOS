@@ -1,0 +1,13 @@
+query Freaks {
+  freaks {
+     edges {
+        node {
+         id,
+         firstName,
+             photo {
+                 uri
+            }
+           }
+        }
+    }
+}

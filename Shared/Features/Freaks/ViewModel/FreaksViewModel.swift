@@ -10,8 +10,16 @@ final class FreaksViewModel: ObservableObject {
         getFreaks()
     }
 
+    func loadFreaks() {
+        Network.shared.getAllFreaks { [weak self] result, _ in
+            guard let self = self else { return }
+            print(result)
+        }
+    }
+
     func getFreaks() {
-        freaks = load("MockData.json")
+        // freaks = load("MockData.json")
+        loadFreaks()
     }
 
     func setSelectedTechnologies(technologies: [Filterable]) {

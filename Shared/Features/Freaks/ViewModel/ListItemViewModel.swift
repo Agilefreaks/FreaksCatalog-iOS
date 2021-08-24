@@ -8,7 +8,7 @@ final class ListItemViewModel {
     }
 
     var imageName: String {
-        freak.imageName
+        freak.imageName ?? "test1"
     }
 
     var fullName: String {

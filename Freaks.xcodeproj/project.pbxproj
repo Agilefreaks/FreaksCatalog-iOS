@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1202513726D43CC300B608CA /* Query.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1202513626D43CC300B608CA /* Query.graphql */; };
+		1202513826D43CC300B608CA /* Query.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1202513626D43CC300B608CA /* Query.graphql */; };
+		1202513A26D43D3E00B608CA /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 1202513926D43D3E00B608CA /* schema.json */; };
+		1202513B26D43D3E00B608CA /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 1202513926D43D3E00B608CA /* schema.json */; };
+		1202513D26D43DA200B608CA /* GraphAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202513C26D43DA200B608CA /* GraphAPIService.swift */; };
+		1202513E26D43DA200B608CA /* GraphAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202513C26D43DA200B608CA /* GraphAPIService.swift */; };
+		1202514026D43DED00B608CA /* FreaksNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202513F26D43DED00B608CA /* FreaksNode.swift */; };
+		1202514126D43DED00B608CA /* FreaksNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202513F26D43DED00B608CA /* FreaksNode.swift */; };
+		1202514326D43EB800B608CA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202514226D43EB800B608CA /* API.swift */; };
+		1202514426D43EB800B608CA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202514226D43EB800B608CA /* API.swift */; };
 		121F7D8E26A6B875005411ED /* FreaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6C26A6B874005411ED /* FreaksApp.swift */; };
 		121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6C26A6B874005411ED /* FreaksApp.swift */; };
 		121F7D9226A6B875005411ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121F7D6E26A6B875005411ED /* Assets.xcassets */; };
@@ -80,6 +90,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1202513626D43CC300B608CA /* Query.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Query.graphql; path = Model/Query.graphql; sourceTree = "<group>"; };
+		1202513926D43D3E00B608CA /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		1202513C26D43DA200B608CA /* GraphAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphAPIService.swift; sourceTree = "<group>"; };
+		1202513F26D43DED00B608CA /* FreaksNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksNode.swift; sourceTree = "<group>"; };
+		1202514226D43EB800B608CA /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		121F7D6C26A6B874005411ED /* FreaksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksApp.swift; sourceTree = "<group>"; };
 		121F7D6E26A6B875005411ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		121F7D7326A6B875005411ED /* Freaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +165,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1202512D26D438BB00B608CA /* NetworkingLayer */ = {
+			isa = PBXGroup;
+			children = (
+				1202512E26D438FB00B608CA /* GraphQL */,
+			);
+			path = NetworkingLayer;
+			sourceTree = "<group>";
+		};
+		1202512E26D438FB00B608CA /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				1202513126D439C300B608CA /* Model */,
+				1202513626D43CC300B608CA /* Query.graphql */,
+				1202514226D43EB800B608CA /* API.swift */,
+				1202513926D43D3E00B608CA /* schema.json */,
+				1202513C26D43DA200B608CA /* GraphAPIService.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		1202513126D439C300B608CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1202513F26D43DED00B608CA /* FreaksNode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		121F7D6626A6B874005411ED = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +212,7 @@
 				3B416B8F26A811A600250A0D /* App */,
 				121F7D6E26A6B875005411ED /* Assets.xcassets */,
 				3B416B9026A811BD00250A0D /* Features */,
+				1202512D26D438BB00B608CA /* NetworkingLayer */,
 				3B8E6FDA26A96C660019E00E /* Resources */,
 			);
 			path = Shared;
@@ -406,6 +450,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 121F7D9626A6B875005411ED /* Build configuration list for PBXNativeTarget "Freaks (iOS)" */;
 			buildPhases = (
+				1202513226D43A4600B608CA /* Generate Apollo GraphQL API */,
 				1288EA1126A6DD7C0069512B /* ShellScript */,
 				121F7D6F26A6B875005411ED /* Sources */,
 				121F7D7026A6B875005411ED /* Frameworks */,
@@ -531,6 +576,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1202513A26D43D3E00B608CA /* schema.json in Resources */,
+				1202513726D43CC300B608CA /* Query.graphql in Resources */,
 				121F7D9226A6B875005411ED /* Assets.xcassets in Resources */,
 				3BDDBC0D26CFBAB0004EBA5D /* MockProjects.json in Resources */,
 				3B8E6FDC26A96C8E0019E00E /* MockData.json in Resources */,
@@ -541,6 +588,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1202513826D43CC300B608CA /* Query.graphql in Resources */,
+				1202513B26D43D3E00B608CA /* schema.json in Resources */,
 				121F7D9326A6B875005411ED /* Assets.xcassets in Resources */,
 				3BDDBC0E26CFBAB0004EBA5D /* MockProjects.json in Resources */,
 			);
@@ -563,6 +612,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1202513226D43A4600B608CA /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/Shared/NetworkingLayer/GraphQL\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n\n\n";
+		};
 		1288EA1126A6DD7C0069512B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -593,6 +660,7 @@
 				3B661F7D26B41EFC00C45974 /* Skill.swift in Sources */,
 				3BE10CFB26D527CC0048FBE6 /* ProjectsViewModel.swift in Sources */,
 				128A614726C163480055AFFF /* HomeView.swift in Sources */,
+				1202514026D43DED00B608CA /* FreaksNode.swift in Sources */,
 				12ECD1DF26A818E10069BD64 /* ListItemViewModel.swift in Sources */,
 				3BE10CF626D3BA8E0048FBE6 /* Technology.swift in Sources */,
 				125FF4FC26A83B9500018CE8 /* FreakDetailsView.swift in Sources */,
@@ -601,6 +669,7 @@
 				3BA783DC26C1407E00E660E8 /* Filterable.swift in Sources */,
 				3BE10CF426D01EDD0048FBE6 /* ProjectCardViewModel.swift in Sources */,
 				3B63BA6726B92DFC0014126B /* Project.swift in Sources */,
+				1202513D26D43DA200B608CA /* GraphAPIService.swift in Sources */,
 				3B8CCBE226AECE81005765AA /* UINavigationController+Extensions.swift in Sources */,
 				3BC6F9EB26B97C2B001EB581 /* FilterViewModel.swift in Sources */,
 				3BE10CF826D3CDC90048FBE6 /* Freak.swift in Sources */,
@@ -611,6 +680,7 @@
 				121F7D8E26A6B875005411ED /* FreaksApp.swift in Sources */,
 				12FD8E3C26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */,
 				3B283D8A26CA95240006B78F /* NavbarTitleModifier.swift in Sources */,
+				1202514326D43EB800B608CA /* API.swift in Sources */,
 				12DFB34E26A6F21E00CB25F7 /* ListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,11 +689,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1202514426D43EB800B608CA /* API.swift in Sources */,
 				3BC6F9EC26B97C2B001EB581 /* FilterViewModel.swift in Sources */,
 				128A614B26C1641A0055AFFF /* ProjectsView.swift in Sources */,
 				128A614826C163480055AFFF /* HomeView.swift in Sources */,
 				128A614526C15C9F0055AFFF /* MenuView.swift in Sources */,
 				12ECD1E026A818E10069BD64 /* ListItemViewModel.swift in Sources */,
+				1202514126D43DED00B608CA /* FreaksNode.swift in Sources */,
 				125FF4FD26A83B9500018CE8 /* FreakDetailsView.swift in Sources */,
 				3B661F6F26B16F7D00C45974 /* MultipleSelectionRow.swift in Sources */,
 				3B416B8E26A80F5B00250A0D /* FreaksViewModel.swift in Sources */,
@@ -633,6 +705,7 @@
 				3BE10CF926D3CDC90048FBE6 /* Freak.swift in Sources */,
 				3BDDBC0B26CFBA3C004EBA5D /* ProjectCardView.swift in Sources */,
 				3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */,
+				1202513E26D43DA200B608CA /* GraphAPIService.swift in Sources */,
 				125FF50026A83CBB00018CE8 /* FreakDetailsViewModel.swift in Sources */,
 				3B76E4DD26B01A2500D92898 /* FilterView.swift in Sources */,
 				121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */,

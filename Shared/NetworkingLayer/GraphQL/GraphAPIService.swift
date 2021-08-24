@@ -16,7 +16,7 @@ class Network {
                 let freaks = nodes?.compactMap { Freak(freakNode: $0!) }
                 completionHandler(freaks ?? [], nil)
             case let .failure(error):
-                print("Failure! Error: \(error)")
+                completionHandler([], error)
             }
         }
     }

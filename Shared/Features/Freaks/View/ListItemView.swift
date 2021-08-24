@@ -26,7 +26,7 @@ struct ListItemView: View {
 }
 
 struct ListItemView_Previews: PreviewProvider {
-    static var viewModel = ListItemViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Stanescu", description: "Lorem ipsum", skills: [Skill(id: 0, name: "iOS")], projects: [Project(id: 0, name: "Epix", description: "Streaming service")], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: "0"))
+    static var viewModel = ListItemViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Stanescu", description: "Lorem ipsum", skills: [Skill(id: "0", name: "iOS")], projects: [Project(id: "0", name: "Epix", description: "Streaming service")], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: "0"))
 
     static var previews: some View {
         ListItemView(viewModel: viewModel)

@@ -14,8 +14,8 @@ final class FreaksViewModel: ObservableObject {
         freaks = load("MockData.json")
     }
 
-    func setSelectedTechnologies(skills: [Filterable]) {
-        selectedTechnologies = skills
+    func setSelectedTechnologies(technologies: [Filterable]) {
+        selectedTechnologies = technologies
     }
 
     func setSelectedProjects(projects: [Filterable]) {

@@ -20,7 +20,7 @@ struct FreaksView: View {
                 FilterButtonsView(preselectedTechnologies: viewModel.selectedTechnologies,
                                   preselectedProjects: viewModel.selectedProjects,
                                   onTechnologiesFilterApply: { skills in
-                                      viewModel.setSelectedTechnologies(skills: skills)
+                                      viewModel.setSelectedTechnologies(technologies: skills)
                                       viewModel.filterFreaks()
                                   },
                                   onProjectsFilterApply: { projects in

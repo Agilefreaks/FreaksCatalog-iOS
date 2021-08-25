@@ -59,6 +59,7 @@
 		3BE10CF626D3BA8E0048FBE6 /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE10CF526D3BA8E0048FBE6 /* Technology.swift */; };
 		3BE10CF826D3CDC90048FBE6 /* Freak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE10CF726D3CDC90048FBE6 /* Freak.swift */; };
 		3BE10CF926D3CDC90048FBE6 /* Freak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE10CF726D3CDC90048FBE6 /* Freak.swift */; };
+		3BE10CFB26D527CC0048FBE6 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE10CFA26D527CC0048FBE6 /* ProjectViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		3BE10CF326D01EDD0048FBE6 /* ProjectCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardViewModel.swift; sourceTree = "<group>"; };
 		3BE10CF526D3BA8E0048FBE6 /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
 		3BE10CF726D3CDC90048FBE6 /* Freak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freak.swift; sourceTree = "<group>"; };
+		3BE10CFA26D527CC0048FBE6 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				3BE10CF326D01EDD0048FBE6 /* ProjectCardViewModel.swift */,
+				3BE10CFA26D527CC0048FBE6 /* ProjectViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 				128A614426C15C9F0055AFFF /* MenuView.swift in Sources */,
 				128A614A26C1641A0055AFFF /* ProjectsView.swift in Sources */,
 				3B661F7D26B41EFC00C45974 /* Skill.swift in Sources */,
+				3BE10CFB26D527CC0048FBE6 /* ProjectViewModel.swift in Sources */,
 				128A614726C163480055AFFF /* HomeView.swift in Sources */,
 				12ECD1DF26A818E10069BD64 /* ListItemViewModel.swift in Sources */,
 				3BE10CF626D3BA8E0048FBE6 /* Technology.swift in Sources */,

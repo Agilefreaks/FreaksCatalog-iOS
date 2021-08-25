@@ -32,6 +32,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -69,6 +70,7 @@
             {
                 "id": 2,
                 "name": "reAsig",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -135,6 +137,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -202,6 +205,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -239,6 +243,7 @@
             {
                 "id": 2,
                 "name": "reAsig",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -306,6 +311,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -373,6 +379,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -440,6 +447,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -507,6 +515,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -544,6 +553,7 @@
             {
                 "id": 0,
                 "name": "EPIX",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -616,6 +626,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -653,6 +664,7 @@
             {
                 "id": 2,
                 "name": "reAsig",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -715,6 +727,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -752,6 +765,7 @@
             {
                 "id": 2,
                 "name": "reAsig",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -789,6 +803,7 @@
             {
                 "id": 0,
                 "name": "EPIX",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -861,6 +876,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {
@@ -928,6 +944,7 @@
             {
                 "id": 1,
                 "name": "FreaksCatalog",
+                "imageUrl": "chad",
                 "description": "Lorem ipsum",
                 "technologies": [
                     {

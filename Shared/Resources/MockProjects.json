@@ -3,227 +3,142 @@
         "name": "EPIX",
         "description": "Streaming",
         "id": 0,
-        "freaks": [
+        "imageUrl": "chad",
+        "technologies": [
             {
-                "firstName": "Gabriel",
-                "lastName": "Giroe",
-                "imageName": "test1",
-                "id": 1007,
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-                "skills": [
-                    {
-                        "id": 7,
-                        "name": "Ruby"
-                    },
-                    {
-                        "id": 8,
-                        "name": "GraphQL"
-                    }
-                ],
-                "projects": [
-                    {
-                        "id": 1,
-                        "name": "FreaksCatalog",
-                        "description": "Lorem ipsum"
-                    },
-                    {
-                        "id": 0,
-                        "name": "EPIX",
-                        "description": "Lorem ipsum"
-                    }
-                ],
-                "role": "Intern",
-                "level": "Junior",
-                "norm": "Fulltime"
+                "id": 0,
+                "name": "iOS",
+                "description": "test"
             },
             {
-                "firstName": "Georgiana",
-                "lastName": "Lazar",
-                "imageName": "test1",
-                "id": 1009,
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-                "skills": [
-                    {
-                        "id": 10,
-                        "name": "Tester"
-                    }
-                ],
-                "projects": [
-                    {
-                        "id": 1,
-                        "name": "FreaksCatalog",
-                        "description": "Lorem ipsum"
-                    },
-                    {
-                        "id": 2,
-                        "name": "reAsig",
-                        "description": "Lorem ipsum"
-                    },
-                    {
-                        "id": 0,
-                        "name": "EPIX",
-                        "description": "Lorem ipsum"
-                    }
-                ],
-                "role": "Intern",
-                "level": "Junior",
-                "norm": "Fulltime"
+                "id": 1,
+                "name": "Swift",
+                "description": "test"
+            },
+            {
+                "id": 4,
+                "name": "Kotlin",
+                "description": "test"
+            },
+            {
+                "id": 7,
+                "name": "Ruby",
+                "description": "test"
+            },
+            {
+                "id": 8,
+                "name": "GraphQL",
+                "description": "test"
+            },
+            {
+                "id": 5,
+                "name": "JavaScript",
+                "description": "test"
+            },
+            {
+                "id": 9,
+                "name": "SCSS",
+                "description": "test"
             }
-        ],
-        "technologies": [
-            {}
         ]
     },
     {
         "name": "UNGC",
+        "imageUrl": "chad",
         "description": "Salvatz copacii",
-        "id": 1,
-        "freaks": [],
+        "id": 3,
         "technologies": [
-            {}
+            {
+                "id": 4,
+                "name": "Kotlin",
+                "description": "test"
+            },
+            {
+                "id": 7,
+                "name": "Ruby",
+                "description": "test"
+            },
+            {
+                "id": 8,
+                "name": "GraphQL",
+                "description": "test"
+            }
         ]
     },
     {
         "name": "reAsig",
+        "imageUrl": "chad",
         "description": "Asigurari",
         "id": 2,
-        "freaks": [
-            {
-                "firstName": "Radu",
-                "lastName": "Moldovan",
-                "imageName": "test1",
-                "id": 1001,
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-                "skills": [
-                    {
-                        "id": 0,
-                        "name": "iOS"
-                    },
-                    {
-                        "id": 1,
-                        "name": "Swift"
-                    },
-                    {
-                        "id": 2,
-                        "name": "SwiftUI"
-                    }
-                ],
-                "projects": [
-                    {
-                        "id": 1,
-                        "name": "FreaksCatalog",
-                        "description": "Lorem ipsum"
-                    },
-                    {
-                        "id": 2,
-                        "name": "reAsig",
-                        "description": "Lorem ipsum"
-                    }
-                ],
-                "role": "Intern",
-                "level": "Junior",
-                "norm": "Fulltime"
-            },
-            {
-                "firstName": "Andreea",
-                "lastName": "Matei",
-                "imageName": "test1",
-                "id": 1003,
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-                "skills": [
-                    {
-                        "id": 3,
-                        "name": "Android"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Kotlin"
-                    }
-                ],
-                "projects": [
-                    {
-                        "id": 1,
-                        "name": "FreaksCatalog",
-                        "description": "Lorem ipsum"
-                    },
-                    {
-                        "id": 2,
-                        "name": "reAsig",
-                        "description": "Lorem ipsum"
-                    }
-                ],
-                "role": "Intern",
-                "level": "Junior",
-                "norm": "Fulltime"
-            },
-            {
-                "firstName": "Marian",
-                "lastName": "Badea",
-                "imageName": "test1",
-                "id": 1008,
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-                "skills": [
-                    {
-                        "id": 5,
-                        "name": "JavaScript"
-                    },
-                    {
-                        "id": 9,
-                        "name": "SCSS"
-                    }
-                ],
-                "projects": [
-                    {
-                        "id": 1,
-                        "name": "FreaksCatalog",
-                        "description": "Lorem ipsum"
-                    },
-                    {
-                        "id": 2,
-                        "name": "reAsig",
-                        "description": "Lorem ipsum"
-                    }
-                ],
-                "role": "Intern",
-                "level": "Junior",
-                "norm": "Fulltime"
-            },
-            {
-                "firstName": "Georgiana",
-                "lastName": "Lazar",
-                "imageName": "test1",
-                "id": 1009,
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc. ",
-                "skills": [
-                    {
-                        "id": 10,
-                        "name": "Tester"
-                    }
-                ],
-                "projects": [
-                    {
-                        "id": 1,
-                        "name": "FreaksCatalog",
-                        "description": "Lorem ipsum"
-                    },
-                    {
-                        "id": 2,
-                        "name": "reAsig",
-                        "description": "Lorem ipsum"
-                    },
-                    {
-                        "id": 0,
-                        "name": "EPIX",
-                        "description": "Lorem ipsum"
-                    }
-                ],
-                "role": "Intern",
-                "level": "Junior",
-                "norm": "Fulltime"
-            }
-        ],
         "technologies": [
-            {}
+            {
+                "id": 0,
+                "name": "iOS",
+                "description": "test"
+            },
+            {
+                "id": 1,
+                "name": "Swift",
+                "description": "test"
+            },
+            {
+                "id": 2,
+                "name": "SwiftUI",
+                "description": "test"
+            },
+            {
+                "id": 4,
+                "name": "Kotlin",
+                "description": "test"
+            },
+            {
+                "id": 7,
+                "name": "Ruby",
+                "description": "test"
+            },
+            {
+                "id": 8,
+                "name": "GraphQL",
+                "description": "test"
+            }
+        ]
+    },
+    {
+        "name": "FreaksCatalog",
+        "imageUrl": "chad",
+        "description": "test",
+        "id": 1,
+        "technologies": [
+            {
+                "id": 0,
+                "name": "iOS",
+                "description": "test"
+            },
+            {
+                "id": 1,
+                "name": "Swift",
+                "description": "test"
+            },
+            {
+                "id": 2,
+                "name": "SwiftUI",
+                "description": "test"
+            },
+            {
+                "id": 4,
+                "name": "Kotlin",
+                "description": "test"
+            },
+            {
+                "id": 7,
+                "name": "Ruby",
+                "description": "test"
+            },
+            {
+                "id": 8,
+                "name": "GraphQL",
+                "description": "test"
+            } 
         ]
     }
 ]

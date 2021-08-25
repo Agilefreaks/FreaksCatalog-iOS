@@ -1,10 +1,20 @@
 import SwiftUI
 
 struct ProjectsView: View {
+    var viewModel = ProjectViewModel()
+
     var body: some View {
         NavigationView {
-            Text("Projects")
-                .modifier(NavbarTitle(title: "Projects"))
+            ScrollView {
+                LazyVStack(spacing: 30) {
+                    ForEach(viewModel.projects) { project in
+                        ProjectCardView(viewModel: ProjectCardViewModel(project: project), type: project.name)
+                            .listRowSeparator(.hidden)
+                            .modifier(NavbarTitle(title: "Projects"))
+                    }
+                }
+                .padding(.top, 20)
+            }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

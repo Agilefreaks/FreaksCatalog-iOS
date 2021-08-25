@@ -1,13 +1,12 @@
 import SwiftUI
 
 struct ProjectCardView: View {
+    var viewModel: ProjectCardViewModel
     var type: String
 
     var body: some View {
         HStack {
-            Spacer()
-
-            Image("chad")
+            Image(viewModel.imageUrl)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(maxWidth: 128, maxHeight: 128)
@@ -31,6 +30,6 @@ struct ProjectCardView: View {
 
 struct ProjectCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectCardView(type: "Streaming")
+        ProjectCardView(viewModel: ProjectCardViewModel(project: Project(id: 0, name: "Epix", description: "test", technologies: [Technology(id: 0, name: "iOS", description: "test")], imageUrl: "chad")), type: "Streaming")
     }
 }

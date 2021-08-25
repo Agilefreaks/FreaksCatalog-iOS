@@ -14,4 +14,12 @@ final class ProjectCardViewModel {
     var name: String {
         project.name
     }
+
+    var technologies: [Technology] {
+        project.technologies
+    }
+
+    var imageUrl: String {
+        project.imageUrl
+    }
 }

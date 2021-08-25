@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1202513726D43CC300B608CA /* Query.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1202513626D43CC300B608CA /* Query.graphql */; };
-		1202513826D43CC300B608CA /* Query.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1202513626D43CC300B608CA /* Query.graphql */; };
+		1202513726D43CC300B608CA /* GetAllFreaksQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1202513626D43CC300B608CA /* GetAllFreaksQuery.graphql */; };
+		1202513826D43CC300B608CA /* GetAllFreaksQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1202513626D43CC300B608CA /* GetAllFreaksQuery.graphql */; };
 		1202513A26D43D3E00B608CA /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 1202513926D43D3E00B608CA /* schema.json */; };
 		1202513B26D43D3E00B608CA /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 1202513926D43D3E00B608CA /* schema.json */; };
 		1202513D26D43DA200B608CA /* GraphAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202513C26D43DA200B608CA /* GraphAPIService.swift */; };
@@ -90,7 +90,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1202513626D43CC300B608CA /* Query.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Query.graphql; path = Model/Query.graphql; sourceTree = "<group>"; };
+		1202513626D43CC300B608CA /* GetAllFreaksQuery.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = GetAllFreaksQuery.graphql; path = Model/GetAllFreaksQuery.graphql; sourceTree = "<group>"; };
 		1202513926D43D3E00B608CA /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		1202513C26D43DA200B608CA /* GraphAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphAPIService.swift; sourceTree = "<group>"; };
 		1202513F26D43DED00B608CA /* FreaksNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksNode.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				1202513126D439C300B608CA /* Model */,
-				1202513626D43CC300B608CA /* Query.graphql */,
+				1202513626D43CC300B608CA /* GetAllFreaksQuery.graphql */,
 				1202514226D43EB800B608CA /* API.swift */,
 				1202513926D43D3E00B608CA /* schema.json */,
 				1202513C26D43DA200B608CA /* GraphAPIService.swift */,
@@ -577,7 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1202513A26D43D3E00B608CA /* schema.json in Resources */,
-				1202513726D43CC300B608CA /* Query.graphql in Resources */,
+				1202513726D43CC300B608CA /* GetAllFreaksQuery.graphql in Resources */,
 				121F7D9226A6B875005411ED /* Assets.xcassets in Resources */,
 				3BDDBC0D26CFBAB0004EBA5D /* MockProjects.json in Resources */,
 				3B8E6FDC26A96C8E0019E00E /* MockData.json in Resources */,
@@ -588,7 +588,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1202513826D43CC300B608CA /* Query.graphql in Resources */,
+				1202513826D43CC300B608CA /* GetAllFreaksQuery.graphql in Resources */,
 				1202513B26D43D3E00B608CA /* schema.json in Resources */,
 				121F7D9326A6B875005411ED /* Assets.xcassets in Resources */,
 				3BDDBC0E26CFBAB0004EBA5D /* MockProjects.json in Resources */,

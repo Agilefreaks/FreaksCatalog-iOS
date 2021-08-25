@@ -6,8 +6,8 @@ enum FilterType {
 }
 
 class FilterViewModel: ObservableObject {
-    var skills: [Skill] = [Skill(id: 0, name: "iOS"), Skill(id: 1, name: "Swift"), Skill(id: 2, name: "SwiftUI"), Skill(id: 3, name: "Android"), Skill(id: 4, name: "Kotlin"), Skill(id: 5, name: "JavaScript"), Skill(id: 6, name: "Solidity"), Skill(id: 7, name: "Ruby"), Skill(id: 8, name: "GraphQL"), Skill(id: 9, name: "SCSS"), Skill(id: 10, name: "Tester")]
-    var projects: [Project] = [Project(id: 1, name: "FreaksCatalog", description: "Catalog of freaks"), Project(id: 0, name: "EPIX", description: "Lorem Ipsum"), Project(id: 2, name: "reAsig", description: "Lorem Ipsum"), Project(id: 3, name: "UNGC", description: "Lorem ipsum")]
+    var skills: [Skill] = [Skill(id: 0, name: "iOS"), Skill(id: 1, name: "Swift"), Skill(id: 2, name: "SwiftUI"), Skill(id: 3, name: "Android"), Skill(id: 4, name: "Kotlin"), Skill(id: 5, name: "JavaScript"), Skill(id: 6, name: "Solidity"), Skill(id: 7, name: "Ruby"), Skill(id: 8, name: "GraphQL"), Skill(id: 9, name: "SCSS"), Skill(id: 10, name: "Tester")].sorted(by: { $0.name.lowercased() < $1.name.lowercased() })
+    var projects: [Project] = [Project(id: 1, name: "FreaksCatalog", description: "Catalog of freaks"), Project(id: 0, name: "EPIX", description: "Lorem Ipsum"), Project(id: 2, name: "reAsig", description: "Lorem Ipsum"), Project(id: 3, name: "UNGC", description: "Lorem ipsum")].sorted(by: { $0.name.lowercased() < $1.name.lowercased() })
 
     @Published var selectedItems: [Filterable] = []
     var filterItems: [Filterable] = []

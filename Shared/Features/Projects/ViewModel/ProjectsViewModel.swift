@@ -1,6 +1,6 @@
 import Foundation
 
-final class ProjectViewModel {
+final class ProjectsViewModel {
     var projects: [Project] = []
 
     init() {

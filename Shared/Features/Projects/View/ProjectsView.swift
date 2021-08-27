@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ProjectsView: View {
-    var viewModel = ProjectViewModel()
+    var viewModel = ProjectsViewModel()
 
     var body: some View {
         NavigationView {

@@ -1,3 +1,4 @@
+import KingfisherSwiftUI
 import SwiftUI
 
 struct ListItemView: View {
@@ -5,16 +6,12 @@ struct ListItemView: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            AsyncImage(url: URL(string: viewModel.imageName)) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(maxWidth: 160, maxHeight: 160)
-                    .cornerRadius(10)
-                    .accessibility(identifier: "freakImage")
-            } placeholder: {
-                Color("AccentColor").opacity(0.1)
-            }
+            KFImage(URL(string: viewModel.imageName))
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(maxWidth: 160, maxHeight: 160)
+                .cornerRadius(10)
+                .accessibility(identifier: "freakImage")
 
             Text(viewModel.firstName)
                 .font(.system(size: 20, weight: .heavy, design: .default))

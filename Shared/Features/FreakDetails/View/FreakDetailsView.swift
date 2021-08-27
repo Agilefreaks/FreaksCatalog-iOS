@@ -1,3 +1,4 @@
+import KingfisherSwiftUI
 import SwiftUI
 
 struct FreakDetailsView: View {
@@ -13,20 +14,17 @@ struct FreakDetailsView: View {
                 .cornerRadius(10)
 
             VStack {
-                AsyncImage(url: URL(string: viewModel.imageName)) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(maxWidth: 160, maxHeight: 160)
-                        .cornerRadius(10)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color("SecondaryColor"), lineWidth: 2)
-                        )
-                        .accessibility(identifier: "freakImage")
-                } placeholder: {
-                    Color("AccentColor").opacity(0.1)
-                }
+                KFImage(URL(string: viewModel.imageName))
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(maxWidth: 160, maxHeight: 160)
+                    .cornerRadius(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color("SecondaryColor"), lineWidth: 2)
+                    )
+                    .accessibility(identifier: "freakImage")
+
                 Text(viewModel.fullName)
                     .font(.system(size: 18, weight: .bold, design: .default))
                     .padding()

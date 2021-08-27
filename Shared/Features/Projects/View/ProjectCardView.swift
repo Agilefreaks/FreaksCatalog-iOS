@@ -20,7 +20,7 @@ struct ProjectCardView: View {
 
             Spacer()
         }
-        .frame(maxWidth: 295, maxHeight: 147)
+        .frame(maxWidth: .infinity, maxHeight: 147)
         .overlay(
             RoundedRectangle(cornerRadius: 8)
                 .stroke(.black, lineWidth: 2)

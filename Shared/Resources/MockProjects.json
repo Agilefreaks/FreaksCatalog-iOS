@@ -1,0 +1,144 @@
+[
+    {
+        "name": "EPIX",
+        "description": "Streaming",
+        "id": 0,
+        "imageUrl": "chad",
+        "technologies": [
+            {
+                "id": 0,
+                "name": "iOS",
+                "description": "test"
+            },
+            {
+                "id": 1,
+                "name": "Swift",
+                "description": "test"
+            },
+            {
+                "id": 4,
+                "name": "Kotlin",
+                "description": "test"
+            },
+            {
+                "id": 7,
+                "name": "Ruby",
+                "description": "test"
+            },
+            {
+                "id": 8,
+                "name": "GraphQL",
+                "description": "test"
+            },
+            {
+                "id": 5,
+                "name": "JavaScript",
+                "description": "test"
+            },
+            {
+                "id": 9,
+                "name": "SCSS",
+                "description": "test"
+            }
+        ]
+    },
+    {
+        "name": "UNGC",
+        "imageUrl": "chad",
+        "description": "Salvatz copacii",
+        "id": 3,
+        "technologies": [
+            {
+                "id": 4,
+                "name": "Kotlin",
+                "description": "test"
+            },
+            {
+                "id": 7,
+                "name": "Ruby",
+                "description": "test"
+            },
+            {
+                "id": 8,
+                "name": "GraphQL",
+                "description": "test"
+            }
+        ]
+    },
+    {
+        "name": "reAsig",
+        "imageUrl": "chad",
+        "description": "Asigurari",
+        "id": 2,
+        "technologies": [
+            {
+                "id": 0,
+                "name": "iOS",
+                "description": "test"
+            },
+            {
+                "id": 1,
+                "name": "Swift",
+                "description": "test"
+            },
+            {
+                "id": 2,
+                "name": "SwiftUI",
+                "description": "test"
+            },
+            {
+                "id": 4,
+                "name": "Kotlin",
+                "description": "test"
+            },
+            {
+                "id": 7,
+                "name": "Ruby",
+                "description": "test"
+            },
+            {
+                "id": 8,
+                "name": "GraphQL",
+                "description": "test"
+            }
+        ]
+    },
+    {
+        "name": "FreaksCatalog",
+        "imageUrl": "chad",
+        "description": "test",
+        "id": 1,
+        "technologies": [
+            {
+                "id": 0,
+                "name": "iOS",
+                "description": "test"
+            },
+            {
+                "id": 1,
+                "name": "Swift",
+                "description": "test"
+            },
+            {
+                "id": 2,
+                "name": "SwiftUI",
+                "description": "test"
+            },
+            {
+                "id": 4,
+                "name": "Kotlin",
+                "description": "test"
+            },
+            {
+                "id": 7,
+                "name": "Ruby",
+                "description": "test"
+            },
+            {
+                "id": 8,
+                "name": "GraphQL",
+                "description": "test"
+            } 
+        ]
+    }
+]

@@ -5,10 +5,10 @@ struct FilterButtonsView: View {
     @State var showSkillsView = false
     @State var showProjectsView = false
 
-    var preselectedSkills: [Filterable]
+    var preselectedTechnologies: [Filterable]
     var preselectedProjects: [Filterable]
 
-    var onSkillsFilterApply: ([Filterable]) -> Void
+    var onTechnologiesFilterApply: ([Filterable]) -> Void
     var onProjectsFilterApply: ([Filterable]) -> Void
 
     var body: some View {
@@ -19,11 +19,11 @@ struct FilterButtonsView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 60)
             .sheet(isPresented: $showSkillsView) {
-                FilterView(viewModel: FilterViewModel(filterType: .skill, preselectedItems: preselectedSkills),
+                FilterView(viewModel: FilterViewModel(filterType: .technology, preselectedItems: preselectedTechnologies),
                            showFilterView: $showSkillsView,
                            title: "SKILLS") { items in
                     viewModel.setSkillsCounter(counter: items.count)
-                    onSkillsFilterApply(items)
+                    onTechnologiesFilterApply(items)
                 }
             }
 
@@ -53,7 +53,7 @@ struct FilterButtonsView: View {
 
 struct FreaksButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterButtonsView(preselectedSkills: [],
+        FilterButtonsView(preselectedTechnologies: [],
                           preselectedProjects: []) { _ in
         } onProjectsFilterApply: { _ in
         }

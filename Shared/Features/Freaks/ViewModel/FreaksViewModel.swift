@@ -3,7 +3,7 @@ import Foundation
 final class FreaksViewModel: ObservableObject {
     @Published var freaks: [Freak] = []
 
-    var selectedSkills: [Filterable] = []
+    var selectedTechnologies: [Filterable] = []
     var selectedProjects: [Filterable] = []
 
     init() {
@@ -14,8 +14,8 @@ final class FreaksViewModel: ObservableObject {
         freaks = load("MockData.json")
     }
 
-    func setSelectedSkills(skills: [Filterable]) {
-        selectedSkills = skills
+    func setSelectedTechnologies(technologies: [Filterable]) {
+        selectedTechnologies = technologies
     }
 
     func setSelectedProjects(projects: [Filterable]) {
@@ -25,10 +25,10 @@ final class FreaksViewModel: ObservableObject {
     func filterFreaks() {
         getFreaks()
 
-        if !selectedSkills.isEmpty {
+        if !selectedTechnologies.isEmpty {
             freaks = freaks.filter {
-                $0.skills.contains { skill in
-                    selectedSkills.contains(where: { $0.id == skill.id })
+                $0.technologies.contains { technology in
+                    selectedTechnologies.contains(where: { $0.id == technology.id })
                 }
             }
         }

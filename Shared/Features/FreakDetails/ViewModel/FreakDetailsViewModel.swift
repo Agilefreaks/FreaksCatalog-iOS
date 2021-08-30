@@ -27,6 +27,10 @@ final class FreakDetailsViewModel {
         freak.projects
     }
 
+    var technologies: [Technology] {
+        freak.technologies
+    }
+
     var level: String {
         freak.level
     }

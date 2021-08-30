@@ -17,7 +17,6 @@
 		1202514126D43DED00B608CA /* FreaksNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202513F26D43DED00B608CA /* FreaksNode.swift */; };
 		1202514326D43EB800B608CA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202514226D43EB800B608CA /* API.swift */; };
 		1202514426D43EB800B608CA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1202514226D43EB800B608CA /* API.swift */; };
-		121A37E126D8CDB600B94315 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 121A37E026D8CDB600B94315 /* KingfisherSwiftUI */; };
 		121F7D8E26A6B875005411ED /* FreaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6C26A6B874005411ED /* FreaksApp.swift */; };
 		121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6C26A6B874005411ED /* FreaksApp.swift */; };
 		121F7D9226A6B875005411ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121F7D6E26A6B875005411ED /* Assets.xcassets */; };
@@ -32,6 +31,9 @@
 		128A614826C163480055AFFF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A614626C163480055AFFF /* HomeView.swift */; };
 		128A614A26C1641A0055AFFF /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A614926C1641A0055AFFF /* ProjectsView.swift */; };
 		128A614B26C1641A0055AFFF /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A614926C1641A0055AFFF /* ProjectsView.swift */; };
+		12ABCEDE26DD04CD006B7F20 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 12ABCEDD26DD04CD006B7F20 /* Kingfisher */; };
+		12DFB34B26A6EE0200CB25F7 /* Freak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DFB34A26A6EE0200CB25F7 /* Freak.swift */; };
+		12DFB34C26A6EE0200CB25F7 /* Freak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DFB34A26A6EE0200CB25F7 /* Freak.swift */; };
 		12DFB34E26A6F21E00CB25F7 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DFB34D26A6F21E00CB25F7 /* ListItemView.swift */; };
 		12DFB34F26A6F21E00CB25F7 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DFB34D26A6F21E00CB25F7 /* ListItemView.swift */; };
 		12ECD1DF26A818E10069BD64 /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ECD1DE26A818E10069BD64 /* ListItemViewModel.swift */; };
@@ -53,7 +55,6 @@
 		3B76E4DC26B01A2500D92898 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B76E4DB26B01A2500D92898 /* FilterView.swift */; };
 		3B76E4DD26B01A2500D92898 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B76E4DB26B01A2500D92898 /* FilterView.swift */; };
 		3B8CCBE226AECE81005765AA /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CCBE126AECE81005765AA /* UINavigationController+Extensions.swift */; };
-		3B8E6FDC26A96C8E0019E00E /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E6FDB26A96C8E0019E00E /* MockData.json */; };
 		3B8E6FE626A993830019E00E /* FreaksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E6FE526A993830019E00E /* FreaksUITests.swift */; };
 		3BA783DC26C1407E00E660E8 /* Filterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA783DB26C1407E00E660E8 /* Filterable.swift */; };
 		3BA783DD26C1407E00E660E8 /* Filterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA783DB26C1407E00E660E8 /* Filterable.swift */; };
@@ -62,15 +63,6 @@
 		3BD3DA5826AFFA3E00281ADC /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD3DA5726AFFA3E00281ADC /* Apollo */; };
 		3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA054026A6EA840070BADB /* FreaksView.swift */; };
 		3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA054026A6EA840070BADB /* FreaksView.swift */; };
-		3BDDBC0A26CFBA3C004EBA5D /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDDBC0926CFBA3C004EBA5D /* ProjectCardView.swift */; };
-		3BDDBC0B26CFBA3C004EBA5D /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDDBC0926CFBA3C004EBA5D /* ProjectCardView.swift */; };
-		3BDDBC0D26CFBAB0004EBA5D /* MockProjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BDDBC0C26CFBAB0004EBA5D /* MockProjects.json */; };
-		3BDDBC0E26CFBAB0004EBA5D /* MockProjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BDDBC0C26CFBAB0004EBA5D /* MockProjects.json */; };
-		3BE10CF426D01EDD0048FBE6 /* ProjectCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE10CF326D01EDD0048FBE6 /* ProjectCardViewModel.swift */; };
-		3BE10CF626D3BA8E0048FBE6 /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE10CF526D3BA8E0048FBE6 /* Technology.swift */; };
-		3BE10CF826D3CDC90048FBE6 /* Freak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE10CF726D3CDC90048FBE6 /* Freak.swift */; };
-		3BE10CF926D3CDC90048FBE6 /* Freak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE10CF726D3CDC90048FBE6 /* Freak.swift */; };
-		3BE10CFB26D527CC0048FBE6 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE10CFA26D527CC0048FBE6 /* ProjectsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +97,7 @@
 		128A614326C15C9F0055AFFF /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		128A614626C163480055AFFF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		128A614926C1641A0055AFFF /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		12DFB34A26A6EE0200CB25F7 /* Freak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freak.swift; sourceTree = "<group>"; };
 		12DFB34D26A6F21E00CB25F7 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		12ECD1DC26A815920069BD64 /* FreakTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakTest.swift; sourceTree = "<group>"; };
 		12ECD1DE26A818E10069BD64 /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
@@ -119,18 +112,11 @@
 		3B66773826C1632700196894 /* FilterButtonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonsViewModel.swift; sourceTree = "<group>"; };
 		3B76E4DB26B01A2500D92898 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		3B8CCBE126AECE81005765AA /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
-		3B8E6FDB26A96C8E0019E00E /* MockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
 		3B8E6FE326A993830019E00E /* FreaksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreaksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8E6FE526A993830019E00E /* FreaksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksUITests.swift; sourceTree = "<group>"; };
 		3BA783DB26C1407E00E660E8 /* Filterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filterable.swift; sourceTree = "<group>"; };
 		3BC6F9EA26B97C2B001EB581 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		3BDA054026A6EA840070BADB /* FreaksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreaksView.swift; sourceTree = "<group>"; };
-		3BDDBC0926CFBA3C004EBA5D /* ProjectCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
-		3BDDBC0C26CFBAB0004EBA5D /* MockProjects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockProjects.json; sourceTree = "<group>"; };
-		3BE10CF326D01EDD0048FBE6 /* ProjectCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardViewModel.swift; sourceTree = "<group>"; };
-		3BE10CF526D3BA8E0048FBE6 /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
-		3BE10CF726D3CDC90048FBE6 /* Freak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freak.swift; sourceTree = "<group>"; };
-		3BE10CFA26D527CC0048FBE6 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121A37E126D8CDB600B94315 /* KingfisherSwiftUI in Frameworks */,
+				12ABCEDE26DD04CD006B7F20 /* Kingfisher in Frameworks */,
 				3BD3DA5826AFFA3E00281ADC /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +201,6 @@
 				121F7D6E26A6B875005411ED /* Assets.xcassets */,
 				3B416B9026A811BD00250A0D /* Features */,
 				1202512D26D438BB00B608CA /* NetworkingLayer */,
-				3B8E6FDA26A96C660019E00E /* Resources */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -291,9 +276,7 @@
 		128A615026C266490055AFFF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				3BDDBC0826CFB9F5004EBA5D /* Model */,
 				128A615126C2665C0055AFFF /* View */,
-				3BE10CF226D01EBD0048FBE6 /* ViewModel */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -301,7 +284,6 @@
 		128A615126C2665C0055AFFF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3BDDBC0926CFBA3C004EBA5D /* ProjectCardView.swift */,
 				128A614926C1641A0055AFFF /* ProjectsView.swift */,
 			);
 			path = View;
@@ -364,8 +346,9 @@
 		3B416B9226A8120000250A0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3BE10CF726D3CDC90048FBE6 /* Freak.swift */,
+				12DFB34A26A6EE0200CB25F7 /* Freak.swift */,
 				3B661F7C26B41EFC00C45974 /* Skill.swift */,
+				3B63BA6626B92DFC0014126B /* Project.swift */,
 				3BA783DB26C1407E00E660E8 /* Filterable.swift */,
 			);
 			path = Model;
@@ -410,39 +393,12 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		3B8E6FDA26A96C660019E00E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3BDDBC0C26CFBAB0004EBA5D /* MockProjects.json */,
-				3B8E6FDB26A96C8E0019E00E /* MockData.json */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		3B8E6FE426A993830019E00E /* FreaksUITests */ = {
 			isa = PBXGroup;
 			children = (
 				3B8E6FE526A993830019E00E /* FreaksUITests.swift */,
 			);
 			path = FreaksUITests;
-			sourceTree = "<group>";
-		};
-		3BDDBC0826CFB9F5004EBA5D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3B63BA6626B92DFC0014126B /* Project.swift */,
-				3BE10CF526D3BA8E0048FBE6 /* Technology.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3BE10CF226D01EBD0048FBE6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				3BE10CF326D01EDD0048FBE6 /* ProjectCardViewModel.swift */,
-				3BE10CFA26D527CC0048FBE6 /* ProjectsViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,7 +421,7 @@
 			name = "Freaks (iOS)";
 			packageProductDependencies = (
 				3BD3DA5726AFFA3E00281ADC /* Apollo */,
-				121A37E026D8CDB600B94315 /* KingfisherSwiftUI */,
+				12ABCEDD26DD04CD006B7F20 /* Kingfisher */,
 			);
 			productName = "Freaks (iOS)";
 			productReference = 121F7D7326A6B875005411ED /* Freaks.app */;
@@ -561,7 +517,7 @@
 			mainGroup = 121F7D6626A6B874005411ED;
 			packageReferences = (
 				3BD3DA5626AFFA3E00281ADC /* XCRemoteSwiftPackageReference "apollo-ios" */,
-				121A37DF26D8CDB600B94315 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				12ABCEDC26DD04CD006B7F20 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 121F7D7426A6B875005411ED /* Products */;
 			projectDirPath = "";
@@ -583,8 +539,6 @@
 				1202513A26D43D3E00B608CA /* schema.json in Resources */,
 				1202513726D43CC300B608CA /* GetAllFreaksQuery.graphql in Resources */,
 				121F7D9226A6B875005411ED /* Assets.xcassets in Resources */,
-				3BDDBC0D26CFBAB0004EBA5D /* MockProjects.json in Resources */,
-				3B8E6FDC26A96C8E0019E00E /* MockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,7 +549,6 @@
 				1202513826D43CC300B608CA /* GetAllFreaksQuery.graphql in Resources */,
 				1202513B26D43D3E00B608CA /* schema.json in Resources */,
 				121F7D9326A6B875005411ED /* Assets.xcassets in Resources */,
-				3BDDBC0E26CFBAB0004EBA5D /* MockProjects.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,25 +611,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12DFB34B26A6EE0200CB25F7 /* Freak.swift in Sources */,
 				3B66773926C1632700196894 /* FilterButtonsViewModel.swift in Sources */,
 				128A614426C15C9F0055AFFF /* MenuView.swift in Sources */,
 				128A614A26C1641A0055AFFF /* ProjectsView.swift in Sources */,
 				3B661F7D26B41EFC00C45974 /* Skill.swift in Sources */,
-				3BE10CFB26D527CC0048FBE6 /* ProjectsViewModel.swift in Sources */,
 				128A614726C163480055AFFF /* HomeView.swift in Sources */,
 				1202514026D43DED00B608CA /* FreaksNode.swift in Sources */,
 				12ECD1DF26A818E10069BD64 /* ListItemViewModel.swift in Sources */,
-				3BE10CF626D3BA8E0048FBE6 /* Technology.swift in Sources */,
 				125FF4FC26A83B9500018CE8 /* FreakDetailsView.swift in Sources */,
-				3BDDBC0A26CFBA3C004EBA5D /* ProjectCardView.swift in Sources */,
 				3B76E4DC26B01A2500D92898 /* FilterView.swift in Sources */,
 				3BA783DC26C1407E00E660E8 /* Filterable.swift in Sources */,
-				3BE10CF426D01EDD0048FBE6 /* ProjectCardViewModel.swift in Sources */,
 				3B63BA6726B92DFC0014126B /* Project.swift in Sources */,
 				1202513D26D43DA200B608CA /* GraphAPIService.swift in Sources */,
 				3B8CCBE226AECE81005765AA /* UINavigationController+Extensions.swift in Sources */,
 				3BC6F9EB26B97C2B001EB581 /* FilterViewModel.swift in Sources */,
-				3BE10CF826D3CDC90048FBE6 /* Freak.swift in Sources */,
 				3B416B8D26A80F5B00250A0D /* FreaksViewModel.swift in Sources */,
 				3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */,
 				3B661F6E26B16F7D00C45974 /* MultipleSelectionRow.swift in Sources */,
@@ -696,6 +645,7 @@
 				1202514426D43EB800B608CA /* API.swift in Sources */,
 				3BC6F9EC26B97C2B001EB581 /* FilterViewModel.swift in Sources */,
 				128A614B26C1641A0055AFFF /* ProjectsView.swift in Sources */,
+				12DFB34C26A6EE0200CB25F7 /* Freak.swift in Sources */,
 				128A614826C163480055AFFF /* HomeView.swift in Sources */,
 				128A614526C15C9F0055AFFF /* MenuView.swift in Sources */,
 				12ECD1E026A818E10069BD64 /* ListItemViewModel.swift in Sources */,
@@ -706,8 +656,6 @@
 				3B63BA6826B92DFC0014126B /* Project.swift in Sources */,
 				3BA783DD26C1407E00E660E8 /* Filterable.swift in Sources */,
 				3B66773A26C1632700196894 /* FilterButtonsViewModel.swift in Sources */,
-				3BE10CF926D3CDC90048FBE6 /* Freak.swift in Sources */,
-				3BDDBC0B26CFBA3C004EBA5D /* ProjectCardView.swift in Sources */,
 				3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */,
 				1202513E26D43DA200B608CA /* GraphAPIService.swift in Sources */,
 				125FF50026A83CBB00018CE8 /* FreakDetailsViewModel.swift in Sources */,
@@ -871,7 +819,7 @@
 		121F7D9726A6B875005411ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APP_BUILD_NUMBER = 4;
+				APP_BUILD_NUMBER = 5;
 				APP_VERSION_STRING = 1.0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -906,7 +854,7 @@
 		121F7D9826A6B875005411ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APP_BUILD_NUMBER = 4;
+				APP_BUILD_NUMBER = 5;
 				APP_VERSION_STRING = 1.0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1138,12 +1086,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		121A37DF26D8CDB600B94315 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		12ABCEDC26DD04CD006B7F20 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.15.2;
+				branch = "fix/xcode-13";
+				kind = branch;
 			};
 		};
 		3BD3DA5626AFFA3E00281ADC /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
@@ -1157,10 +1105,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		121A37E026D8CDB600B94315 /* KingfisherSwiftUI */ = {
+		12ABCEDD26DD04CD006B7F20 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 121A37DF26D8CDB600B94315 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = KingfisherSwiftUI;
+			package = 12ABCEDC26DD04CD006B7F20 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		3BD3DA5726AFFA3E00281ADC /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;

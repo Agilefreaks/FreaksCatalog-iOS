@@ -42,6 +42,7 @@ struct FreaksView: View {
             }
             .modifier(NavbarTitle(title: "Freaks"))
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

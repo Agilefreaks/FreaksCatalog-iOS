@@ -73,8 +73,8 @@ struct FreakDetailsView: View {
     }
 }
 
-// struct FreakDetailsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Stanescu", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc.", skills: [Skill(id: "0", name: "iOS")], projects: [Project(id: "0", name: "Epix", description: "Streaming service")], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: "0")))
-//    }
-// }
+struct FreakDetailsView_Previews: PreviewProvider {
+    static var previews: some View {
+        FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Militaru", description: "Lorem ipsum", skills: [Skill(id: "0", name: "iOS")], projects: [Project(id: "0", name: "Epix", description: "Streaming service", technologies: [Technology(id: "1", name: "Mihai", description: "descriere")], imageUrl: "imagine")], technologies: [Technology(id: "1", name: "Mihai", description: "descriere")], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: "0")))
+    }
+}

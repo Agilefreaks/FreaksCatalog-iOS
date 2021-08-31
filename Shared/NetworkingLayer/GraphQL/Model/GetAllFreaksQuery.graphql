@@ -17,6 +17,10 @@ query GetAllFreaks {
           photo{
             uri
           }
+          skills {
+            id
+            name
+          }
           technologies{
             id
             name

@@ -21,6 +21,20 @@
 		121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F7D6C26A6B874005411ED /* FreaksApp.swift */; };
 		121F7D9226A6B875005411ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121F7D6E26A6B875005411ED /* Assets.xcassets */; };
 		121F7D9326A6B875005411ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121F7D6E26A6B875005411ED /* Assets.xcassets */; };
+		123D76D326DE24D900238B96 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76CB26DE24D900238B96 /* ProjectsViewModel.swift */; };
+		123D76D426DE24D900238B96 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76CB26DE24D900238B96 /* ProjectsViewModel.swift */; };
+		123D76D526DE24D900238B96 /* ProjectCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76CC26DE24D900238B96 /* ProjectCardViewModel.swift */; };
+		123D76D626DE24D900238B96 /* ProjectCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76CC26DE24D900238B96 /* ProjectCardViewModel.swift */; };
+		123D76D726DE24D900238B96 /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76CE26DE24D900238B96 /* Technology.swift */; };
+		123D76D826DE24D900238B96 /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76CE26DE24D900238B96 /* Technology.swift */; };
+		123D76D926DE24D900238B96 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76CF26DE24D900238B96 /* Project.swift */; };
+		123D76DA26DE24D900238B96 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76CF26DE24D900238B96 /* Project.swift */; };
+		123D76DB26DE24D900238B96 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76D126DE24D900238B96 /* ProjectCardView.swift */; };
+		123D76DC26DE24D900238B96 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76D126DE24D900238B96 /* ProjectCardView.swift */; };
+		123D76DD26DE24D900238B96 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76D226DE24D900238B96 /* ProjectsView.swift */; };
+		123D76DE26DE24D900238B96 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D76D226DE24D900238B96 /* ProjectsView.swift */; };
+		123D76E526DE35E500238B96 /* MockProjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 123D76E326DE35E500238B96 /* MockProjects.json */; };
+		123D76E626DE35E500238B96 /* MockProjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 123D76E326DE35E500238B96 /* MockProjects.json */; };
 		125FF4FC26A83B9500018CE8 /* FreakDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FF4FB26A83B9500018CE8 /* FreakDetailsView.swift */; };
 		125FF4FD26A83B9500018CE8 /* FreakDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FF4FB26A83B9500018CE8 /* FreakDetailsView.swift */; };
 		125FF4FF26A83CBB00018CE8 /* FreakDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FF4FE26A83CBB00018CE8 /* FreakDetailsViewModel.swift */; };
@@ -29,8 +43,6 @@
 		128A614526C15C9F0055AFFF /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A614326C15C9F0055AFFF /* MenuView.swift */; };
 		128A614726C163480055AFFF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A614626C163480055AFFF /* HomeView.swift */; };
 		128A614826C163480055AFFF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A614626C163480055AFFF /* HomeView.swift */; };
-		128A614A26C1641A0055AFFF /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A614926C1641A0055AFFF /* ProjectsView.swift */; };
-		128A614B26C1641A0055AFFF /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A614926C1641A0055AFFF /* ProjectsView.swift */; };
 		12ABCEDE26DD04CD006B7F20 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 12ABCEDD26DD04CD006B7F20 /* Kingfisher */; };
 		12DFB34B26A6EE0200CB25F7 /* Freak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DFB34A26A6EE0200CB25F7 /* Freak.swift */; };
 		12DFB34C26A6EE0200CB25F7 /* Freak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DFB34A26A6EE0200CB25F7 /* Freak.swift */; };
@@ -44,8 +56,6 @@
 		3B283D8A26CA95240006B78F /* NavbarTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B283D8926CA95240006B78F /* NavbarTitleModifier.swift */; };
 		3B416B8D26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
 		3B416B8E26A80F5B00250A0D /* FreaksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */; };
-		3B63BA6726B92DFC0014126B /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63BA6626B92DFC0014126B /* Project.swift */; };
-		3B63BA6826B92DFC0014126B /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63BA6626B92DFC0014126B /* Project.swift */; };
 		3B661F6E26B16F7D00C45974 /* MultipleSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B661F6D26B16F7D00C45974 /* MultipleSelectionRow.swift */; };
 		3B661F6F26B16F7D00C45974 /* MultipleSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B661F6D26B16F7D00C45974 /* MultipleSelectionRow.swift */; };
 		3B661F7D26B41EFC00C45974 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B661F7C26B41EFC00C45974 /* Skill.swift */; };
@@ -92,11 +102,17 @@
 		121F7D6E26A6B875005411ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		121F7D7326A6B875005411ED /* Freaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		121F7D7926A6B875005411ED /* Freaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		123D76CB26DE24D900238B96 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		123D76CC26DE24D900238B96 /* ProjectCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCardViewModel.swift; sourceTree = "<group>"; };
+		123D76CE26DE24D900238B96 /* Technology.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
+		123D76CF26DE24D900238B96 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		123D76D126DE24D900238B96 /* ProjectCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
+		123D76D226DE24D900238B96 /* ProjectsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		123D76E326DE35E500238B96 /* MockProjects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockProjects.json; sourceTree = "<group>"; };
 		125FF4FB26A83B9500018CE8 /* FreakDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakDetailsView.swift; sourceTree = "<group>"; };
 		125FF4FE26A83CBB00018CE8 /* FreakDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakDetailsViewModel.swift; sourceTree = "<group>"; };
 		128A614326C15C9F0055AFFF /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		128A614626C163480055AFFF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		128A614926C1641A0055AFFF /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		12DFB34A26A6EE0200CB25F7 /* Freak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freak.swift; sourceTree = "<group>"; };
 		12DFB34D26A6F21E00CB25F7 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		12ECD1DC26A815920069BD64 /* FreakTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakTest.swift; sourceTree = "<group>"; };
@@ -106,7 +122,6 @@
 		3B283D8926CA95240006B78F /* NavbarTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarTitleModifier.swift; sourceTree = "<group>"; };
 		3B416B8C26A80F5B00250A0D /* FreaksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreaksViewModel.swift; sourceTree = "<group>"; };
 		3B416B9526A8463800250A0D /* Freaks--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freaks--iOS--Info.plist"; sourceTree = "<group>"; };
-		3B63BA6626B92DFC0014126B /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		3B661F6D26B16F7D00C45974 /* MultipleSelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionRow.swift; sourceTree = "<group>"; };
 		3B661F7C26B41EFC00C45974 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		3B66773826C1632700196894 /* FilterButtonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonsViewModel.swift; sourceTree = "<group>"; };
@@ -195,12 +210,13 @@
 		121F7D6B26A6B874005411ED /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				3B283D8726CA94EE0006B78F /* Common */,
-				3B8CCBE026AECE46005765AA /* Utils */,
 				3B416B8F26A811A600250A0D /* App */,
 				121F7D6E26A6B875005411ED /* Assets.xcassets */,
+				3B283D8726CA94EE0006B78F /* Common */,
 				3B416B9026A811BD00250A0D /* Features */,
 				1202512D26D438BB00B608CA /* NetworkingLayer */,
+				123D76E226DE35E500238B96 /* Resources */,
+				3B8CCBE026AECE46005765AA /* Utils */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -214,6 +230,51 @@
 				3B8E6FE326A993830019E00E /* FreaksUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		123D76C926DE24D900238B96 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				123D76CA26DE24D900238B96 /* ViewModel */,
+				123D76CD26DE24D900238B96 /* Model */,
+				123D76D026DE24D900238B96 /* View */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		123D76CA26DE24D900238B96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				123D76CB26DE24D900238B96 /* ProjectsViewModel.swift */,
+				123D76CC26DE24D900238B96 /* ProjectCardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		123D76CD26DE24D900238B96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				123D76CE26DE24D900238B96 /* Technology.swift */,
+				123D76CF26DE24D900238B96 /* Project.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		123D76D026DE24D900238B96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				123D76D126DE24D900238B96 /* ProjectCardView.swift */,
+				123D76D226DE24D900238B96 /* ProjectsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		123D76E226DE35E500238B96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				123D76E326DE35E500238B96 /* MockProjects.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		125FF50126A847A600018CE8 /* FreakDetails */ = {
@@ -273,22 +334,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		128A615026C266490055AFFF /* Projects */ = {
-			isa = PBXGroup;
-			children = (
-				128A615126C2665C0055AFFF /* View */,
-			);
-			path = Projects;
-			sourceTree = "<group>";
-		};
-		128A615126C2665C0055AFFF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				128A614926C1641A0055AFFF /* ProjectsView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		12ECD1E626A82CB80069BD64 /* FreaksTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,7 +369,7 @@
 		3B416B9026A811BD00250A0D /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				128A615026C266490055AFFF /* Projects */,
+				123D76C926DE24D900238B96 /* Projects */,
 				128A614E26C266170055AFFF /* Home */,
 				128A614C26C25EB80055AFFF /* Menu */,
 				125FF50126A847A600018CE8 /* FreakDetails */,
@@ -348,7 +393,6 @@
 			children = (
 				12DFB34A26A6EE0200CB25F7 /* Freak.swift */,
 				3B661F7C26B41EFC00C45974 /* Skill.swift */,
-				3B63BA6626B92DFC0014126B /* Project.swift */,
 				3BA783DB26C1407E00E660E8 /* Filterable.swift */,
 			);
 			path = Model;
@@ -537,6 +581,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1202513A26D43D3E00B608CA /* schema.json in Resources */,
+				123D76E526DE35E500238B96 /* MockProjects.json in Resources */,
 				1202513726D43CC300B608CA /* GetAllFreaksQuery.graphql in Resources */,
 				121F7D9226A6B875005411ED /* Assets.xcassets in Resources */,
 			);
@@ -547,6 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1202513826D43CC300B608CA /* GetAllFreaksQuery.graphql in Resources */,
+				123D76E626DE35E500238B96 /* MockProjects.json in Resources */,
 				1202513B26D43D3E00B608CA /* schema.json in Resources */,
 				121F7D9326A6B875005411ED /* Assets.xcassets in Resources */,
 			);
@@ -614,18 +660,22 @@
 				12DFB34B26A6EE0200CB25F7 /* Freak.swift in Sources */,
 				3B66773926C1632700196894 /* FilterButtonsViewModel.swift in Sources */,
 				128A614426C15C9F0055AFFF /* MenuView.swift in Sources */,
-				128A614A26C1641A0055AFFF /* ProjectsView.swift in Sources */,
+				123D76D326DE24D900238B96 /* ProjectsViewModel.swift in Sources */,
 				3B661F7D26B41EFC00C45974 /* Skill.swift in Sources */,
+				123D76D926DE24D900238B96 /* Project.swift in Sources */,
 				128A614726C163480055AFFF /* HomeView.swift in Sources */,
 				1202514026D43DED00B608CA /* FreaksNode.swift in Sources */,
 				12ECD1DF26A818E10069BD64 /* ListItemViewModel.swift in Sources */,
 				125FF4FC26A83B9500018CE8 /* FreakDetailsView.swift in Sources */,
 				3B76E4DC26B01A2500D92898 /* FilterView.swift in Sources */,
+				123D76D526DE24D900238B96 /* ProjectCardViewModel.swift in Sources */,
 				3BA783DC26C1407E00E660E8 /* Filterable.swift in Sources */,
-				3B63BA6726B92DFC0014126B /* Project.swift in Sources */,
 				1202513D26D43DA200B608CA /* GraphAPIService.swift in Sources */,
 				3B8CCBE226AECE81005765AA /* UINavigationController+Extensions.swift in Sources */,
+				123D76D726DE24D900238B96 /* Technology.swift in Sources */,
 				3BC6F9EB26B97C2B001EB581 /* FilterViewModel.swift in Sources */,
+				123D76DB26DE24D900238B96 /* ProjectCardView.swift in Sources */,
+				123D76DD26DE24D900238B96 /* ProjectsView.swift in Sources */,
 				3B416B8D26A80F5B00250A0D /* FreaksViewModel.swift in Sources */,
 				3BDA054126A6EA840070BADB /* FreaksView.swift in Sources */,
 				3B661F6E26B16F7D00C45974 /* MultipleSelectionRow.swift in Sources */,
@@ -644,26 +694,30 @@
 			files = (
 				1202514426D43EB800B608CA /* API.swift in Sources */,
 				3BC6F9EC26B97C2B001EB581 /* FilterViewModel.swift in Sources */,
-				128A614B26C1641A0055AFFF /* ProjectsView.swift in Sources */,
 				12DFB34C26A6EE0200CB25F7 /* Freak.swift in Sources */,
 				128A614826C163480055AFFF /* HomeView.swift in Sources */,
+				123D76D826DE24D900238B96 /* Technology.swift in Sources */,
 				128A614526C15C9F0055AFFF /* MenuView.swift in Sources */,
 				12ECD1E026A818E10069BD64 /* ListItemViewModel.swift in Sources */,
+				123D76D626DE24D900238B96 /* ProjectCardViewModel.swift in Sources */,
 				1202514126D43DED00B608CA /* FreaksNode.swift in Sources */,
 				125FF4FD26A83B9500018CE8 /* FreakDetailsView.swift in Sources */,
 				3B661F6F26B16F7D00C45974 /* MultipleSelectionRow.swift in Sources */,
 				3B416B8E26A80F5B00250A0D /* FreaksViewModel.swift in Sources */,
-				3B63BA6826B92DFC0014126B /* Project.swift in Sources */,
 				3BA783DD26C1407E00E660E8 /* Filterable.swift in Sources */,
 				3B66773A26C1632700196894 /* FilterButtonsViewModel.swift in Sources */,
 				3BDA054226A6EA840070BADB /* FreaksView.swift in Sources */,
 				1202513E26D43DA200B608CA /* GraphAPIService.swift in Sources */,
 				125FF50026A83CBB00018CE8 /* FreakDetailsViewModel.swift in Sources */,
 				3B76E4DD26B01A2500D92898 /* FilterView.swift in Sources */,
+				123D76DE26DE24D900238B96 /* ProjectsView.swift in Sources */,
+				123D76D426DE24D900238B96 /* ProjectsViewModel.swift in Sources */,
 				121F7D8F26A6B875005411ED /* FreaksApp.swift in Sources */,
 				3B661F7E26B41EFC00C45974 /* Skill.swift in Sources */,
 				12FD8E3D26A9BB8D00EF05E8 /* FilterButtonsView.swift in Sources */,
+				123D76DC26DE24D900238B96 /* ProjectCardView.swift in Sources */,
 				12DFB34F26A6F21E00CB25F7 /* ListItemView.swift in Sources */,
+				123D76DA26DE24D900238B96 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

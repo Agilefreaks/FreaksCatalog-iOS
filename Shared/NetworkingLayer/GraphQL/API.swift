@@ -33,6 +33,11 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                 __typename
                 uri
               }
+              skills {
+                __typename
+                id
+                name
+              }
               technologies {
                 __typename
                 id
@@ -135,6 +140,7 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                         GraphQLField("norm", type: .nonNull(.object(Norm.selections))),
                         GraphQLField("role", type: .nonNull(.object(Role.selections))),
                         GraphQLField("photo", type: .object(Photo.selections)),
+                        GraphQLField("skills", type: .nonNull(.list(.nonNull(.object(Skill.selections))))),
                         GraphQLField("technologies", type: .nonNull(.list(.nonNull(.object(Technology.selections))))),
                         GraphQLField("projects", type: .nonNull(.list(.nonNull(.object(Project.selections))))),
                     ]
@@ -146,8 +152,8 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                     resultMap = unsafeResultMap
                 }
 
-                public init(id: GraphQLID, firstName: String, lastName: String, description: String, level: Level, norm: Norm, role: Role, photo: Photo? = nil, technologies: [Technology], projects: [Project]) {
-                    self.init(unsafeResultMap: ["__typename": "Freak", "id": id, "firstName": firstName, "lastName": lastName, "description": description, "level": level.resultMap, "norm": norm.resultMap, "role": role.resultMap, "photo": photo.flatMap { (value: Photo) -> ResultMap in value.resultMap }, "technologies": technologies.map { (value: Technology) -> ResultMap in value.resultMap }, "projects": projects.map { (value: Project) -> ResultMap in value.resultMap }])
+                public init(id: GraphQLID, firstName: String, lastName: String, description: String, level: Level, norm: Norm, role: Role, photo: Photo? = nil, skills: [Skill], technologies: [Technology], projects: [Project]) {
+                    self.init(unsafeResultMap: ["__typename": "Freak", "id": id, "firstName": firstName, "lastName": lastName, "description": description, "level": level.resultMap, "norm": norm.resultMap, "role": role.resultMap, "photo": photo.flatMap { (value: Photo) -> ResultMap in value.resultMap }, "skills": skills.map { (value: Skill) -> ResultMap in value.resultMap }, "technologies": technologies.map { (value: Technology) -> ResultMap in value.resultMap }, "projects": projects.map { (value: Project) -> ResultMap in value.resultMap }])
                 }
 
                 public var __typename: String {
@@ -228,6 +234,15 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                     }
                     set {
                         resultMap.updateValue(newValue?.resultMap, forKey: "photo")
+                    }
+                }
+
+                public var skills: [Skill] {
+                    get {
+                        (resultMap["skills"] as! [ResultMap]).map { (value: ResultMap) -> Skill in Skill(unsafeResultMap: value) }
+                    }
+                    set {
+                        resultMap.updateValue(newValue.map { (value: Skill) -> ResultMap in value.resultMap }, forKey: "skills")
                     }
                 }
 
@@ -401,6 +416,55 @@ public final class GetAllFreaksQuery: GraphQLQuery {
                         }
                         set {
                             resultMap.updateValue(newValue, forKey: "uri")
+                        }
+                    }
+                }
+
+                public struct Skill: GraphQLSelectionSet {
+                    public static let possibleTypes: [String] = ["Skill"]
+
+                    public static var selections: [GraphQLSelection] {
+                        [
+                            GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+                            GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+                            GraphQLField("name", type: .nonNull(.scalar(String.self))),
+                        ]
+                    }
+
+                    public private(set) var resultMap: ResultMap
+
+                    public init(unsafeResultMap: ResultMap) {
+                        resultMap = unsafeResultMap
+                    }
+
+                    public init(id: GraphQLID, name: String) {
+                        self.init(unsafeResultMap: ["__typename": "Skill", "id": id, "name": name])
+                    }
+
+                    public var __typename: String {
+                        get {
+                            resultMap["__typename"]! as! String
+                        }
+                        set {
+                            resultMap.updateValue(newValue, forKey: "__typename")
+                        }
+                    }
+
+                    public var id: GraphQLID {
+                        get {
+                            resultMap["id"]! as! GraphQLID
+                        }
+                        set {
+                            resultMap.updateValue(newValue, forKey: "id")
+                        }
+                    }
+
+                    public var name: String {
+                        get {
+                            resultMap["name"]! as! String
+                        }
+                        set {
+                            resultMap.updateValue(newValue, forKey: "name")
                         }
                     }
                 }

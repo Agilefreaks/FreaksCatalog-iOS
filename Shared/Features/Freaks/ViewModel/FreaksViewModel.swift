@@ -4,7 +4,7 @@ final class FreaksViewModel: ObservableObject {
     @Published var freaks: [Freak] = []
     private var allFreaks: [Freak] = []
 
-    var selectedSkills: [Filterable] = []
+    var selectedTechnologies: [Filterable] = []
     var selectedProjects: [Filterable] = []
 
     init() {
@@ -23,8 +23,8 @@ final class FreaksViewModel: ObservableObject {
         loadFreaks()
     }
 
-    func setSelectedSkills(skills: [Filterable]) {
-        selectedSkills = skills
+    func setSelectedTechnologies(technologies: [Filterable]) {
+        selectedTechnologies = technologies
     }
 
     func setSelectedProjects(projects: [Filterable]) {
@@ -33,10 +33,10 @@ final class FreaksViewModel: ObservableObject {
 
     func filterFreaks() {
         freaks = allFreaks
-        if !selectedSkills.isEmpty {
+        if !selectedTechnologies.isEmpty {
             freaks = freaks.filter {
-                $0.skills.contains { skill in
-                    selectedSkills.contains(where: { $0.id == skill.id })
+                $0.technologies.contains { technology in
+                    selectedTechnologies.contains(where: { $0.id == technology.id })
                 }
             }
         }
@@ -48,5 +48,27 @@ final class FreaksViewModel: ObservableObject {
                 }
             }
         }
+    }
+}
+
+func load<T: Decodable>(_ filename: String) -> T {
+    let data: Data
+
+    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
+    }
+
+    do {
+        data = try Data(contentsOf: file)
+    } catch {
+        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
+    }
+
+    do {
+        let decoder = JSONDecoder()
+        return try decoder.decode(T.self, from: data)
+    } catch {
+        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }

@@ -20,6 +20,6 @@ final class ProjectCardViewModel {
     }
 
     var imageUrl: String {
-        project.imageUrl
+        project.imageUrl ?? "test1"
     }
 }

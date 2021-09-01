@@ -30,7 +30,15 @@ query GetAllFreaks {
             id
             name
             description
+            logoUrl{
+              uri
+             }
+          technologies{
+            id
+            name
+            description
           }
+            }
            }
         }
 }

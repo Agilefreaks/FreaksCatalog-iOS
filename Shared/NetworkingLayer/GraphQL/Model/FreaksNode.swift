@@ -5,10 +5,17 @@ typealias FreakItemNode = FreakItem.Node
 typealias TechnologyItem = FreakItem.Node.Technology
 typealias SkillItem = FreakItem.Node.Skill
 typealias ProjectItem = FreakItem.Node.Project
+typealias ProjectTechnologies = ProjectItem.Technology
 
 extension FreakItemNode {
     var freakPhoto: String? {
         photo?.uri
+    }
+}
+
+extension ProjectItem {
+    var projectPhoto: String? {
+        logoUrl.uri
     }
 }
 
@@ -27,13 +34,21 @@ extension Technology {
     }
 }
 
+extension Technology {
+    init(from projectTechnologies: ProjectTechnologies) {
+        id = projectTechnologies.id
+        name = projectTechnologies.name
+        description = projectTechnologies.description
+    }
+}
+
 extension Project {
     init(from projectItem: ProjectItem) {
         id = projectItem.id
         name = projectItem.name
         description = projectItem.description
-        technologies = []
-        imageUrl = ""
+        technologies = projectItem.technologies.map { Technology(from: $0) }
+        imageUrl = projectItem.projectPhoto
     }
 }
 

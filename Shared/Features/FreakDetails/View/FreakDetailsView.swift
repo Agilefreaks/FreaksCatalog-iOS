@@ -67,6 +67,7 @@ struct FreakDetailsView: View {
                 Image(systemName: "chevron.left")
                 Text(viewModel.fullName)
             }
+            .foregroundColor(Color("SecondaryColor"))
         })
     }
 }

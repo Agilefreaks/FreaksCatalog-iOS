@@ -1,7 +1,7 @@
 import Foundation
 
 struct Freak: Identifiable, Codable {
-    let imageName: String
+    let imageName: String?
     let firstName: String
     let lastName: String
     let description: String
@@ -11,5 +11,5 @@ struct Freak: Identifiable, Codable {
     let role: String
     let level: String
     let norm: String
-    let id: Int
+    let id: String
 }

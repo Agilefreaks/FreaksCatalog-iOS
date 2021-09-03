@@ -30,6 +30,6 @@ struct ProjectCardView: View {
 
 struct ProjectCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectCardView(viewModel: ProjectCardViewModel(project: Project(id: 0, name: "Epix", description: "test", technologies: [Technology(id: 0, name: "iOS", description: "test")], imageUrl: "chad")), type: "Streaming")
+        ProjectCardView(viewModel: ProjectCardViewModel(project: Project(id: "0", name: "Epix", description: "test", technologies: [Technology(id: "0", name: "iOS", description: "test")], imageUrl: "chad")), type: "Streaming")
     }
 }

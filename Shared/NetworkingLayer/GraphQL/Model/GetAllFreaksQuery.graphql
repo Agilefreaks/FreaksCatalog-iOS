@@ -1,0 +1,44 @@
+query GetAllFreaks {
+      freaks {
+        nodes {
+        id
+         firstName
+         lastName
+          description
+          level{
+            name
+          }
+          norm{
+            name
+          }
+          role {
+            name
+          }
+          photo{
+            uri
+          }
+          skills {
+            id
+            name
+          }
+          technologies{
+            id
+            name
+            description
+          }
+          projects{
+            id
+            name
+            description
+            logoUrl{
+              uri
+             }
+          technologies{
+            id
+            name
+            description
+          }
+            }
+           }
+        }
+}

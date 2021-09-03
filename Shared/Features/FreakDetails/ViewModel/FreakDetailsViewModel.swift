@@ -12,7 +12,7 @@ final class FreakDetailsViewModel {
     }
 
     var imageName: String {
-        freak.imageName
+        freak.imageName ?? "test1"
     }
 
     var description: String {

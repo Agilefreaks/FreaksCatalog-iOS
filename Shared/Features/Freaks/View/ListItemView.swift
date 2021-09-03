@@ -1,3 +1,4 @@
+import Kingfisher
 import SwiftUI
 
 struct ListItemView: View {
@@ -5,7 +6,7 @@ struct ListItemView: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            Image(viewModel.imageName)
+            KFImage(URL(string: viewModel.imageName))
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(maxWidth: 160, maxHeight: 160)
@@ -26,7 +27,7 @@ struct ListItemView: View {
 }
 
 struct ListItemView_Previews: PreviewProvider {
-    static var viewModel = ListItemViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Stanescu", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc.", skills: [Skill(id: 0, name: "iOS")], projects: [Project(id: 0, name: "Epix", description: "Streaming service", technologies: [Technology(id: 0, name: "test", description: "test")], imageUrl: "chad")], technologies: [Technology(id: 0, name: "iOS", description: "test")], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: 0))
+    static var viewModel = ListItemViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Militaru", description: "Lorem ipsum", skills: [Skill(id: "0", name: "iOS")], projects: [Project(id: "0", name: "Epix", description: "Streaming service", technologies: [Technology(id: "1", name: "Mihai", description: "descriere")], imageUrl: "imagine")], technologies: [Technology(id: "1", name: "Mihai", description: "descriere")], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: "0"))
 
     static var previews: some View {
         ListItemView(viewModel: viewModel)

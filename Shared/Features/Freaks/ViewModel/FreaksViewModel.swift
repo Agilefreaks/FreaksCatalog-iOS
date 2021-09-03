@@ -2,6 +2,7 @@ import Foundation
 
 final class FreaksViewModel: ObservableObject {
     @Published var freaks: [Freak] = []
+    private var allFreaks: [Freak] = []
 
     var selectedTechnologies: [Filterable] = []
     var selectedProjects: [Filterable] = []
@@ -10,8 +11,16 @@ final class FreaksViewModel: ObservableObject {
         getFreaks()
     }
 
+    func loadFreaks() {
+        Network.shared.getAllFreaks { [weak self] result, _ in
+            guard let self = self else { return }
+            self.freaks = result
+            self.allFreaks = result
+        }
+    }
+
     func getFreaks() {
-        freaks = load("MockData.json")
+        loadFreaks()
     }
 
     func setSelectedTechnologies(technologies: [Filterable]) {
@@ -23,8 +32,7 @@ final class FreaksViewModel: ObservableObject {
     }
 
     func filterFreaks() {
-        getFreaks()
-
+        freaks = allFreaks
         if !selectedTechnologies.isEmpty {
             freaks = freaks.filter {
                 $0.technologies.contains { technology in

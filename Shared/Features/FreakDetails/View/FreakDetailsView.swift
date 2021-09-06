@@ -63,6 +63,7 @@ struct FreakDetailsView: View {
             .frame(maxWidth: 350, maxHeight: 650, alignment: .top)
             .foregroundColor(Color("SecondaryColor"))
         }
+        .hiddenTabBar()
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: Button(action: { self.presentationMode.wrappedValue.dismiss() }) {
             HStack {

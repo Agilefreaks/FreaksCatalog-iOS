@@ -40,6 +40,7 @@ struct FreaksView: View {
                     .padding(.vertical, 5)
                 }
             }
+            .showTabBar()
             .modifier(NavbarTitle(title: "Freaks"))
         }
         .navigationViewStyle(StackNavigationViewStyle())

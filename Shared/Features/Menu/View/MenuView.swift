@@ -3,6 +3,10 @@ import SwiftUI
 struct MenuView: View {
     @State private var selection = 2
 
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(named: "SecondaryColor")
+    }
+
     var body: some View {
         TabView(selection: $selection) {
             HomeView()

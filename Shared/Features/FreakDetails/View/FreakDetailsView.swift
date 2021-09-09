@@ -41,18 +41,17 @@ struct FreakDetailsView: View {
                     }
 
                     HStack {
-                        Text("Projects: ")
-                        ForEach(viewModel.projects) { project in
-                            Text(project.name)
-                        }
+                        Text("Projects: " + viewModel.getFormattedProjects())
+                            .lineLimit(nil)
+                            .fixedSize(horizontal: true, vertical: true)
                     }
+                    .frame(maxWidth: 350, alignment: .leading)
 
                     HStack {
                         Text("Level: ")
                         Text(viewModel.level)
                     }
                 }
-
                 .foregroundColor(Color("SecondaryColor"))
                 .font(.system(size: 18, weight: .medium, design: .default))
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -74,6 +73,6 @@ struct FreakDetailsView: View {
 
 struct FreakDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Stanescu", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc.", skills: [Skill(id: 0, name: "iOS")], projects: [Project(id: 0, name: "Epix", description: "Streaming service", technologies: [Technology(id: 0, name: "test", description: "test")], imageUrl: "chad")], technologies: [Technology(id: 0, name: "iOS", description: "test")], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: 0)))
+        FreakDetailsView(viewModel: FreakDetailsViewModel(freak: Freak(imageName: "test1", firstName: "Vlad", lastName: "Stanescu", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae egestas enim. Ut vel orci interdum, egestas orci id, molestie urna. Phasellus sit amet ipsum nec urna efficitur dapibus a sit amet nunc.", skills: [Skill(id: 0, name: "iOS")], projects: [Project(id: 0, name: "FreaksCatalog", description: "Streaming service", technologies: [Technology(id: 0, name: "test", description: "test")], imageUrl: "chad"), Project(id: 0, name: "reAsig", description: "Streaming service", technologies: [Technology(id: 0, name: "test", description: "test")], imageUrl: "chad"), Project(id: 0, name: "EPIX", description: "Streaming service", technologies: [Technology(id: 0, name: "test", description: "test")], imageUrl: "chad")], technologies: [Technology(id: 0, name: "iOS", description: "test")], role: "iOS Developer", level: "Senior", norm: "Fulltime", id: 0)))
     }
 }

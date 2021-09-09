@@ -27,6 +27,14 @@ final class FreakDetailsViewModel {
         freak.projects
     }
 
+    func getFormattedProjects() -> String {
+        if freak.projects.count == 0 {
+            return "None"
+        }
+
+        return freak.projects.map(\.name).joined(separator: " ")
+    }
+
     var technologies: [Technology] {
         freak.technologies
     }
